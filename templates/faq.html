@@ -1,0 +1,61 @@
+{% extends "website-base.html" %}
+
+{% block content %}
+  <div class="row">
+    <div class="col-12">
+      <h1>Frequently asked questions</h1>
+      
+      <h2>Cloud</h2>
+      <div class="list-group w-100">
+        <a href="#shortExampleAnswer1collapse" data-mdb-toggle="collapse" aria-expanded="false"
+          aria-controls="shortExampleAnswer1collapse" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Is it mandatory to use cloud storage?</h5>
+          </div>
+          <p class="mb-1">
+            No, you can store structure on your own computer
+          </p>
+          <small><u>Learn more</u></small>
+          <!-- Collapsed content -->
+          <div class="collapse mt-3" id="shortExampleAnswer1collapse">
+            It's quite easy from the interface to save a structure on your disk, as a single file, and upload a structure from your disk to the interface to view/edit it.
+          </div>
+        </a>
+        
+        <a href="#shortExampleAnswer2collapse" data-mdb-toggle="collapse" aria-expanded="false"
+          aria-controls="shortExampleAnswer2collapse" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">How long do you store structures?</h5>
+          </div>
+          <p class="mb-1">
+            Forever, until you delete them.
+          </p>
+          <small class="text-muted"><u>Learn more</u></small>
+          <!-- Collapsed content -->
+          <div class="collapse mt-3" id="shortExampleAnswer2collapse">
+            Structures on the server are stored within a database, and are not deleted unless you delete them.<br/>
+            Even when your subscription is over, you can connect to the web application to view your structures.
+          </div>
+        </a>
+        
+        <a href="#shortExampleAnswer3collapse" data-mdb-toggle="collapse" aria-expanded="false"
+          aria-controls="shortExampleAnswer3collapse" class="list-group-item list-group-item-action">
+          <div class="d-flex w-100 justify-content-between">
+            <h5 class="mb-1">Where is it stored geographically?</h5>
+          </div>
+          <p class="mb-1">
+            In Europe
+          </p>
+          <small class="text-muted"><u>Learn more</u></small>
+          <!-- Collapsed content -->
+          <div class="collapse mt-3" id="shortExampleAnswer3collapse">
+            We're using servers in France, and the database is hosted in France.<br/>
+            We're also using other servers in Europe for backups.<br/>
+            We're not using any US cloud providers like Amazon, Google, ...<br/>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+{% endblock %}

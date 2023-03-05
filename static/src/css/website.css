@@ -1,0 +1,54 @@
+header {
+    background: #222e3c;
+}
+
+footer {
+    background-color: #222e3c !important;
+    color: white;
+}
+
+.beamzgrey {
+    background-color: #f3f3f4 !important;
+}
+
+.beamz-bg {
+    background-color: #304781 !important;
+    color: #ffffff;
+}
+
+.card-body {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+    color: #212529;
+}
+
+.s_comparisons_decimal {
+    font-size: 80%;
+}
+
+.s_comparisons_price {
+    font-size: 200%;
+}
+
+.btn-primary:hover {
+    color: #FFFFFF;
+    background-color: #365192;
+    border-color: #334c8a;
+}
+
+.btn-primary {
+    color: #FFFFFF;
+    background-color: #365192;
+    border-color: #334c8a;
+}
+
+@media (max-width: 991px) {
+    body {
+        margin-top:110px;
+    }
+}
+
+@media (min-width: 991px) {
+    body {
+        margin-top:70px;
+    }
+}
