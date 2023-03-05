@@ -1,0 +1,100 @@
+{% extends "website-base.html" %}
+
+{% block title %}Pricing BeamZ{% endblock %}
+
+{% block content %}
+<div class="container">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <h1> Pricing</h1>
+    <br/>
+    
+    <div class="row">
+        <div class="col-lg-4 s_col_no_bgcolor text-center pt32 pb16" data-name="Box">
+          <div class="card bg-200">
+            <h4 class="card-header">Student</h4>
+            <div class="card-body text-center">
+              <h2 class="card-title">
+                <!-- <span class="s_comparisons_currency">$</span> -->
+                <span class="s_comparisons_price">
+                  <b>Free</b>
+                </span>
+                <!-- <span class="s_comparisons_decimal">.00</span> -->
+              </h2>
+              <!-- <small>/ mois</small> -->
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Ventes &amp; Marketing élémentaires jusqu'à 2 utilisateurs</li>
+              <li class="list-group-item">Gestion des comptes &amp; des ventes</li>
+              <li class="list-group-item">Pas de customisation</li>
+              <li class="list-group-item">Pas de support</li>
+            </ul>
+            <div class="card-footer">
+              <p>
+                <i>Configuration instantanée, satisfait ou remboursé.</i>
+              </p>
+              <a href="/contactus" class="btn btn-primary mb-2">Start now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 s_col_no_bgcolor text-center pt32 pb16" data-name="Box">
+          <div class="card beamz-bg">
+            <h4 class="card-header">Professional</h4>
+            <div class="card-body">
+              <h2 class="card-title">
+                <span class="s_comparisons_currency">€</span>
+                <span class="s_comparisons_price">
+                  <b>70</b>
+                </span>
+                <span class="s_comparisons_decimal">.00</span>
+              </h2>
+              <small>/ year</small>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">One user</li>
+              <li class="list-group-item">Unlimited analysis</li>
+              <li class="list-group-item">Unlimited structures number</li>
+              <li class="list-group-item">Email support</li>
+            </ul>
+            <div class="card-footer">
+              <p>
+                <i>Immediatly available.</i>
+              </p>
+              <a href="/purchase" class="btn btn-primary mb-2">Start now</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 s_col_no_bgcolor text-center pt32 pb16" data-name="Box">
+          <div class="card bg-secondary">
+            <h4 class="card-header">Enterprise</h4>
+            <div class="card-body text-center">
+              <h2 class="card-title">
+                <span class="s_comparisons_currency">€</span>
+                <span class="s_comparisons_price">
+                  <b>70</b>
+                </span>
+                <span class="s_comparisons_decimal">.00</span>
+              </h2>
+              <small>/ user / year</small>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Manage teams of users</li>
+              <li class="list-group-item">Share structures among teams</li>
+              <li class="list-group-item">Social portal</li>
+              <li class="list-group-item">24h/7j assistance gratuite</li>
+            </ul>
+            <div class="card-footer">
+              <p>
+                <i>Immediatly available.</i>
+              </p>
+              <a href="/contactus" class="btn btn-primary mb-2">Contact us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+{% endblock %}
