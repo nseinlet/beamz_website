@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-24 19:21+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+#: templates/pricing.html:12 templates/website-base.html:32
+msgid "Pricing"
+msgstr "Tarif"
+
+#: templates/pricing.html:18
+msgid "Student"
+msgstr "Etudiant"
+
+#: templates/pricing.html:23
+msgid "Free"
+msgstr "Gratuit"
+
+#: templates/pricing.html:30 templates/pricing.html:57
+msgid "One user"
+msgstr "Un utilisateur"
+
+#: templates/pricing.html:31 templates/pricing.html:59
+msgid "Unlimited structures number"
+msgstr "Nombre illimité de structures"
+
+#: templates/pricing.html:32
+msgid "No support"
+msgstr "Pas de support"
+
+#: templates/pricing.html:36
+msgid "Need manual student card validation."
+msgstr "Après validation manuelle de la carte étudiant"
+
+#: templates/pricing.html:38 templates/pricing.html:66
+msgid "Start now"
+msgstr "Commencez maintenant"
+
+#: templates/pricing.html:45
+msgid "Professional"
+msgstr "Professionel"
+
+#: templates/pricing.html:54 templates/pricing.html:82
+msgid "year"
+msgstr "An"
+
+#: templates/pricing.html:58
+msgid "Unlimited analysis"
+msgstr "Analyses illimitées"
+
+#: templates/pricing.html:60
+msgid "Email support"
+msgstr "Support par courriel"
+
+#: templates/pricing.html:64 templates/pricing.html:92
+msgid "Immediatly available."
+msgstr "Diusponnible immédiatement."
+
+#: templates/pricing.html:73
+msgid "Enterprise"
+msgstr ""
+
+#: templates/pricing.html:82
+msgid "user"
+msgstr "Utilisateur"
+
+#: templates/pricing.html:85
+msgid "Manage teams of users"
+msgstr "Gestion d'équipes"
+
+#: templates/pricing.html:86
+msgid "Share structures among teams"
+msgstr "Partage de structure au sein des équipes"
+
+#: templates/pricing.html:87
+msgid "Social portal"
+msgstr "Portail social"
+
+#: templates/pricing.html:88
+msgid "Phone and email support"
+msgstr "Support courriel et téléphonique"
+
+#: templates/pricing.html:94
+msgid "Contact us"
+msgstr "Contactez nous"
+
+#: templates/webindex.html:8
+msgid "Structural analysis software"
+msgstr "Logiciel dánalyse de structures"
+
+#: templates/webindex.html:9
+msgid "Analyse structures with confidence. And effortless."
+msgstr ""
+
+#: templates/webindex.html:10
+msgid "Discover features"
+msgstr ""
+
+#: templates/website-base.html:30
+msgid "Home"
+msgstr "Acceuil"
+
+#: templates/website-base.html:31
+msgid "Features"
+msgstr "Fonctionnalités"
+
+#: templates/website-base.html:34
+msgid "My files"
+msgstr "Mes fichiers"
+
+#: templates/website-base.html:45
+msgid "Dashboard"
+msgstr "Tableau de bord"
+
+#: templates/website-base.html:46
+msgid "Logout"
+msgstr "Déconnexion"
+
+#: templates/website-base.html:48
+msgid "Login"
+msgstr "Connexion"
+
+#: templates/website-base.html:49
+msgid "Sign-up"
+msgstr "Enregistrement"
+
+#: templates/website-base.html:86
+msgid "A cloud based structure analysis platform for architects and engineers."
+msgstr ""
+
+#: templates/website-base.html:87
+msgid "Accessibler through a web interface, using any device."
+msgstr ""
+
+#: templates/website-base.html:91
+msgid "Services"
+msgstr ""
+
+#: templates/website-base.html:93
+msgid "Cloud based"
+msgstr ""
+
+#: templates/website-base.html:96
+msgid "FAQ"
+msgstr ""
+
+#: templates/website-base.html:99
+msgid "Licence"
+msgstr ""
+
+#: templates/website-base.html:102
+msgid "Privacy"
+msgstr ""
+
+#: templates/website-base.html:106
+msgid "Contact"
+msgstr ""
+
+#: templates/website-base.html:127
+msgid "Still not a user?"
+msgstr ""
+
+#: templates/website-base.html:129
+msgid "Sign up!"
+msgstr ""

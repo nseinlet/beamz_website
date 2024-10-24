@@ -1,12 +1,13 @@
 {% extends "website-base.html" %}
+{% load i18n %}
 
 {% block content %}
 <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center beamzgrey">
   <div class="row">
   <div class="col-md-7 p-lg-5 mx-auto my-5">
-    <h1 class="display-4 font-weight-normal">Structural analysis software</h1>
-    <p class="lead font-weight-normal">Analyse structures with confidence. And effortless.</p>
-    <a class="btn btn-outline-secondary" href="#">Discover features</a>
+    <h1 class="display-4 font-weight-normal">{% trans 'Structural analysis software' %}</h1>
+    <p class="lead font-weight-normal">{% trans 'Analyse structures with confidence. And effortless.' %}</p>
+    <a class="btn btn-outline-secondary" href="#">{% trans 'Discover features' %}</a>
   </div>
   <div class="col-md-5 p-lg-5 mx-auto my-5">
     <img src="/static/img/Logo.png" class="img-fluid" alt="BeamZ">
