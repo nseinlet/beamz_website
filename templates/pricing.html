@@ -1,4 +1,5 @@
 {% extends "website-base.html" %}
+{% load i18n %}
 
 {% block title %}Pricing BeamZ{% endblock %}
 
@@ -8,41 +9,40 @@
     <br/>
     <br/>
     <br/>
-    <h1> Pricing</h1>
+    <h1>{% trans 'Pricing' %}</h1>
     <br/>
     
     <div class="row">
         <div class="col-lg-4 s_col_no_bgcolor text-center pt32 pb16" data-name="Box">
           <div class="card bg-200">
-            <h4 class="card-header">Student</h4>
+            <h4 class="card-header">{% trans 'Student' %}</h4>
             <div class="card-body text-center">
               <h2 class="card-title">
                 <!-- <span class="s_comparisons_currency">$</span> -->
                 <span class="s_comparisons_price">
-                  <b>Free</b>
+                  <b>{% trans 'Free' %}</b>
                 </span>
                 <!-- <span class="s_comparisons_decimal">.00</span> -->
               </h2>
               <!-- <small>/ mois</small> -->
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">Ventes &amp; Marketing élémentaires jusqu'à 2 utilisateurs</li>
-              <li class="list-group-item">Gestion des comptes &amp; des ventes</li>
-              <li class="list-group-item">Pas de customisation</li>
-              <li class="list-group-item">Pas de support</li>
+              <li class="list-group-item">{% trans 'One user' %}</li>
+              <li class="list-group-item">{% trans 'Unlimited structures number' %}</li>
+              <li class="list-group-item">{% trans 'No support' %}</li>
             </ul>
             <div class="card-footer">
               <p>
-                <i>Configuration instantanée, satisfait ou remboursé.</i>
+                <i>{% trans 'Need manual student card validation.' %}</i>
               </p>
-              <a href="/contactus" class="btn btn-primary mb-2">Start now</a>
+              <a href="/register" class="btn btn-primary mb-2">{% trans 'Start now' %}</a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 s_col_no_bgcolor text-center pt32 pb16" data-name="Box">
           <div class="card beamz-bg">
-            <h4 class="card-header">Professional</h4>
+            <h4 class="card-header">{% trans 'Professional' %}</h4>
             <div class="card-body">
               <h2 class="card-title">
                 <span class="s_comparisons_currency">€</span>
@@ -51,47 +51,47 @@
                 </span>
                 <span class="s_comparisons_decimal">.00</span>
               </h2>
-              <small>/ year</small>
+              <small>/ {% trans 'year' %}</small>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">One user</li>
-              <li class="list-group-item">Unlimited analysis</li>
-              <li class="list-group-item">Unlimited structures number</li>
-              <li class="list-group-item">Email support</li>
+              <li class="list-group-item">{% trans 'One user' %}</li>
+              <li class="list-group-item">{% trans 'Unlimited analysis' %}</li>
+              <li class="list-group-item">{% trans 'Unlimited structures number' %}</li>
+              <li class="list-group-item">{% trans 'Email support' %}</li>
             </ul>
             <div class="card-footer">
               <p>
-                <i>Immediatly available.</i>
+                <i>{% trans 'Immediatly available.' %}</i>
               </p>
-              <a href="/purchase" class="btn btn-primary mb-2">Start now</a>
+              <a href="/register" class="btn btn-primary mb-2">{% trans 'Start now' %}</a>
             </div>
           </div>
         </div>
 
         <div class="col-lg-4 s_col_no_bgcolor text-center pt32 pb16" data-name="Box">
           <div class="card bg-secondary">
-            <h4 class="card-header">Enterprise</h4>
+            <h4 class="card-header">{% trans 'Enterprise' %}</h4>
             <div class="card-body text-center">
               <h2 class="card-title">
                 <span class="s_comparisons_currency">€</span>
                 <span class="s_comparisons_price">
-                  <b>70</b>
+                  <b>90</b>
                 </span>
                 <span class="s_comparisons_decimal">.00</span>
               </h2>
-              <small>/ user / year</small>
+              <small>/ {% trans 'user' %} / {% trans 'year' %}</small>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">Manage teams of users</li>
-              <li class="list-group-item">Share structures among teams</li>
-              <li class="list-group-item">Social portal</li>
-              <li class="list-group-item">24h/7j assistance gratuite</li>
+              <li class="list-group-item">{% trans 'Manage teams of users' %}</li>
+              <li class="list-group-item">{% trans 'Share structures among teams' %}</li>
+              <li class="list-group-item">{% trans 'Social portal' %}</li>
+              <li class="list-group-item">{% trans 'Phone and email support' %}</li>
             </ul>
             <div class="card-footer">
               <p>
-                <i>Immediatly available.</i>
+                <i>{% trans 'Immediatly available.' %}</i>
               </p>
-              <a href="/contactus" class="btn btn-primary mb-2">Contact us</a>
+              <a href="/contactus" class="btn btn-primary mb-2">{% trans 'Contact us' %}</a>
             </div>
           </div>
         </div>
