@@ -6,6 +6,10 @@ def index(request):
     context = {}
     return render(request, 'webindex.html', context)
 
+def features(request):
+    context = {}
+    return render(request, 'features.html', context)
+
 def pricing(request):
     context = {}
     return render(request, 'pricing.html', context)

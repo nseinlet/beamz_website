@@ -28,7 +28,7 @@
         
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                   <li><a href="/{{ LANGUAGE_CODE }}/" class="nav-link px-2 {% if request.get_full_path == '/{{ LANGUAGE_CODE }}/' %}text-white{% else %}text-secondary{% endif %}">{% trans 'Home' %}</a></li>
-                  <li><a href="#" class="nav-link px-2 text-secondary">{% trans 'Features'%}</a></li>
+                  <li><a href="/{{ LANGUAGE_CODE }}/features" class="nav-link px-2 {% if request.get_full_path == '/{{ LANGUAGE_CODE }}/features' %}text-white{% else %}text-secondary{% endif %}">{% trans 'Features'%}</a></li>
                   <li><a href="/{{ LANGUAGE_CODE }}/pricing" class="nav-link px-2 {% if request.get_full_path == '/{{ LANGUAGE_CODE }}/pricing' %}text-white{% else %}text-secondary{% endif %}">{% trans 'Pricing' %}</a></li>
                   {% if user.is_authenticated %}
                   <li><a href="/{{ LANGUAGE_CODE }}/app/files" class="nav-link px-2 text-secondary">{% trans 'My files' %}</a></li>
@@ -72,10 +72,11 @@
               </div>
             </div>
           </header>
-          
+          {% block main %}
           <content>
             {% block content %}{% endblock %}
           </content>
+          {% endblock %}
           <footer class="footer mt-auto py-3">
           <!-- <footer class="footer mt-auto py-3 fixed-bottom"> -->
             <div class="container">
@@ -84,7 +85,7 @@
                   <H2>BeamZ</H2>
                   <p>
                     {% trans 'A cloud based structure analysis platform for architects and engineers.' %}<br/>
-                    {% trans 'Accessibler through a web interface, using any device.' %}<br/>
+                    {% trans 'Accessible through a web interface, using any device.' %}<br/>
                   </p>
                 </div>
                 <div class="col-md-3">
