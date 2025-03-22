@@ -24,30 +24,31 @@
                 </span>
                 <!-- <span class="s_comparisons_decimal">.00</span> -->
               </h2>
-              <!-- <small>/ mois</small> -->
+              <small>/ {% trans 'academic year' %}</small>
             </div>
             <ul class="list-group list-group-flush">
               <li class="list-group-item">{% trans 'One user' %}</li>
               <li class="list-group-item">{% trans 'Unlimited structures number' %}</li>
               <li class="list-group-item">{% trans 'No support' %}</li>
+              <li class="list-group-item">{% trans 'For affiliated shools/universities' %}</li>
             </ul>
             <div class="card-footer">
               <p>
-                <i>{% trans 'Need manual student card validation.' %}</i>
+                <i>{% trans 'Immediatly available.' %}</i>
               </p>
               <a href="/register" class="btn btn-primary mb-2">{% trans 'Start now' %}</a>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 s_col_no_bgcolor text-center pt32 pb16" data-name="Box">
+        <div class="col-lg-4 s_col_no_bgcolor text-center pt48 pb16" data-name="Box">
           <div class="card beamz-bg">
             <h4 class="card-header">{% trans 'Professional' %}</h4>
             <div class="card-body">
               <h2 class="card-title">
                 <span class="s_comparisons_currency">€</span>
                 <span class="s_comparisons_price">
-                  <b>70</b>
+                  <b>45</b>
                 </span>
                 <span class="s_comparisons_decimal">.00</span>
               </h2>
@@ -61,7 +62,7 @@
             </ul>
             <div class="card-footer">
               <p>
-                <i>{% trans 'Immediatly available.' %}</i>
+                <i>{% trans 'Available after payment.' %}</i>
               </p>
               <a href="/register" class="btn btn-primary mb-2">{% trans 'Start now' %}</a>
             </div>
@@ -75,26 +76,187 @@
               <h2 class="card-title">
                 <span class="s_comparisons_currency">€</span>
                 <span class="s_comparisons_price">
-                  <b>90</b>
+                  <b>50</b>
                 </span>
                 <span class="s_comparisons_decimal">.00</span>
               </h2>
               <small>/ {% trans 'user' %} / {% trans 'year' %}</small>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">{% trans 'Manage teams of users' %}</li>
-              <li class="list-group-item">{% trans 'Share structures among teams' %}</li>
+              <li class="list-group-item">{% trans 'Multiple users' %}</li>
+              <li class="list-group-item">{% trans 'Share structures among users' %}</li>
               <li class="list-group-item">{% trans 'Social portal' %}</li>
-              <li class="list-group-item">{% trans 'Phone and email support' %}</li>
+              <li class="list-group-item">{% trans 'Email support' %}</li>
             </ul>
             <div class="card-footer">
               <p>
-                <i>{% trans 'Immediatly available.' %}</i>
+                <i>{% trans 'Contact us for terms and conditions.' %}</i>
               </p>
               <a href="/contactus" class="btn btn-primary mb-2">{% trans 'Contact us' %}</a>
             </div>
           </div>
         </div>
       </div>
+
+    <h1>Features comparision</h1>
+
+    <div class="table-responsive">
+      <table class="table table-striped fa-check text-successtable-border border-light">
+        <thead class="border-light">
+          <tr>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"><strong>Student</strong></th>
+            <th scope="col"><strong>Professional</strong></th>
+            <th scope="col"><strong>Enterprise</strong></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" colspan="2">Cloud based</th>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+          </tr>
+          <tr>
+            <th scope="row" colspan="2">Structures</th>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+          </tr>
+          <tr>
+            <td> </td>
+            <td scope="row">Max number of structures</td>
+            <td>{% trans 'Unlimited' %}</td>
+            <td>{% trans 'Unlimited' %}</td>
+            <td>{% trans 'Unlimited' %}</td>
+          </tr>
+          <tr>
+            <td> </td>
+            <td scope="row">Max number of analysis</td>
+            <td>{% trans 'Unlimited' %}</td>
+            <td>{% trans 'Unlimited' %}</td>
+            <td>{% trans 'Unlimited' %}</td>
+          </tr>
+          <tr>
+            <td> </td>
+            <td scope="row">Sharing</td>
+            <td><i class="fas fa-check text-success"></i>*1</td>
+            <td><i class="fas fa-times text-danger"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+          </tr>
+          <tr>
+            <td> </td>
+            <td scope="row">Online saving</td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+          </tr>
+          <tr>
+            <td> </td>
+            <td scope="row">Offline saving</td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+          </tr>
+          <tr>
+            <td> </td>
+            <td scope="row">File history</td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+          </tr>
+          <tr>
+            <td> </td>
+            <td scope="row">Multi users</td>
+            <td><i class="fas fa-times text-danger"></i></td>
+            <td><i class="fas fa-times text-danger"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+          </tr>
+          <tr>
+            <th scope="row">Supports</th>
+            <td colspan="4"></td>
+          </tr>
+          <tr>
+            <td> </td>
+            <td scope="row">Hinged</td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+          </tr>
+          <tr>
+            <td> </td>
+            <td scope="row">Springs</td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+          </tr>
+          <tr>
+            <td> </td>
+            <td scope="row">Rolls</td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+          </tr>
+          <tr>
+            <th scope="row">Elements</th>
+            <td colspan="4"></td>
+          </tr>
+          <tr>
+            <td> </td>
+            <td scope="row">Beams</td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+          </tr>
+          <tr>
+            <td> </td>
+            <td scope="row">Springs</td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+          </tr>
+          <tr>
+            <td> </td>
+            <td scope="row">Dashpots</td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+          </tr>
+          <tr>
+            <td> </td>
+            <td scope="row">Materials per structure</td>
+            <td>{% trans 'Unlimited' %}</td>
+            <td>{% trans 'Unlimited' %}</td>
+            <td>{% trans 'Unlimited' %}</td>
+          </tr>
+          <tr>
+            <td> </td>
+            <td scope="row">Geometries per structure</td>
+            <td>{% trans 'Unlimited' %}</td>
+            <td>{% trans 'Unlimited' %}</td>
+            <td>{% trans 'Unlimited' %}</td>
+          </tr>
+          <tr>
+            <th scope="row">Support</th>
+            <td colspan="4"></td>
+          </tr>
+          <tr>
+            <td> </td>
+            <td scope="row">Email</td>
+            <td><i class="fas fa-times text-danger"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <ol>  
+        <li>
+          Sharing with students from same school/university
+        </li>
+      </ol>
+    </div>
+
 </div>
 {% endblock %}
