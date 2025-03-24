@@ -27,9 +27,9 @@
               <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
         
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                  <li><a href="/{{ LANGUAGE_CODE }}/" class="nav-link px-2 {% if request.get_full_path == '/{{ LANGUAGE_CODE }}/' %}text-white{% else %}text-secondary{% endif %}">{% trans 'Home' %}</a></li>
-                  <li><a href="/{{ LANGUAGE_CODE }}/features" class="nav-link px-2 {% if request.get_full_path == '/{{ LANGUAGE_CODE }}/features' %}text-white{% else %}text-secondary{% endif %}">{% trans 'Features'%}</a></li>
-                  <li><a href="/{{ LANGUAGE_CODE }}/pricing" class="nav-link px-2 {% if request.get_full_path == '/{{ LANGUAGE_CODE }}/pricing' %}text-white{% else %}text-secondary{% endif %}">{% trans 'Pricing' %}</a></li>
+                  <li><a href="/{{ LANGUAGE_CODE }}/" class="nav-link px-2 {% block menuclass-home %}text-secondary{% endblock %}">{% trans 'Home' %}</a></li>
+                  <li><a href="/{{ LANGUAGE_CODE }}/features" class="nav-link px-2 {% block menuclass-features %}text-secondary{% endblock %}">{% trans 'Features'%}</a></li>
+                  <li><a href="/{{ LANGUAGE_CODE }}/pricing" class="nav-link px-2 {% block menuclass-pricing %}text-secondary{% endblock %}">{% trans 'Pricing' %}</a></li>
                   {% if user.is_authenticated %}
                   <li><a href="/{{ LANGUAGE_CODE }}/app/files" class="nav-link px-2 text-secondary">{% trans 'My files' %}</a></li>
                   {% endif %}
