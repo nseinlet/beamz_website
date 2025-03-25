@@ -252,8 +252,6 @@ msgid "Multiple users"
 msgstr "Plusieurs utilisateurs"
 
 #: templates/pricing.html:89
-#, fuzzy
-#| msgid "Share structures among teams"
 msgid "Share structures among users"
 msgstr "Partage de structures entre utilisateurs"
 
@@ -287,8 +285,6 @@ msgstr "Nombre maximum de structures"
 #: templates/pricing.html:231 templates/pricing.html:232
 #: templates/pricing.html:233 templates/pricing.html:238
 #: templates/pricing.html:239 templates/pricing.html:240
-#, fuzzy
-#| msgid "Unlimited analysis"
 msgid "Unlimited"
 msgstr "Illimité"
 
