@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-24 19:21+0000\n"
+"POT-Creation-Date: 2025-03-25 20:52+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,105 +17,405 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-#: templates/pricing.html:12 templates/website-base.html:32
-msgid "Pricing"
-msgstr "Tarif"
 
-#: templates/pricing.html:18
-msgid "Student"
-msgstr "Etudiant"
+#: templates/aboutus.html:13
+msgid "Who we are"
+msgstr "Qui nous sommes"
 
-#: templates/pricing.html:23
-msgid "Free"
-msgstr "Gratuit"
-
-#: templates/pricing.html:30 templates/pricing.html:57
-msgid "One user"
-msgstr "Un utilisateur"
-
-#: templates/pricing.html:31 templates/pricing.html:59
-msgid "Unlimited structures number"
-msgstr "Nombre illimité de structures"
-
-#: templates/pricing.html:32
-msgid "No support"
-msgstr "Pas de support"
-
-#: templates/pricing.html:36
-msgid "Need manual student card validation."
-msgstr "Après validation manuelle de la carte étudiant"
-
-#: templates/pricing.html:38 templates/pricing.html:66
-msgid "Start now"
-msgstr "Commencez maintenant"
-
-#: templates/pricing.html:45
-msgid "Professional"
-msgstr "Professionel"
-
-#: templates/pricing.html:54 templates/pricing.html:82
-msgid "year"
-msgstr "An"
-
-#: templates/pricing.html:58
-msgid "Unlimited analysis"
-msgstr "Analyses illimitées"
-
-#: templates/pricing.html:60
-msgid "Email support"
-msgstr "Support par courriel"
-
-#: templates/pricing.html:64 templates/pricing.html:92
-msgid "Immediatly available."
-msgstr "Diusponnible immédiatement."
-
-#: templates/pricing.html:73
-msgid "Enterprise"
+#: templates/aboutus.html:24
+msgid ""
+"Vincent is passionate about structures. He teaches Structural Analysis, "
+"statics, and dynamics at the University of Liège where he received his PhD "
+"degree in Civil Engineering."
 msgstr ""
+"Vincent est passionné par les structures. Il enseigne l'analyse structurale, "
+"la statique et la dynamique à l'Université de Liège où il a obtenu son "
+"doctorat en génie civil."
 
-#: templates/pricing.html:82
-msgid "user"
-msgstr "Utilisateur"
+#: templates/aboutus.html:25
+msgid ""
+"He travelled across many places in Europe, Asia, Australia, and the US to "
+"sharpen his knowledge in structural analysis under various loads and "
+"conditions."
+msgstr ""
+"Il a voyagé dans de nombreux endroits en Europe, en Asie, en Australie et "
+"aux États-Unis pour affiner ses connaissances en analyse structurale sous "
+"diverses charges et conditions."
 
-#: templates/pricing.html:85
-msgid "Manage teams of users"
-msgstr "Gestion d'équipes"
+#: templates/aboutus.html:26
+msgid "He also founded the Structural and Stochastic Dynamics lab."
+msgstr ""
+"Il a aussi fond'e le laboratoire de dynamique structurale et stochastique."
 
-#: templates/pricing.html:86
-msgid "Share structures among teams"
-msgstr "Partage de structure au sein des équipes"
+#: templates/aboutus.html:39
+msgid ""
+"Nicolas is a developer. He received his Diploma in Computer Science from the "
+"University of Mons."
+msgstr ""
+"Nicolas est un développeur. Il a reçu son diplôme en informatique de "
+"l'Université de Mons."
 
-#: templates/pricing.html:87
+#: templates/aboutus.html:40
+msgid ""
+"His area of expertises are the databases and the performance of IT systems."
+msgstr ""
+"Ses domaines d'expertise sont les bases de données et les performances des "
+"systèmes informatiques."
+
+#: templates/aboutus.html:49
+msgid "What we do"
+msgstr "Ce que nous faisons"
+
+#: templates/aboutus.html:54
+#, fuzzy
+#| msgid "Unlimited analysis"
+msgid "Finite elements analysis"
+msgstr "Analyses par elements finis"
+
+#: templates/aboutus.html:57
+msgid ""
+"From smaller structures to bigger ones, our platform makes analyses a breeze."
+msgstr ""
+" Des structures les plus simples aux plus complexes, notre plateforme rend "
+"leurs analyses faciles."
+
+#: templates/aboutus.html:58
+msgid ""
+"Web based, this tool allows you to perform finite elements analyses from "
+"anywhere, at any time."
+msgstr ""
+"Basé sur le web, cet outil vous permet d'effectuer des analyses par éléments "
+"finis de n'importe où, à tout moment."
+
+#: templates/aboutus.html:59
+msgid "You can also collaborate with your colleagues."
+msgstr "Vous pouvez aussi collaborer avec vos collègues."
+
+#: templates/aboutus.html:62 templates/features.html:4
+#: templates/website-base.html:31
+msgid "Features"
+msgstr "Fonctionnalités"
+
+#: templates/features.html:13
+msgid "Everytime. Everywhere."
+msgstr "Partout. Tout le temps."
+
+#: templates/features.html:14
+msgid ""
+"You just need a recent web browser. Share your structures among devices, "
+"thanks to the cloud storage."
+msgstr ""
+"Vous avez juste besoin d'un navigateur web récent. Partagez vos structures "
+"entre appareils, grâce au stockage dans le cloud."
+
+#: templates/features.html:15
+msgid "Work now"
+msgstr "Travaillez maintenant"
+
+#: templates/features.html:28
+msgid "Units of measure"
+msgstr "Unités de mesure"
+
+#: templates/features.html:29
+msgid ""
+"Works with international system, or the one that suits the best your needs."
+msgstr ""
+"Fonctionne avec le système international, ou celui qui convient le mieux à "
+"vos besoins."
+
+#: templates/features.html:37
+msgid "Intuitive UI"
+msgstr "Interface intuitive"
+
+#: templates/features.html:38
+msgid "Every needed tool at your fingertips."
+msgstr "Chaque outil nécessaire à portée de main."
+
+#: templates/features.html:49
+msgid "Cloud storage"
+msgstr "Sauvegarde dans le cloud"
+
+#: templates/features.html:50
+msgid "Multiple version per structure."
+msgstr "Versions multiples par structure"
+
+#: templates/features.html:58
+msgid "Multiple load cases"
+msgstr "Plusieurs cas de charge"
+
+#: templates/features.html:59
+msgid "Multiple load cases per structure."
+msgstr "Plusieurs cas de charge par structure."
+
+#: templates/features.html:70
+msgid "Loads combination"
+msgstr "Combinaison de charges"
+
+#: templates/features.html:71
+msgid "Analyze results for multiple load cases combination."
+msgstr "Analyser les résultats pour plusieurs combinaisons de charges."
+
+#: templates/features.html:80
+msgid "Materials library"
+msgstr "Librairie de matériaux"
+
+#: templates/features.html:81
+msgid "Existing materials, with proven characteristics."
+msgstr "Libraison de matériaux existants, avec des caractéristiques prouvées."
+
+#: templates/features.html:92 templates/pricing.html:90
 msgid "Social portal"
 msgstr "Portail social"
 
-#: templates/pricing.html:88
-msgid "Phone and email support"
-msgstr "Support courriel et téléphonique"
+#: templates/features.html:93
+msgid "Activity from colleagues."
+msgstr "Activite de vos collègues."
 
-#: templates/pricing.html:94
+#: templates/features.html:101
+msgid "Suits your needs"
+msgstr "Repond à vos besoins"
+
+#: templates/features.html:102
+msgid "Through lots of parameters."
+msgstr "A travers de nombreux paramètres."
+
+#: templates/pricing.html:14 templates/website-base.html:32
+msgid "Pricing"
+msgstr "Tarif"
+
+#: templates/pricing.html:20 templates/pricing.html:111
+msgid "Student"
+msgstr "Etudiant"
+
+#: templates/pricing.html:25
+msgid "Free"
+msgstr "Gratuit"
+
+#: templates/pricing.html:29
+msgid "academic year"
+msgstr "année académique"
+
+#: templates/pricing.html:32 templates/pricing.html:60
+msgid "One user"
+msgstr "Un utilisateur"
+
+#: templates/pricing.html:33 templates/pricing.html:62
+msgid "Unlimited structures number"
+msgstr "Nombre illimité de structures"
+
+#: templates/pricing.html:34
+msgid "No support"
+msgstr "Pas de support"
+
+#: templates/pricing.html:35
+msgid "For affiliated shools/universities"
+msgstr "Pour les écoles/universités partenaires"
+
+#: templates/pricing.html:39
+msgid "Immediatly available."
+msgstr "Disponnible immédiatement."
+
+#: templates/pricing.html:41 templates/pricing.html:69
+msgid "Start now"
+msgstr "Commencez maintenant"
+
+#: templates/pricing.html:48 templates/pricing.html:112
+msgid "Professional"
+msgstr "Professionel"
+
+#: templates/pricing.html:57 templates/pricing.html:85
+msgid "year"
+msgstr "An"
+
+#: templates/pricing.html:61
+msgid "Unlimited analysis"
+msgstr "Analyses illimitées"
+
+#: templates/pricing.html:63 templates/pricing.html:91
+msgid "Email support"
+msgstr "Support par courriel"
+
+#: templates/pricing.html:67
+msgid "Available after payment."
+msgstr "Disponnible après paiement."
+
+#: templates/pricing.html:76 templates/pricing.html:113
+msgid "Enterprise"
+msgstr "Entreprise"
+
+#: templates/pricing.html:85
+msgid "user"
+msgstr "utilisateur"
+
+#: templates/pricing.html:88
+msgid "Multiple users"
+msgstr "Plusieurs utilisateurs"
+
+#: templates/pricing.html:89
+#, fuzzy
+#| msgid "Share structures among teams"
+msgid "Share structures among users"
+msgstr "Partage de structures entre utilisateurs"
+
+#: templates/pricing.html:95
+msgid "Contact us for terms and conditions."
+msgstr "Contactez nous pour les conditions d'accès et modalités."
+
+#: templates/pricing.html:97
 msgid "Contact us"
 msgstr "Contactez nous"
 
-#: templates/webindex.html:8
-msgid "Structural analysis software"
-msgstr "Logiciel dánalyse de structures"
+#: templates/pricing.html:103
+msgid "Features comparision"
+msgstr "Comparaison des fonctionnalités"
 
-#: templates/webindex.html:9
-msgid "Analyse structures with confidence. And effortless."
-msgstr ""
+#: templates/pricing.html:118 templates/website-base.html:94
+msgid "Cloud based"
+msgstr "Hébergé dans le cloud"
+
+#: templates/pricing.html:124
+msgid "Structures"
+msgstr "Structures"
+
+#: templates/pricing.html:131
+msgid "Max number of structures"
+msgstr "Nombre maximum de structures"
+
+#: templates/pricing.html:132 templates/pricing.html:133
+#: templates/pricing.html:134 templates/pricing.html:139
+#: templates/pricing.html:140 templates/pricing.html:141
+#: templates/pricing.html:231 templates/pricing.html:232
+#: templates/pricing.html:233 templates/pricing.html:238
+#: templates/pricing.html:239 templates/pricing.html:240
+#, fuzzy
+#| msgid "Unlimited analysis"
+msgid "Unlimited"
+msgstr "Illimité"
+
+#: templates/pricing.html:138
+#, fuzzy
+#| msgid "Unlimited analysis"
+msgid "Max number of analysis"
+msgstr "Analyses illimitées"
+
+#: templates/pricing.html:145
+msgid "Sharing"
+msgstr "Partage"
+
+#: templates/pricing.html:152
+msgid "Online saving"
+msgstr "Sauvegarde en ligne"
+
+#: templates/pricing.html:159
+msgid "Offline saving"
+msgstr "Sauvegarde locale"
+
+#: templates/pricing.html:166
+msgid "File history"
+msgstr "Historique du fichier"
+
+#: templates/pricing.html:173
+#, fuzzy
+#| msgid "Multiple users"
+msgid "Multi users"
+msgstr "Plusieurs utilisateurs"
+
+#: templates/pricing.html:179
+#, fuzzy
+#| msgid "No support"
+msgid "Supports"
+msgstr "Supports"
+
+#: templates/pricing.html:184
+msgid "Hinged"
+msgstr "Rotules"
+
+#: templates/pricing.html:191 templates/pricing.html:216
+msgid "Springs"
+msgstr "Ressorts"
+
+#: templates/pricing.html:198
+msgid "Rolls"
+msgstr "Rouleaux"
+
+#: templates/pricing.html:209
+msgid "Beams"
+msgstr "Barres"
+
+#: templates/pricing.html:223
+msgid "Dashpots"
+msgstr "Coulisses"
+
+#: templates/pricing.html:230
+msgid "Materials per structure"
+msgstr "Matériaux par structure"
+
+#: templates/pricing.html:237
+msgid "Geometries per structure"
+msgstr "Géométries par structure"
+
+#: templates/pricing.html:248
+msgid "Email"
+msgstr "Courriel"
+
+#: templates/pricing.html:258
+msgid "Sharing with students from same school/university"
+msgstr "Partage avec les étudiants de la même école/université"
 
 #: templates/webindex.html:10
+msgid "Structural analysis software"
+msgstr "Logiciel d'analyse de structures"
+
+#: templates/webindex.html:11
+msgid "Analyze structures with confidence. And effortless."
+msgstr "Analysez les structures en toute confiance. Simplement."
+
+#: templates/webindex.html:12
 msgid "Discover features"
+msgstr "Decouvrez les fonctionnalités"
+
+#: templates/webindex.html:22
+msgid ""
+"a lightweight and intuitive structural finite element model accessible "
+"directly from your web browser"
 msgstr ""
+"un modèle d'éléments finis de structure léger et intuitif, accessible "
+"directement depuis votre navigateur"
+
+#: templates/webindex.html:23
+msgid ""
+"No installations, no hassle! It is multi-platform. MacOS, Windows, Linux, … "
+"on your desktop, laptop, tablet, smartphone"
+msgstr ""
+"Pas d'installation, pas de soucis! Multi-plateforme. MacOS, Windows, Linux, "
+"… sur votre ordinateur de bureau, portable, tablette, smartphone"
+
+#: templates/webindex.html:23
+msgid "we don't mind as long as you enjoy"
+msgstr "On s'en fiche tant que vous appréciez"
+
+#: templates/webindex.html:32
+msgid "Designed for simplicity"
+msgstr "Conçu pour la simplicité"
+
+#: templates/webindex.html:32
+msgid "and efficiency"
+msgstr "et l'efficacité"
+
+#: templates/webindex.html:33
+msgid ""
+"This tool empowers engineers to analyze structures seamlessly anytime, "
+"anywhere. Experience the future of finite element modeling with unmatched "
+"convenience and performance."
+msgstr ""
+"Cet outil permet aux ingénieurs d'analyser les structures de manière "
+"transparente n'importe où, n'importe quand. Découvrez le futur de la "
+"modélisation par éléments finis avec une commodité et des performances "
+"inégalées."
 
 #: templates/website-base.html:30
 msgid "Home"
 msgstr "Acceuil"
-
-#: templates/website-base.html:31
-msgid "Features"
-msgstr "Fonctionnalités"
 
 #: templates/website-base.html:34
 msgid "My files"
@@ -137,42 +437,75 @@ msgstr "Connexion"
 msgid "Sign-up"
 msgstr "Enregistrement"
 
-#: templates/website-base.html:86
+#: templates/website-base.html:87
 msgid "A cloud based structure analysis platform for architects and engineers."
 msgstr ""
+"Une plateforme d'analyse de structures pour architectes et ingénieurs, "
+"hébergée dans le cloud."
 
-#: templates/website-base.html:87
-msgid "Accessibler through a web interface, using any device."
-msgstr ""
+#: templates/website-base.html:88
+msgid "Accessible through a web interface, using any device."
+msgstr "Accessible via une interface web, sur n'importe quel appareil."
 
-#: templates/website-base.html:91
+#: templates/website-base.html:92
 msgid "Services"
-msgstr ""
+msgstr "Services"
 
-#: templates/website-base.html:93
-msgid "Cloud based"
-msgstr ""
-
-#: templates/website-base.html:96
+#: templates/website-base.html:97
 msgid "FAQ"
-msgstr ""
+msgstr "FaQ"
 
-#: templates/website-base.html:99
+#: templates/website-base.html:100
 msgid "Licence"
-msgstr ""
+msgstr "Licence"
 
-#: templates/website-base.html:102
+#: templates/website-base.html:103
 msgid "Privacy"
-msgstr ""
+msgstr "Vie privée"
 
-#: templates/website-base.html:106
+#: templates/website-base.html:107
 msgid "Contact"
-msgstr ""
+msgstr "Contact"
 
-#: templates/website-base.html:127
+#: templates/website-base.html:128
 msgid "Still not a user?"
-msgstr ""
+msgstr "Pas encore utilisateur?"
 
-#: templates/website-base.html:129
+#: templates/website-base.html:130
 msgid "Sign up!"
-msgstr ""
+msgstr "Enregistrez-vous!"
+
+#~ msgid "Proven computation engine"
+#~ msgstr "Moteur de calcul éprouvé"
+
+#~ msgid "Reliable structure analysis engine, for more than a decade."
+#~ msgstr "Moteur d'analyse de structure fiable, depuis plus d'une décennie."
+
+#, fuzzy
+#~| msgid "Online saving"
+#~ msgid "Online computing"
+#~ msgstr "Sauvegarde en ligne"
+
+#~ msgid "No matter your computer speed, our servers compute it for you."
+#~ msgstr ""
+#~ "Peu importe la vitesse de votre ordinateur, nos serveurs le calculent "
+#~ "pour vous."
+
+#, fuzzy
+#~| msgid "Offline saving"
+#~ msgid "Offline files"
+#~ msgstr "Sauvegarde locale"
+
+#, fuzzy
+#~| msgid "Share structures among teams"
+#~ msgid "Save structures on your own computer."
+#~ msgstr "Partage de structures entre utilisateurs"
+
+#~ msgid "Need manual student card validation."
+#~ msgstr "Après validation manuelle de la carte étudiant"
+
+#~ msgid "Manage teams of users"
+#~ msgstr "Gestion d'équipes"
+
+#~ msgid "Phone and email support"
+#~ msgstr "Support courriel et téléphonique"

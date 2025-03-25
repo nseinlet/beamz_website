@@ -1,7 +1,7 @@
 {% extends "website-base.html" %}
 {% load i18n %}
 
-{% block title %}Features{% endblock %}
+{% block title %}{% trans 'Features' %}{% endblock %}
 
 {% block menuclass-features %}text-white{% endblock %}
 
@@ -10,79 +10,100 @@
 <main>
     <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
       <div class="col-md-5 p-lg-5 mx-auto my-5">
-        <h1 class="display-4 fw-normal">Everytime. Everywhere.</h1>
-        <p class="lead fw-normal">You just need a recent web browser. Share your structures among devices, thanks to the cloud storage.</p>
-        <a class="btn btn-outline-secondary" href="/app/">Work now</a>
+        <h1 class="display-4 fw-normal">{% trans 'Everytime. Everywhere.' %}</h1>
+        <p class="lead fw-normal">{% trans 'You just need a recent web browser. Share your structures among devices, thanks to the cloud storage.' %}</p>
+        <a class="btn btn-outline-secondary" href="/app/">{% trans 'Work now' %}</a>
       </div>
-      <div class="product-device shadow-sm d-none d-md-block"></div>
-      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+      <div class="product-device shadow-sm d-none d-md-block">
+        <img src="/static/screenshots/phone_menu.png" style="height: 100%;"/>
+      </div>
+      <div class="product-device product-device-2 shadow-sm d-none d-md-block" style="padding: 15px;">
+        <img src="/static/screenshots/phone_paysage.png" style="width: 100%;"/>
+      </div>
     </div>
 
     <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
         <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
           <div class="my-3 py-3">
-            <h2 class="display-5">Units of measure</h2>
-            <p class="lead">Works with international system, or the one that suits the best your needs.</p>
+            <h2 class="display-5">{% trans 'Units of measure' %}</h2>
+            <p class="lead">{% trans 'Works with international system, or the one that suits the best your needs.' %}</p>
           </div>
-          <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">456789</div>
+          <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; padding: 15px;">
+            <img src="/static/screenshots/units.png" alt="Unit systems" style="height: 100%;"/>
+          </div>
         </div>
         <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
           <div class="my-3 p-3">
-            <h2 class="display-5">Proven computation engine</h2>
-            <p class="lead">Reliable structure analysis engine, for more than a decade.</p>
+            <h2 class="display-5">{% trans 'Intuitive UI' %}</h2>
+            <p class="lead">{% trans 'Every needed tool at your fingertips.' %}</p>
           </div>
-          <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+          <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; padding:15px;">
+            <img src="/static/screenshots/intuitive_ui.png" alt="intuitive ui" style="height: 100%;"/>
+          </div>
         </div>
     </div>  
 
     <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
       <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
         <div class="my-3 p-3">
-          <h2 class="display-5">Online computing</h2>
-          <p class="lead">No matter your computer speed, our servers compute it for you.</p>
+          <h2 class="display-5">{% trans 'Cloud storage' %}</h2>
+            <p class="lead">{% trans 'Multiple version per structure.' %}</p>
         </div>
-        <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+        <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; padding: 15px;">
+          <img src="/static/screenshots/structure_history.png" alt="Cloud storage" style="width: 100%;"/>
+        </div>
       </div>
       <div class="bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
         <div class="my-3 py-3">
-          <h2 class="display-5">Multiple load cases</h2>
-          <p class="lead">Multiple load cases per structure.</p>
+          <h2 class="display-5">{% trans 'Multiple load cases' %}</h2>
+          <p class="lead">{% trans 'Multiple load cases per structure.' %}</p>
         </div>
-        <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+        <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; padding: 15px;">
+          <img src="/static/screenshots/multiple_loads.png" alt="Multiple load cases" style="height: 100%;"/>
+        </div>
       </div>
     </div>
 
     <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
         <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
           <div class="my-3 py-3">
-            <h2 class="display-5">Cloud storage</h2>
-            <p class="lead">And even multiple version per structure.</p>
+            <h2 class="display-5">{% trans 'Loads combination' %}</h2>
+            <p class="lead">{% trans 'Analyze results for multiple load cases combination.' %}</p>
           </div>
-          <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">456789</div>
+          <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; padding: 15px;">
+            <img src="/static/screenshots/loads_combo.png" alt="Loads combo" style="height: 100%;"/>
+
+          </div>
         </div>
         <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
           <div class="my-3 p-3">
-            <h2 class="display-5">Offline files</h2>
-            <p class="lead">Save structures on your own computer.</p>
+            <h2 class="display-5">{% trans 'Materials library' %}</h2>
+          <p class="lead">{% trans 'Existing materials, with proven characteristics.' %}</p>
           </div>
-          <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+          <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; padding: 15px;">
+            <img src="/static/screenshots/materials_library.png" alt="Materials library" style="height: 100%;"/>
+          </div>
         </div>
     </div>  
   
     <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
       <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
         <div class="my-3 p-3">
-          <h2 class="display-5">Loads combination</h2>
-          <p class="lead">Analyze results for multiple load cases combination.</p>
+          <h2 class="display-5">{% trans 'Social portal' %}</h2>
+          <p class="lead">{% trans 'Activity from colleagues.' %}</p>
         </div>
-        <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+        <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; padding: 15px;">
+          <img src="/static/screenshots/portal.png" alt="Social portal" style="width: 100%;"/>
+        </div>
       </div>
       <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
         <div class="my-3 py-3">
-          <h2 class="display-5">Materials library</h2>
-          <p class="lead">Existing materials, with proven characteristics.</p>
+          <h2 class="display-5">{% trans 'Suits your needs' %}</h2>
+          <p class="lead">{% trans 'Through lots of parameters.' %}</p>
         </div>
-        <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+        <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; padding: 15px;">
+          <img src="/static/screenshots/settings.png" alt="Settings" style="height: 100%;"/>
+        </div>
       </div>
     </div>
   
