@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-25 20:52+0000\n"
+"POT-Creation-Date: 2025-03-29 15:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -184,8 +184,8 @@ msgid "Pricing"
 msgstr "Tarif"
 
 #: templates/pricing.html:20 templates/pricing.html:111
-msgid "Student"
-msgstr "Etudiant"
+msgid "Academic"
+msgstr "Académique"
 
 #: templates/pricing.html:25
 msgid "Free"
@@ -334,6 +334,10 @@ msgstr "Ressorts"
 msgid "Rolls"
 msgstr "Rouleaux"
 
+#: templates/pricing.html:204
+msgid "Elements"
+msgstr "Eléments"
+
 #: templates/pricing.html:209
 msgid "Beams"
 msgstr "Barres"
@@ -349,6 +353,10 @@ msgstr "Matériaux par structure"
 #: templates/pricing.html:237
 msgid "Geometries per structure"
 msgstr "Géométries par structure"
+
+#: templates/pricing.html:243
+msgid "Support"
+msgstr "Support"
 
 #: templates/pricing.html:248
 msgid "Email"
@@ -456,8 +464,8 @@ msgid "Licence"
 msgstr "Licence"
 
 #: templates/website-base.html:103
-msgid "Privacy"
-msgstr "Vie privée"
+msgid "Documentation"
+msgstr "Documentation"
 
 #: templates/website-base.html:107
 msgid "Contact"
@@ -470,6 +478,12 @@ msgstr "Pas encore utilisateur?"
 #: templates/website-base.html:130
 msgid "Sign up!"
 msgstr "Enregistrez-vous!"
+
+#~ msgid "Student"
+#~ msgstr "Etudiant"
+
+#~ msgid "Privacy"
+#~ msgstr "Vie privée"
 
 #~ msgid "Proven computation engine"
 #~ msgstr "Moteur de calcul éprouvé"
