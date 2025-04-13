@@ -1,0 +1,16 @@
+{% extends "blog.html" %}
+{% load i18n %}
+{% load markdown %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block title %}{% if LANGUAGE_CODE == 'fr' and blog.title_fr %}{{ blog.title_fr }}{% else %}{{ blog.title }}{% endif %}{% endblock %}
+
+{% block blogtitle %}{% if LANGUAGE_CODE == 'fr' and blog.title_fr %}{{ blog.title_fr }}{% else %}{{ blog.title }}{% endif %}{% endblock %}
+
+{% block blogcontent %}
+    {% if LANGUAGE_CODE == 'fr' and blog.content_fr %}
+        <p class="card-text">{{ blog.content_fr|render_markdown }}</p>
+    {% else %}
+        <p class="card-text">{{ blog.content|render_markdown }}</p>
+    {% endif %}
+{% endblock %}

@@ -1,62 +1,37 @@
 {% extends "website-base.html" %}
 {% load i18n %}
+{% load markdown %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block title %}{% trans 'Faq' %}{% endblock %}
 
 {% block content %}
+<div class="container">
   <div class="row">
     <div class="col-12">
-      <h1>Frequently asked questions</h1>
-      
-      <h2>Cloud</h2>
-      <div class="list-group w-100">
-        <a href="#shortExampleAnswer1collapse" data-mdb-toggle="collapse" aria-expanded="false"
-          aria-controls="shortExampleAnswer1collapse" class="list-group-item list-group-item-action">
-          <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">Is it mandatory to use cloud storage?</h5>
+      <h1>{% trans 'Frequently asked questions' %}</h1>
+      {% for section in faq_sections %}
+      <h2>{% if LANGUAGE_CODE == 'fr' and section.section.name_fr %}{{ section.section.name_fr }}{% else %}{{ section.section.name }}{% endif%}</h2>
+      <div class="accordion" id="accordion{{section.id}}">
+        {% for faq in section.qr %}
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="heading{{faq.id}}">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{faq.id}}" aria-expanded="true" aria-controls="collapse{{faq.id}}">
+              {% if LANGUAGE_CODE == 'fr' and faq.question_fr %}{{ faq.question_fr }}{% else %}{{ faq.question }}{% endif %}
+              <!-- <span class="text-secondary font-sm">{% if LANGUAGE_CODE == 'fr' and faq.short_answer_fr %}{{ faq.short_answer_fr }}{% else %}{{ faq.short_answer }}{% endif %}</span> -->
+            </button>
+          </h2>
+          <div id="collapse{{faq.id}}" class="accordion-collapse collapse" aria-labelledby="heading{{faq.id}}" data-bs-parent="#accordion{{section.id}}">
+            <div class="accordion-body">
+              {% if LANGUAGE_CODE == 'fr' and faq.answer_fr %}{{ faq.answer_fr|render_markdown }}{% else %}{{ faq.answer|render_markdown }}{% endif %}
+            </div>
           </div>
-          <p class="mb-1">
-            No, you can store structure on your own computer
-          </p>
-          <small><u>Learn more</u></small>
-          <!-- Collapsed content -->
-          <div class="collapse mt-3" id="shortExampleAnswer1collapse">
-            It's quite easy from the interface to save a structure on your disk, as a single file, and upload a structure from your disk to the interface to view/edit it.
-          </div>
-        </a>
-        
-        <a href="#shortExampleAnswer2collapse" data-mdb-toggle="collapse" aria-expanded="false"
-          aria-controls="shortExampleAnswer2collapse" class="list-group-item list-group-item-action">
-          <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">How long do you store structures?</h5>
-          </div>
-          <p class="mb-1">
-            Forever, until you delete them.
-          </p>
-          <small class="text-muted"><u>Learn more</u></small>
-          <!-- Collapsed content -->
-          <div class="collapse mt-3" id="shortExampleAnswer2collapse">
-            Structures on the server are stored within a database, and are not deleted unless you delete them.<br/>
-            Even when your subscription is over, you can connect to the web application to view your structures.
-          </div>
-        </a>
-        
-        <a href="#shortExampleAnswer3collapse" data-mdb-toggle="collapse" aria-expanded="false"
-          aria-controls="shortExampleAnswer3collapse" class="list-group-item list-group-item-action">
-          <div class="d-flex w-100 justify-content-between">
-            <h5 class="mb-1">Where is it stored geographically?</h5>
-          </div>
-          <p class="mb-1">
-            In Europe
-          </p>
-          <small class="text-muted"><u>Learn more</u></small>
-          <!-- Collapsed content -->
-          <div class="collapse mt-3" id="shortExampleAnswer3collapse">
-            We're using servers in France, and the database is hosted in France.<br/>
-            We're also using other servers in Europe for backups.<br/>
-            We're not using any US cloud providers like Amazon, Google, ...<br/>
-          </div>
-        </a>
+        </div>
+        {% endfor %}
       </div>
-
+      <br/>
+      {% endfor %}
     </div>
   </div>
+</div>
 {% endblock %}

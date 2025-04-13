@@ -28,6 +28,7 @@
         
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                   <li><a href="/{{ LANGUAGE_CODE }}/" class="nav-link px-2 {% block menuclass-home %}text-secondary{% endblock %}">{% trans 'Home' %}</a></li>
+                  <li><a href="/{{ LANGUAGE_CODE }}/blog" class="nav-link px-2 {% block menuclass-blog %}text-secondary{% endblock %}">{% trans 'Blog'%}</a></li>
                   <li><a href="/{{ LANGUAGE_CODE }}/features" class="nav-link px-2 {% block menuclass-features %}text-secondary{% endblock %}">{% trans 'Features'%}</a></li>
                   <li><a href="/{{ LANGUAGE_CODE }}/pricing" class="nav-link px-2 {% block menuclass-pricing %}text-secondary{% endblock %}">{% trans 'Pricing' %}</a></li>
                   {% if user.is_authenticated %}
@@ -94,7 +95,7 @@
                     <a href="#!" class="text-reset">{% trans 'Cloud based' %}</a>
                   </p>
                   <p>
-                    {% trans 'FAQ' %}
+                    <a href="/faq" class="text-reset">{% trans 'FAQ' %}</a>
                   </p>
                   <p>
                     {% trans 'Licence' %}
