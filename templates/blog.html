@@ -1,0 +1,91 @@
+{% extends "website-base.html" %}
+{% load i18n %}
+{% load markdown %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block title %}{% trans 'Blog' %}{% endblock %}
+
+{% block menuclass-blog %}text-white{% endblock %}
+
+{% block main %}
+<main class="height-100 d-flex flex-grow-1 height-100">
+    
+    <div class="container">
+        <h1 class="text-center">{% block blogtitle %}{% trans 'Blog posts' %}{% endblock %}</h1>
+        <div class="row">
+            <div class="col-md-9">
+                {% block blogcontent %}
+                {% for blog in blogs %}
+                <div class="row">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    {% if LANGUAGE_CODE == 'fr' and blog.title_fr %}
+                                    <h4>{{ blog.title_fr }}</h4>
+                                    {% else %}
+                                    <h4>{{ blog.title }}</h4>
+                                    {% endif %}
+                                </div>
+                                <div class="col-md-3 float-right text-secondary text-sm fw-lighter text-end">
+                                    {{ blog.publication_date }}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            {% if LANGUAGE_CODE == 'fr' and blog.description_fr %}
+                            <p class="card-text">{{ blog.description_fr|render_markdown }}</p>
+                            {% else %}
+                            <p class="card-text">{{ blog.description|render_markdown }}</p>
+                            {% endif %}
+                        </div>
+                        <div class="card-footer">
+                          <div class="row">
+                            <div class="col-md-4"><a href="/{{LANGUAGE_CODE}}/blog/post/{{blog.id}}/{% if LANGUAGE_CODE == 'fr' and blog.title_fr %}{{ blog.title_fr }}{% else %}{{ blog.title }}{% endif %}/">{% trans 'Read more' %}...</a></div>
+                            <div class="col-md-8 float-right text-secondary text-sm fw-lighter text-end">
+                                {% for tag in blog.tags.all %}
+                                    <a href="/{{LANGUAGE_CODE}}/blog/tag/{{ tag.name }}">#{% if LANGUAGE_CODE == 'fr' and tag.name_fr %}{{ tag.name_fr }}{% else %}{{ tag.name }}{% endif %}</a>
+                                {% endfor %}
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                {% endfor %}
+                {% endblock %}
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{% trans 'Publication dates' %}</h2>
+                        <dl class="row">
+                            {% for year in pub_dates %}
+                                <dt class="col-sm-3">{{ year.year }}</dt>
+                                <dd class="col-sm-9">
+                                {% for month in year.month %}
+                                    <a href="/{{LANGUAGE_CODE}}/blog/month/{{year.year}}/{{month.m}}/">{{month.m}}</a> <span class="text-secondary fw-lighter">({{month.qty}})</span><br/>
+                                {% endfor %}
+                                </dd>
+                            {% endfor %}
+                        </dl>
+                    </div>
+                </div>
+                <br/>
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">{% trans 'Tags' %}</h2>
+                        <ul>
+                            {% for tag in blog_tags %}
+                            <li><a href="/{{LANGUAGE_CODE}}/blog/tag/{{ tag.name }}">#{% if LANGUAGE_CODE == 'fr' and tag.name_fr %}{{ tag.name_fr }}{% else %}{{ tag.name }}{% endif %}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+                <br/>
+            </div>
+                
+        </div>
+    </div>
+</main>
+{% endblock %}
