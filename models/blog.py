@@ -4,6 +4,7 @@ from django.db import models
 from django.db.models import Count
 from django.utils.timezone import now
 from django.db.models.functions import TruncMonth, TruncYear
+from django.template.defaultfilters import slugify
 
 
 class BlogTag(models.Model):
@@ -22,7 +23,7 @@ class BlogPost(models.Model):
     published = models.BooleanField(default=False)
     publication_date = models.DateField(default=now, editable=True)
     tags = models.ManyToManyField(BlogTag, blank=True, related_name='blogs')
-    title = models.CharField(max_length=250)
+    title = models.CharField(max_length=250, unique=True)
     title_fr = models.CharField(max_length=250, blank=True)
     description = models.TextField(help_text="Short description of the blog post")
     description_fr = models.TextField(blank=True)
@@ -58,4 +59,6 @@ class BlogPost(models.Model):
         the_dates.sort(key=lambda x: (x['year']), reverse=True)
 
         return the_dates
-        
+    
+    def get_slug(self):
+        return self.publication_date.strftime("%Y/%m/") + str(self.id) + '-' + slugify(self.title)
