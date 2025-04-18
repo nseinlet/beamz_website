@@ -10,7 +10,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="">
         <meta name="author" content="">
-    
+        <link rel="canonical" href="https://{{ request.get_host }}{% block canonicalurl %}{{ request.get_full_path }}{% endblock %}">
+
         <title>{% block title %}BeamZ{% endblock %}</title>
         <link rel="shortcut icon" type="image/png" href="/static/favicon.ico"/>
 
