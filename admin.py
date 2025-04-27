@@ -1,9 +1,11 @@
 from django.db import models
 from django.contrib import admin
 from django.forms import CheckboxSelectMultiple
-from .models.blog import BlogTag, BlogPost
+from .models.blog import BlogTag, BlogPost, BlogPicture
 from .models.faq import FaqSection, Faq
 
+
+admin.site.register(BlogPicture)
 
 @admin.register(BlogPost)
 class BlogPostAdmin(admin.ModelAdmin):

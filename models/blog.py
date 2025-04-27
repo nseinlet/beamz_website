@@ -62,3 +62,15 @@ class BlogPost(models.Model):
     
     def get_slug(self):
         return self.publication_date.strftime("%Y/%m/") + str(self.id) + '-' + slugify(self.title)
+
+
+class BlogPicture(models.Model):
+    id = models.BigAutoField(primary_key=True)
+    name = models.CharField(max_length=200, blank=True, null=True)
+    blog = models.ForeignKey(BlogPost, on_delete=models.SET_NULL, related_name='pictures', blank=True, null=True)
+    picture = models.ImageField(upload_to='blog/articles/pictures/')
+
+    def __str__(self):
+        if self.blog:
+            return self.name + ' - ' + str(self.blog.title) + ' - ' + str(self.id)
+        return self.name + ' - ' + str(self.id)

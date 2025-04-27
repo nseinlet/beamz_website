@@ -52,3 +52,7 @@ footer {
         margin-top:70px;
     }
 }
+
+img[alt=blogpicture] { 
+    max-width: 100%; 
+}
