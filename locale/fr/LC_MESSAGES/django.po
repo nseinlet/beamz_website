@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-04 16:13+0000\n"
+"POT-Creation-Date: 2025-05-11 17:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -98,19 +98,19 @@ msgstr "Fonctionnalités"
 
 #: templates/blog.html:6 templates/website-base.html:32
 msgid "Blog"
-msgstr ""
+msgstr "Blog"
 
 #: templates/blog.html:14
 msgid "Blog posts"
-msgstr ""
+msgstr "Articles de blog"
 
 #: templates/blog.html:44
 msgid "Read more"
-msgstr ""
+msgstr "Lire plus"
 
 #: templates/blog.html:61
 msgid "Publication dates"
-msgstr ""
+msgstr "Dates de publication"
 
 #: templates/blog.html:77
 msgid "Tags"
@@ -122,7 +122,7 @@ msgstr ""
 
 #: templates/faq.html:12
 msgid "Frequently asked questions"
-msgstr ""
+msgstr "Questions fréquentes"
 
 #: templates/features.html:14
 msgid "Everytime. Everywhere."
@@ -140,72 +140,182 @@ msgstr ""
 msgid "Work now"
 msgstr "Travaillez maintenant"
 
-#: templates/features.html:29
-msgid "Units of measure"
-msgstr "Unités de mesure"
-
-#: templates/features.html:30
-msgid ""
-"Works with international system, or the one that suits the best your needs."
-msgstr ""
-"Fonctionne avec le système international, ou celui qui convient le mieux à "
-"vos besoins."
-
-#: templates/features.html:38
+#: templates/features.html:34
 msgid "Intuitive UI"
 msgstr "Interface intuitive"
 
-#: templates/features.html:39
-msgid "Every needed tool at your fingertips."
-msgstr "Chaque outil nécessaire à portée de main."
+#: templates/features.html:35
+msgid ""
+"Every tool you need to draw a structure at your fingertips, whichever the "
+"platform you're using."
+msgstr ""
+"Chaque outil dont vous avez besoin pour dessiner une structure à portée de "
+"main, quel que soit la plateforme que vous utilisez."
 
-#: templates/features.html:50
-msgid "Cloud storage"
-msgstr "Sauvegarde dans le cloud"
+#: templates/features.html:36
+msgid ""
+"Without any training, a new user is able to draw a tructure, add loads, and "
+"analyse it in minutes."
+msgstr ""
+"Sans aucune formation, un nouvel utilisateur est capable de dessiner une "
+"structure, d'ajouter des charges et de l'analyser en quelques minutes."
 
-#: templates/features.html:51
-msgid "Multiple version per structure."
-msgstr "Versions multiples par structure"
-
-#: templates/features.html:59
+#: templates/features.html:44
 msgid "Multiple load cases"
 msgstr "Plusieurs cas de charge"
 
-#: templates/features.html:60
-msgid "Multiple load cases per structure."
-msgstr "Plusieurs cas de charge par structure."
+#: templates/features.html:45
+msgid ""
+"In addition to the existing <i>Self weight</i> pre-defined load, you can "
+"define <b>as many</b> load cases as you want."
+msgstr ""
+"En plus de la charge pré-définie <i>Poids propre</i>, vous pouvez définir "
+"<b>autant</b> de cas de charge que vous le souhaitez."
 
-#: templates/features.html:71
+#: templates/features.html:46
+msgid "Each load case can contain <b>as many</b> Loads as you want."
+msgstr ""
+"Chaque cas de charge peut contenir <b>autant</b> de charges que vous le "
+"souhaitez."
+
+#: templates/features.html:47
+msgid ""
+"Distributed, concentrated, moments, on elements or nodes, heat, fire are the "
+"loads you can add in every case. You can also define supports displacements "
+"or rotations."
+msgstr ""
+"Réparties, concentrées, moments, sur des éléments ou des nœuds, chaleur, "
+"incendie sont les charges que vous pouvez ajouter dans chaque cas. Vous "
+"pouvez également définir des déplacements ou des rotations de supports."
+
+#: templates/features.html:61
 msgid "Loads combination"
 msgstr "Combinaison de charges"
 
-#: templates/features.html:72
-msgid "Analyze results for multiple load cases combination."
-msgstr "Analyser les résultats pour plusieurs combinaisons de charges."
+#: templates/features.html:62
+msgid ""
+"In addition to multiple loads definitions, you can create <b>combinations</"
+"b> of loads, with a factor. To ease the work, the defaults are set to 1.35 "
+"for self-weight, and 1.5 for others. You can of course set the coefficients "
+"you need per combination."
+msgstr ""
+"En plus de la définition de plusieurs charges, vous pouvez créer des "
+"<b>combinaisons</b> de charges, avec un facteur. Pour faciliter le travail, "
+"les valeurs par défaut sont fixées à 1,35 pour le poids propre et 1,5 pour "
+"les autres. Vous pouvez bien sûr définir les coefficients dont vous avez "
+"besoin par combinaison."
 
-#: templates/features.html:81
+#: templates/features.html:63
+msgid "And you can combine load cases and combos in enveloppes."
+msgstr ""
+"Et vous pouvez combiner les cas de charge et les combinaisons dans des "
+"enveloppes."
+
+#: templates/features.html:64
+msgid "As usual, no limit on the number of combinations and enveloppes."
+msgstr ""
+"Comme d'habitude, pas de limite sur le nombre de combinaisons et "
+"d'enveloppes."
+
+#: templates/features.html:72
 msgid "Materials library"
 msgstr "Librairie de matériaux"
 
-#: templates/features.html:82
-msgid "Existing materials, with proven characteristics."
-msgstr "Libraison de matériaux existants, avec des caractéristiques prouvées."
+#: templates/features.html:73
+msgid ""
+"In addition to the long list of pre-defined materials in the software, you "
+"can create your own list of materials."
+msgstr ""
+"En place de la longue liste de matériaux pré-définis dans le logiciel, vous "
+"pouvez créer votre propre liste de matériaux."
 
-#: templates/features.html:93 templates/pricing.html:91
+#: templates/features.html:74
+msgid ""
+"To ease your work, you can also create your list of <b>prefered materials</"
+"b> and have the app to automatically start every new structure with this "
+"list, instead of the default one."
+msgstr ""
+"Pour faciliter votre travail, vous pouvez également créer votre liste de "
+"<b>matériaux préférés</b> et faire en sorte que l'application démarre "
+"automatiquement chaque nouvelle structure avec cette liste, au lieu de la "
+"liste par défaut."
+
+#: templates/features.html:75
+msgid ""
+"You can also load those custom-defined materials in any existing structure "
+"in one click."
+msgstr ""
+"Vous pouvez également charger ces matériaux définis par vous dans n'importe "
+"quelle structure existante en un clic."
+
+#: templates/features.html:76
+msgid ""
+"The same fonctionality apply for <b>geometries</b>, <b>springs</b> and "
+"<b>dashpots</b>."
+msgstr ""
+"Cette même fonctionnalité s'applique aux <b>géométries</b>, <b>ressorts</b> "
+"et <b>coulisses</b>."
+
+#: templates/features.html:87
+msgid "Units of measure"
+msgstr "Unités de mesure"
+
+#: templates/features.html:88
+msgid "Create your own system of units, to suits your needs."
+msgstr "Créez votre propre système d'unités, pour répondre à vos besoins."
+
+#: templates/features.html:89
+msgid ""
+"When collaborating on the same structure, different users can use different "
+"units of measures, without interfering each other!"
+msgstr ""
+"Lorsque vous collaborez sur la même structure, différents utilisateurs "
+"peuvent utiliser différentes unités de mesure, sans interférer les uns avec "
+"les autres!"
+
+#: templates/features.html:103
+msgid "Cloud storage"
+msgstr "Sauvegarde dans le cloud"
+
+#: templates/features.html:104
+msgid ""
+"Save your structures in the cloud, and we'll save all your structure's "
+"versions."
+msgstr ""
+"Enregistrez vos structures dans le cloud, et nous enregistrerons toutes les "
+"versions de votre structure."
+
+#: templates/features.html:105
+msgid ""
+"No need to worry about loosing info, or overwrite a modification, we keep "
+"track of all versions."
+msgstr ""
+"Inutile de s'inquiéter de la perte d'informations ou de l'écrasement d'une "
+"modification, nous gardons une trace de toutes les versions."
+
+#: templates/features.html:116 templates/pricing.html:91
 msgid "Social portal"
 msgstr "Portail social"
 
-#: templates/features.html:94
-msgid "Activity from colleagues."
-msgstr "Activite de vos collègues."
+#: templates/features.html:117
+msgid ""
+"Get track of your work, as well as your colleagues' work in a single place, "
+"in a social network style."
+msgstr ""
+"Suivez votre travail, ainsi que celui de vos collègues en un seul endroit, "
+"dans un style de réseau social."
 
-#: templates/features.html:102
+#: templates/features.html:125
 msgid "Suits your needs"
 msgstr "Repond à vos besoins"
 
-#: templates/features.html:103
-msgid "Through lots of parameters."
-msgstr "A travers de nombreux paramètres."
+#: templates/features.html:126
+msgid ""
+"Adapt the application settings to suit your needs, like number roundings, "
+"units, default drawing style, colors, ..."
+msgstr ""
+"Adaptez les paramètres de l'application à vos besoins, comme le nombre de "
+"décimales, les unités, le style de dessin par défaut, les couleurs, ..."
 
 #: templates/pricing.html:14 templates/website-base.html:34
 msgid "Pricing"
@@ -232,8 +342,10 @@ msgid "No support"
 msgstr "Pas de support"
 
 #: templates/pricing.html:35
+#, fuzzy
+#| msgid "For affiliated shools/universities"
 msgid "Free for affiliated shools/universities"
-msgstr "Gratuit pour les écoles/universités partenaires"
+msgstr "Pour les écoles/universités partenaires"
 
 #: templates/pricing.html:39
 msgid "Available after student card check."
@@ -249,7 +361,7 @@ msgstr "Professionel"
 
 #: templates/pricing.html:57 templates/pricing.html:86
 msgid "year"
-msgstr "An"
+msgstr "Année"
 
 #: templates/pricing.html:61
 msgid "Unlimited analysis"
@@ -303,110 +415,110 @@ msgstr "Hébergé dans le cloud"
 msgid "Structures"
 msgstr "Structures"
 
-#: templates/pricing.html:132
+#: templates/pricing.html:130
 msgid "Max number of structures"
 msgstr "Nombre maximum de structures"
 
-#: templates/pricing.html:133 templates/pricing.html:134
-#: templates/pricing.html:135 templates/pricing.html:140
-#: templates/pricing.html:141 templates/pricing.html:142
-#: templates/pricing.html:232 templates/pricing.html:233
-#: templates/pricing.html:234 templates/pricing.html:239
-#: templates/pricing.html:240 templates/pricing.html:241
+#: templates/pricing.html:131 templates/pricing.html:132
+#: templates/pricing.html:133 templates/pricing.html:138
+#: templates/pricing.html:139 templates/pricing.html:140
+#: templates/pricing.html:230 templates/pricing.html:231
+#: templates/pricing.html:232 templates/pricing.html:237
+#: templates/pricing.html:238 templates/pricing.html:239
 msgid "Unlimited"
 msgstr "Illimité"
 
-#: templates/pricing.html:139
+#: templates/pricing.html:137
 #, fuzzy
 #| msgid "Unlimited analysis"
 msgid "Max number of analysis"
 msgstr "Analyses illimitées"
 
-#: templates/pricing.html:146
+#: templates/pricing.html:144
 msgid "Sharing"
 msgstr "Partage"
 
-#: templates/pricing.html:153
+#: templates/pricing.html:151
 msgid "Online saving"
 msgstr "Sauvegarde en ligne"
 
-#: templates/pricing.html:160
+#: templates/pricing.html:158
 msgid "Offline saving"
 msgstr "Sauvegarde locale"
 
-#: templates/pricing.html:167
+#: templates/pricing.html:165
 msgid "File history"
 msgstr "Historique du fichier"
 
-#: templates/pricing.html:174
+#: templates/pricing.html:172
 #, fuzzy
 #| msgid "Multiple users"
 msgid "Multi users"
 msgstr "Plusieurs utilisateurs"
 
-#: templates/pricing.html:180
+#: templates/pricing.html:178
 #, fuzzy
 #| msgid "No support"
 msgid "Supports"
 msgstr "Supports"
 
-#: templates/pricing.html:185
+#: templates/pricing.html:183
 msgid "Hinged"
 msgstr "Rotules"
 
-#: templates/pricing.html:192 templates/pricing.html:217
+#: templates/pricing.html:190 templates/pricing.html:215
 msgid "Springs"
 msgstr "Ressorts"
 
-#: templates/pricing.html:199
+#: templates/pricing.html:197
 msgid "Rolls"
 msgstr "Rouleaux"
 
-#: templates/pricing.html:205
+#: templates/pricing.html:203
 msgid "Elements"
 msgstr "Eléments"
 
-#: templates/pricing.html:210
+#: templates/pricing.html:208
 msgid "Beams"
 msgstr "Barres"
 
-#: templates/pricing.html:224
+#: templates/pricing.html:222
 msgid "Dashpots"
 msgstr "Coulisses"
 
-#: templates/pricing.html:231
+#: templates/pricing.html:229
 msgid "Materials per structure"
 msgstr "Matériaux par structure"
 
-#: templates/pricing.html:238
+#: templates/pricing.html:236
 msgid "Geometries per structure"
 msgstr "Géométries par structure"
 
-#: templates/pricing.html:244
+#: templates/pricing.html:242
 msgid "Support"
 msgstr "Support"
 
-#: templates/pricing.html:249
+#: templates/pricing.html:247
 msgid "Email"
 msgstr "Courriel"
 
-#: templates/pricing.html:255
+#: templates/pricing.html:253
 msgid "Dedicated servers"
 msgstr "Serveurs dédiés"
 
-#: templates/pricing.html:260
+#: templates/pricing.html:258
 msgid "Dedicated compute module"
 msgstr "Moteur de calcul dédié"
 
-#: templates/pricing.html:267
+#: templates/pricing.html:265
 msgid "Dedicated storage server"
 msgstr "Serveur de stockage privé"
 
-#: templates/pricing.html:274
+#: templates/pricing.html:272
 msgid "On-premise deployment"
 msgstr "Déploiement sur site"
 
-#: templates/pricing.html:284
+#: templates/pricing.html:282
 msgid "Sharing with students from same school/university"
 msgstr "Partage avec les étudiants de la même école/université"
 
@@ -523,8 +635,48 @@ msgstr "Pas encore utilisateur?"
 msgid "Sign up!"
 msgstr "Enregistrez-vous!"
 
-#~ msgid "Free"
-#~ msgstr "Gratuit"
+#, fuzzy
+#~| msgid "Free"
+#~ msgid "Free for "
+#~ msgstr "Gratuit pour les"
+
+#, fuzzy
+#~| msgid "For affiliated shools/universities"
+#~ msgid "affiliated shools/universities"
+#~ msgstr "écoles/universités partenaires"
+
+#, fuzzy
+#~| msgid "For affiliated shools/universities"
+#~ msgid "Affiliated schools / Universities"
+#~ msgstr "Pour les écoles/universités partenaires"
+
+#~ msgid ""
+#~ "Works with international system, or the one that suits the best your "
+#~ "needs."
+#~ msgstr ""
+#~ "Fonctionne avec le système international, ou celui qui convient le mieux "
+#~ "à vos besoins."
+
+#~ msgid "Every needed tool at your fingertips."
+#~ msgstr "Chaque outil nécessaire à portée de main."
+
+#~ msgid "Multiple version per structure."
+#~ msgstr "Versions multiples par structure"
+
+#~ msgid "Multiple load cases per structure."
+#~ msgstr "Plusieurs cas de charge par structure."
+
+#~ msgid "Analyze results for multiple load cases combination."
+#~ msgstr "Analyser les résultats pour plusieurs combinaisons de charges."
+
+#~ msgid "Existing materials, with proven characteristics."
+#~ msgstr "Libraison de matériaux existants, aux caractéristiques éprouvées."
+
+#~ msgid "Activity from colleagues."
+#~ msgstr "Activite de vos collègues."
+
+#~ msgid "Through lots of parameters."
+#~ msgstr "A travers de nombreux paramètres."
 
 #~ msgid "Immediatly available."
 #~ msgstr "Disponnible immédiatement."
@@ -555,11 +707,6 @@ msgstr "Enregistrez-vous!"
 #~| msgid "Offline saving"
 #~ msgid "Offline files"
 #~ msgstr "Sauvegarde locale"
-
-#, fuzzy
-#~| msgid "Share structures among teams"
-#~ msgid "Save structures on your own computer."
-#~ msgstr "Partage de structures entre utilisateurs"
 
 #~ msgid "Need manual student card validation."
 #~ msgstr "Après validation manuelle de la carte étudiant"

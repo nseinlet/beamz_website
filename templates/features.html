@@ -9,104 +9,129 @@
 {% block main %}
 <link rel="stylesheet" href="/static/src/css/features.css"/>
 <main>
-    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-      <div class="col-md-5 p-lg-5 mx-auto my-5">
-        <h1 class="display-4 fw-normal">{% trans 'Everytime. Everywhere.' %}</h1>
-        <p class="lead fw-normal">{% trans 'You just need a recent web browser. Share your structures among devices, thanks to the cloud storage.' %}</p>
-        <a class="btn btn-outline-secondary" href="/app/">{% trans 'Work now' %}</a>
-      </div>
-      <div class="product-device shadow-sm d-none d-md-block">
-        <img src="/static/screenshots/phone_menu.png" style="height: 100%;"/>
-      </div>
-      <div class="product-device product-device-2 shadow-sm d-none d-md-block" style="padding: 15px;">
-        <img src="/static/screenshots/phone_paysage.png" style="width: 100%;"/>
-      </div>
+  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+    <div class="col-md-5 p-lg-5 mx-auto my-5">
+      <h1 class="display-4 fw-normal">{% trans 'Everytime. Everywhere.' %}</h1>
+      <p class="lead fw-normal">{% trans 'You just need a recent web browser. Share your structures among devices, thanks to the cloud storage.' %}</p>
+      <a class="btn btn-outline-secondary" href="/app/">{% trans 'Work now' %}</a>
     </div>
+    <div class="product-device shadow-sm d-none d-md-block">
+      <img src="/static/screenshots/phone_menu.png" style="height: 100%;"/>
+    </div>
+    <div class="product-device product-device-2 shadow-sm d-none d-md-block" style="padding: 15px;">
+      <img src="/static/screenshots/phone_paysage.png" style="width: 100%;"/>
+    </div>
+  </div>
 
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-        <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-          <div class="my-3 py-3">
-            <h2 class="display-5">{% trans 'Units of measure' %}</h2>
-            <p class="lead">{% trans 'Works with international system, or the one that suits the best your needs.' %}</p>
-          </div>
-          <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; padding: 15px;">
-            <img src="/static/screenshots/units.png" alt="Unit systems" style="height: 100%;"/>
-          </div>
-        </div>
-        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-          <div class="my-3 p-3">
-            <h2 class="display-5">{% trans 'Intuitive UI' %}</h2>
-            <p class="lead">{% trans 'Every needed tool at your fingertips.' %}</p>
-          </div>
-          <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; padding:15px;">
-            <img src="/static/screenshots/intuitive_ui.png" alt="intuitive ui" style="height: 100%;"/>
-          </div>
-        </div>
-    </div>  
+  <div class="container">
 
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-      <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 p-3">
-          <h2 class="display-5">{% trans 'Cloud storage' %}</h2>
-            <p class="lead">{% trans 'Multiple version per structure.' %}</p>
+    <div class="feature-card bg-light-alt">
+      <div class="row align-items-start mb-4">
+        <div class="col-md-6 order-1 order-md-0">
+          <img src="/static/screenshots/intuitive_ui.png" class="img-fluid" alt="Intuitive UI">
         </div>
-        <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; padding: 15px;">
-          <img src="/static/screenshots/structure_history.png" alt="Cloud storage" style="width: 100%;"/>
-        </div>
-      </div>
-      <div class="bg-primary me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-        <div class="my-3 py-3">
-          <h2 class="display-5">{% trans 'Multiple load cases' %}</h2>
-          <p class="lead">{% trans 'Multiple load cases per structure.' %}</p>
-        </div>
-        <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; padding: 15px;">
-          <img src="/static/screenshots/multiple_loads.png" alt="Multiple load cases" style="height: 100%;"/>
+        <div class="col-md-6 order-0 order-md-1">
+          <h4>{% trans 'Intuitive UI' %}</h4>
+          <p>{% trans "Every tool you need to draw a structure at your fingertips, whichever the platform you're using." %}</p>
+          <p>{% trans 'Without any training, a new user is able to draw a tructure, add loads, and analyse it in minutes.' %}</p>
         </div>
       </div>
     </div>
 
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-        <div class="bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-          <div class="my-3 py-3">
-            <h2 class="display-5">{% trans 'Loads combination' %}</h2>
-            <p class="lead">{% trans 'Analyze results for multiple load cases combination.' %}</p>
-          </div>
-          <div class="bg-light shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; padding: 15px;">
-            <img src="/static/screenshots/loads_combo.png" alt="Loads combo" style="height: 100%;"/>
+    <div class="feature-card bg-white">
+      <div class="row align-items-start mb-4">
+        <div class="col-md-6 order-1 order-md-0">
+          <h4>{% trans 'Multiple load cases' %}</h4>
+          <p>{% trans 'In addition to the existing <i>Self weight</i> pre-defined load, you can define <b>as many</b> load cases as you want.' %}</p>
+          <p>{% trans 'Each load case can contain <b>as many</b> Loads as you want.' %}</p>
+          <p>{% trans 'Distributed, concentrated, moments, on elements or nodes, heat, fire are the loads you can add in every case. You can also define supports displacements or rotations.' %}</p>
+        </div>
+        <div class="col-md-6 order-0 order-md-1">
+          <img src="/static/screenshots/multiple_loads.png" class="img-fluid" alt="multiple loads ui">
+        </div>
+      </div>
+    </div>
 
-          </div>
+    <div class="feature-card bg-light-alt">
+      <div class="row align-items-start mb-4">
+        <div class="col-md-3 order-1 order-md-0">
+          <img src="/static/screenshots/loadcombo.gif" class="img-fluid" alt="load combination">
         </div>
-        <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-          <div class="my-3 p-3">
-            <h2 class="display-5">{% trans 'Materials library' %}</h2>
-          <p class="lead">{% trans 'Existing materials, with proven characteristics.' %}</p>
-          </div>
-          <div class="bg-dark shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; padding: 15px;">
-            <img src="/static/screenshots/materials_library.png" alt="Materials library" style="height: 100%;"/>
-          </div>
+        <div class="col-md-9 order-0 order-md-1">
+          <h4>{% trans 'Loads combination' %}</h4>
+          <p>{% trans 'In addition to multiple loads definitions, you can create <b>combinations</b> of loads, with a factor. To ease the work, the defaults are set to 1.35 for self-weight, and 1.5 for others. You can of course set the coefficients you need per combination.' %}</p>
+          <p>{% trans 'And you can combine load cases and combos in enveloppes.' %}</p>
+          <p>{% trans 'As usual, no limit on the number of combinations and enveloppes.' %}</p>
         </div>
-    </div>  
+      </div>
+    </div>
+
+    <div class="feature-card bg-white">
+      <div class="row align-items-start mb-4">
+        <div class="col-md-6 order-1 order-md-0">
+          <h4>{% trans 'Materials library' %}</h4>
+          <p>{% trans 'In addition to the long list of pre-defined materials in the software, you can create your own list of materials.' %}</p>
+          <p>{% trans 'To ease your work, you can also create your list of <b>prefered materials</b> and have the app to automatically start every new structure with this list, instead of the default one.' %}</p>
+          <p>{% trans 'You can also load those custom-defined materials in any existing structure in one click.' %}</p>
+          <p>{% trans 'The same fonctionality apply for <b>geometries</b>, <b>springs</b> and <b>dashpots</b>.' %}</p>
+        </div>
+        <div class="col-md-6 order-0 order-md-1">
+          <img src="/static/screenshots/materials_library.png" class="img-fluid" alt="Materials library UI">
+        </div>
+      </div>
+    </div>
+
+    <div class="feature-card bg-white">
+      <div class="row align-items-start mb-4">
+        <div class="col-md-6 order-1 order-md-0">
+          <h4>{% trans 'Units of measure' %}</h4>
+          <p>{% trans 'Create your own system of units, to suits your needs.' %}</p>
+          <p>{% trans 'When collaborating on the same structure, different users can use different units of measures, without interfering each other!' %}</p>
+        </div>
+        <div class="col-md-6 order-0 order-md-1">
+          <img src="/static/screenshots/units.png" class="img-fluid" alt="Units">
+        </div>
+      </div>
+    </div>
+
+    <div class="feature-card bg-light-alt">
+      <div class="row align-items-start mb-4">
+        <div class="col-md-6 order-1 order-md-0">
+          <img src="/static/screenshots/structure_history.png" class="img-fluid" alt="structure history graph">
+        </div>
+        <div class="col-md-6 order-0 order-md-1">
+          <h4>{% trans 'Cloud storage' %}</h4>
+          <p>{% trans "Save your structures in the cloud, and we'll save all your structure's versions." %}</p>
+          <p>{% trans 'No need to worry about loosing info, or overwrite a modification, we keep track of all versions.' %}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature-card bg-light-alt">
+      <div class="row align-items-start mb-4">
+        <div class="col-md-6 order-1 order-md-0">
+          <img src="/static/screenshots/portal.png" class="img-fluid" alt="portal web page">
+        </div>
+        <div class="col-md-6 order-0 order-md-1">
+          <h4>{% trans 'Social portal' %}</h4>
+          <p>{% trans "Get track of your work, as well as your colleagues' work in a single place, in a social network style." %}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="feature-card bg-white">
+      <div class="row align-items-start mb-4">
+        <div class="col-md-6 order-1 order-md-0">
+          <h4>{% trans 'Suits your needs' %}</h4>
+          <p>{% trans 'Adapt the application settings to suit your needs, like number roundings, units, default drawing style, colors, ...' %}</p>
+        </div>
+        <div class="col-md-6 order-0 order-md-1">
+          <img src="/static/screenshots/settings.png" class="img-fluid" alt="Settings screen">
+        </div>
+      </div>
+    </div>
+
+  </div>
   
-    <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-      <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 p-3">
-          <h2 class="display-5">{% trans 'Social portal' %}</h2>
-          <p class="lead">{% trans 'Activity from colleagues.' %}</p>
-        </div>
-        <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; padding: 15px;">
-          <img src="/static/screenshots/portal.png" alt="Social portal" style="width: 100%;"/>
-        </div>
-      </div>
-      <div class="bg-light me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        <div class="my-3 py-3">
-          <h2 class="display-5">{% trans 'Suits your needs' %}</h2>
-          <p class="lead">{% trans 'Through lots of parameters.' %}</p>
-        </div>
-        <div class="bg-body shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; padding: 15px;">
-          <img src="/static/screenshots/settings.png" alt="Settings" style="height: 100%;"/>
-        </div>
-      </div>
-    </div>
-  
-  </main>
-{% endblock %}
+</main>
+{% endblock %}"
