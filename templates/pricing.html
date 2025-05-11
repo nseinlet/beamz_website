@@ -32,7 +32,7 @@
               <li class="list-group-item">{% trans 'One user' %}</li>
               <li class="list-group-item">{% trans 'Unlimited structures number' %}</li>
               <li class="list-group-item">{% trans 'No support' %}</li>
-              <li class="list-group-item">{% trans 'Free for affiliated shools/universities' %}</li>
+              <li class="list-group-item">{% trans 'Free for ' %}<a href="{% url 'universities' %}">{% trans 'affiliated shools/universities' %}</a></li>
             </ul>
             <div class="card-footer">
               <p>
@@ -142,7 +142,7 @@
           <tr>
             <td> </td>
             <td scope="row">{% trans 'Sharing' %}</td>
-            <td><i class="fas fa-check text-success"></i>*1</td>
+            <td><i class="fas fa-check text-success"></i><a href="#id_note_1">*1</a></td>
             <td><i class="fas fa-times text-danger"></i></td>
             <td><i class="fas fa-check text-success"></i></td>
           </tr>
@@ -246,8 +246,8 @@
             <td> </td>
             <td scope="row">{% trans 'Email' %}</td>
             <td><i class="fas fa-times text-danger"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
-            <td><i class="fas fa-check text-success"></i></td>
+            <td><i class="fas fa-check text-success"></i><a href="#id_note_2">*2</a></td>
+            <td><i class="fas fa-check text-success"></i><a href="#id_note_3">*3</a></td>
           </tr>
           <tr>
             <th scope="row">{% trans 'Dedicated servers' %}</th>
@@ -278,8 +278,14 @@
       </table>
 
       <ol>  
-        <li>
+        <li id="id_note_1">
           {% trans 'Sharing with students from same school/university' %}
+        </li>
+        <li id="id_note_2">
+          {% trans 'Require additional module, ask for quote.' %}
+        </li>
+        <li id="id_note_3">
+          {% trans 'Require additional module on your infrastructure, ask for quote.' %}
         </li>
       </ol>
     </div>

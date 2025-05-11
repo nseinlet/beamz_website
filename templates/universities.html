@@ -1,0 +1,57 @@
+{% extends "website-base.html" %}
+{% load i18n %}
+{% get_current_language as LANGUAGE_CODE %}
+
+{% block title %}{% trans 'Affiliated schools / Universities'  %}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <br/><br/><br/>
+    <div class="row">
+        <div class="col-12">
+            <h1 class="text-center">{% trans 'Affiliated schools/universities' %}</h1>
+            <p>
+                We've got a partnership with the given schools. All students from those schools currently studying in an engineering-related class can get a licence for free, during their study.
+                They simply need to register with their student's email address.
+            </p>
+        </div>
+    </div>
+    {% for university in universities %}
+    <div class="feature-card {% if forloop.counter|divisibleby:2 %}bg-white{% else %}bg-light-alt{% endif %}">
+        <div class="row align-items-start">
+            {% if forloop.counter|divisibleby:2 %}
+            <div class="col-md-6 order-0 order-md-0">
+                <div class="container text-center">
+
+                    <img src="/media/{{ university.logo }}" class=" university-logo d-block mx-auto" alt="{{ university.name }}">
+                </div>
+            </div>
+            <div class="col-md-6 order-1 order-md-1">
+                <h4 class="mb-3">{{ university.name }}</h4>
+                <p>{% if LANGUAGE_CODE == 'fr' %}{{ university.description_fr }}{% else %}{{ university.description }}{% endif %}</p>
+                <i class="fa-solid fa-link"></i> <a href="{{ university.website }}" target="_blank">{{ university.website }}</a>
+            </div>
+            {% else %}
+            <div class="col-md-6 order-1 order-md-1">
+                <h4 class="mb-3">{{ university.name }}</h4>
+                <p>{% if LANGUAGE_CODE == 'fr' %}{{ university.description_fr }}{% else %}{{ university.description }}{% endif %}</p>
+                <i class="fa-solid fa-link"></i> <a href="{{ university.website }}" target="_blank">{{ university.website }}</a>
+            </div>
+            <div class="col-md-6 order-0 order-md-0">
+                <div class="container text-center">
+
+                    <img src="/media/{{ university.logo }}" class=" university-logo d-block mx-auto" alt="{{ university.name }}">
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+    {% endfor %}
+
+    <div class="row">
+        <div class="col-12">
+            <p><center>You want to become an affiliated school? <a href="mailto:school@beamz.app" class="btn btn-primary">Contact us</a>.</center></p>
+        </div>
+    </div>
+</div>
+{% endblock %}

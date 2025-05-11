@@ -56,3 +56,18 @@ footer {
 img[alt=blogpicture] { 
     max-width: 100%; 
 }
+
+.feature-card {
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+  
+  .bg-light-alt {
+    background-color: #f8f9fa;
+  }
+
+  .university-logo {
+    max-width: 100%; height: auto; max-height: 150px;
+  }

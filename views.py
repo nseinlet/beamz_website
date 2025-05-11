@@ -5,6 +5,7 @@ from django.db.models import Q
 
 from .models.faq import Faq, FaqSection
 from .models.blog import BlogPost, BlogTag
+from beamz.models import University
 
 
 def index(request):
@@ -57,3 +58,7 @@ def blog_post(request, post_id, title=''):
     except BlogPost.DoesNotExist:
         context['error'] = "Blog post not found."
     return render(request, 'blogpost.html', context)
+
+def universities(request):
+    context = {'universities': University.objects.filter(published=True).order_by('name')}
+    return render(request, 'universities.html', context)
