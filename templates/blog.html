@@ -16,44 +16,25 @@
         <div class="row">
             <div class="col-md-9">
                 {% block blogcontent %}
-                {% for blog in blogs %}
-                <div class="row">
-                    <div class="card">
-                        <div class="card-header">
-                            <div class="row">
-                                <div class="col-md-9">
-                                    {% if LANGUAGE_CODE == 'fr' and blog.title_fr %}
-                                    <h4>{{ blog.title_fr }}</h4>
-                                    {% else %}
-                                    <h4>{{ blog.title }}</h4>
-                                    {% endif %}
-                                </div>
-                                <div class="col-md-3 float-right text-secondary text-sm fw-lighter text-end">
-                                    {{ blog.publication_date }}
-                                </div>
-                            </div>
-                        </div>
+                <div class="row g-4">
+                    {% for blog in blogs %}
+                    <div class="col-12 col-md-12">
+                        <div class="card h-100 card-horizontal">
+                        <img src="/media/{{ blog.blog_img }}" class="card-img" alt="Post Image">
                         <div class="card-body">
+                            <h5 class="card-title fw-bold">{% if LANGUAGE_CODE == 'fr' and blog.title_fr %}{{ blog.title_fr }}{% else %}{{ blog.title }}{% endif %}</h5>
+                            <p class="post-meta">{% trans 'Published' %} {{ blog.publication_date }}{% for tag in blog.tags.all %} · <a class="blog-tag" href="/{{LANGUAGE_CODE}}/blog/tag/{{ tag.name }}">#{% if LANGUAGE_CODE == 'fr' and tag.name_fr %}{{ tag.name_fr }}{% else %}{{ tag.name }}{% endif %}</a>{% endfor %}</p>
                             {% if LANGUAGE_CODE == 'fr' and blog.description_fr %}
-                            <p class="card-text">{{ blog.description_fr|render_markdown }}</p>
+                                <p class="card-text">{{ blog.description_fr|render_markdown }}</p>
                             {% else %}
-                            <p class="card-text">{{ blog.description|render_markdown }}</p>
+                                <p class="card-text">{{ blog.description|render_markdown }}</p>
                             {% endif %}
+                            <a class="read-more" href="/{{LANGUAGE_CODE}}/blog/post/{{blog.id}}/{% if LANGUAGE_CODE == 'fr' and blog.title_fr %}{{ blog.title_fr }}{% else %}{{ blog.title }}{% endif %}/">{% trans 'Read more' %} →</a>
                         </div>
-                        <div class="card-footer">
-                          <div class="row">
-                            <div class="col-md-4"><a href="/{{LANGUAGE_CODE}}/blog/post/{{blog.id}}/{% if LANGUAGE_CODE == 'fr' and blog.title_fr %}{{ blog.title_fr }}{% else %}{{ blog.title }}{% endif %}/">{% trans 'Read more' %}...</a></div>
-                            <div class="col-md-8 float-right text-secondary text-sm fw-lighter text-end">
-                                {% for tag in blog.tags.all %}
-                                    <a href="/{{LANGUAGE_CODE}}/blog/tag/{{ tag.name }}">#{% if LANGUAGE_CODE == 'fr' and tag.name_fr %}{{ tag.name_fr }}{% else %}{{ tag.name }}{% endif %}</a>
-                                {% endfor %}
-                            </div>
-                          </div>
                         </div>
                     </div>
+                    {% endfor %}
                 </div>
-                <br/>
-                {% endfor %}
                 {% endblock %}
             </div>
             <div class="col-md-3">
@@ -65,7 +46,7 @@
                                 <dt class="col-sm-3">{{ year.year }}</dt>
                                 <dd class="col-sm-9">
                                 {% for month in year.month %}
-                                    <a href="/{{LANGUAGE_CODE}}/blog/month/{{year.year}}/{{month.m}}/">{{month.m}}</a> <span class="text-secondary fw-lighter">({{month.qty}})</span><br/>
+                                    <a class="blog-tag" href="/{{LANGUAGE_CODE}}/blog/month/{{year.year}}/{{month.m}}/">{{month.m}}</a> <span class="text-secondary fw-lighter">({{month.qty}})</span><br/>
                                 {% endfor %}
                                 </dd>
                             {% endfor %}
@@ -78,7 +59,7 @@
                         <h5 class="card-title">{% trans 'Tags' %}</h2>
                         <ul>
                             {% for tag in blog_tags %}
-                            <li><a href="/{{LANGUAGE_CODE}}/blog/tag/{{ tag.name }}">#{% if LANGUAGE_CODE == 'fr' and tag.name_fr %}{{ tag.name_fr }}{% else %}{{ tag.name }}{% endif %}</a></li>
+                            <li><a class="blog-tag" href="/{{LANGUAGE_CODE}}/blog/tag/{{ tag.name }}">#{% if LANGUAGE_CODE == 'fr' and tag.name_fr %}{{ tag.name_fr }}{% else %}{{ tag.name }}{% endif %}</a></li>
                             {% endfor %}
                         </ul>
                     </div>

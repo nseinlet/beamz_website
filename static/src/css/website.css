@@ -71,3 +71,54 @@ img[alt=blogpicture] {
   .university-logo {
     max-width: 100%; height: auto; max-height: 150px;
   }
+
+.card-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+.post-meta {
+    font-size: 0.875rem;
+    color: #888;
+}
+.read-more {
+    color: #334c8a;
+    font-weight: 500;
+    text-decoration: none;
+}
+.blog-tag {
+    color: #334c8a;
+    text-decoration: none;
+}
+.read-more:hover {
+    text-decoration: underline;
+}
+
+.card-horizontal {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.card-horizontal img {
+    width: 160px;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.card-body {
+    flex: 1;
+}
+
+@media (max-width: 576px) {
+    .card-horizontal {
+        flex-direction: column;
+    }
+    .card-horizontal img {
+        width: 100%;
+        height: 160px;
+        border-radius: 0.5rem 0.5rem 0 0;
+    }
+}
