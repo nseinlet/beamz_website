@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-11 17:00+0000\n"
+"POT-Creation-Date: 2025-06-01 13:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,31 +96,35 @@ msgstr "Vous pouvez aussi collaborer avec vos collègues."
 msgid "Features"
 msgstr "Fonctionnalités"
 
-#: templates/blog.html:6 templates/website-base.html:32
+#: templates/blog.html:7 templates/website-base.html:32
 msgid "Blog"
 msgstr "Blog"
 
-#: templates/blog.html:14
+#: templates/blog.html:15
 msgid "Blog posts"
 msgstr "Articles de blog"
 
-#: templates/blog.html:44
+#: templates/blog.html:26
+msgid "Published"
+msgstr "Publié"
+
+#: templates/blog.html:32
 msgid "Read more"
 msgstr "Lire plus"
 
-#: templates/blog.html:61
+#: templates/blog.html:43
 msgid "Publication dates"
 msgstr "Dates de publication"
 
-#: templates/blog.html:77
+#: templates/blog.html:59
 msgid "Tags"
 msgstr ""
 
-#: templates/faq.html:6
+#: templates/faq.html:8
 msgid "Faq"
 msgstr ""
 
-#: templates/faq.html:12
+#: templates/faq.html:14
 msgid "Frequently asked questions"
 msgstr "Questions fréquentes"
 
@@ -293,11 +297,23 @@ msgstr ""
 "Inutile de s'inquiéter de la perte d'informations ou de l'écrasement d'une "
 "modification, nous gardons une trace de toutes les versions."
 
-#: templates/features.html:116 templates/pricing.html:91
+#: templates/features.html:113
+msgid "Suits your needs"
+msgstr "Repond à vos besoins"
+
+#: templates/features.html:114
+msgid ""
+"Adapt the application settings to suit your needs, like number roundings, "
+"units, default drawing style, colors, ..."
+msgstr ""
+"Adaptez les paramètres de l'application à vos besoins, comme le nombre de "
+"décimales, les unités, le style de dessin par défaut, les couleurs, ..."
+
+#: templates/features.html:128 templates/pricing.html:91
 msgid "Social portal"
 msgstr "Portail social"
 
-#: templates/features.html:117
+#: templates/features.html:129
 msgid ""
 "Get track of your work, as well as your colleagues' work in a single place, "
 "in a social network style."
@@ -305,17 +321,21 @@ msgstr ""
 "Suivez votre travail, ainsi que celui de vos collègues en un seul endroit, "
 "dans un style de réseau social."
 
-#: templates/features.html:125
-msgid "Suits your needs"
-msgstr "Repond à vos besoins"
+#: templates/features.html:137
+msgid "Results in spreadsheet"
+msgstr "Résultats dans une feuille de calcul"
 
-#: templates/features.html:126
+#: templates/features.html:138
 msgid ""
-"Adapt the application settings to suit your needs, like number roundings, "
-"units, default drawing style, colors, ..."
-msgstr ""
-"Adaptez les paramètres de l'application à vos besoins, comme le nombre de "
-"décimales, les unités, le style de dessin par défaut, les couleurs, ..."
+"Analyse all results in an embedded spreadsheet, even on mobile devices.<br/"
+">No need for an external application to achieve this, it's built-in.<br/>All "
+"the usual spreadsheet tools are available.<br/>Export to XLSX format "
+"available to match your regular workflows."
+msgstr "Analysez tous les résultats dans une feuille de calcul intégrée, même sur "
+"les appareils mobiles.<br/>Pas besoin d'une application externe pour cela, "
+"c'est intégré.<br/>Tous les outils habituels de feuille de calcul sont "
+"disponibles.<br/>L'export au format XLSX est disponible pour s'adapter à "
+"vos flux de travail habituels."
 
 #: templates/pricing.html:14 templates/website-base.html:34
 msgid "Pricing"
@@ -343,9 +363,15 @@ msgstr "Pas de support"
 
 #: templates/pricing.html:35
 #, fuzzy
+#| msgid "Free"
+msgid "Free for "
+msgstr "Gratuit pour les"
+
+#: templates/pricing.html:35
+#, fuzzy
 #| msgid "For affiliated shools/universities"
-msgid "Free for affiliated shools/universities"
-msgstr "Pour les écoles/universités partenaires"
+msgid "affiliated shools/universities"
+msgstr "écoles/universités partenaires"
 
 #: templates/pricing.html:39
 msgid "Available after student card check."
@@ -522,6 +548,22 @@ msgstr "Déploiement sur site"
 msgid "Sharing with students from same school/university"
 msgstr "Partage avec les étudiants de la même école/université"
 
+#: templates/pricing.html:285
+msgid "Require additional module, ask for quote."
+msgstr "Nécessite un module additionnel, demandez un devis."
+
+#: templates/pricing.html:288
+msgid "Require additional module on your infrastructure, ask for quote."
+msgstr "Nécessite un module additionnel sur votre infrastructure, demandez un devis."
+
+#: templates/universities.html:5
+msgid "Affiliated schools / Universities"
+msgstr "Ecoles / universités partenaires"
+
+#: templates/universities.html:12
+msgid "Affiliated schools/universities"
+msgstr "Ecoles/universités partenaires"
+
 #: templates/webindex.html:11
 msgid "Structural analysis software"
 msgstr "Logiciel d'analyse de structures"
@@ -636,18 +678,8 @@ msgid "Sign up!"
 msgstr "Enregistrez-vous!"
 
 #, fuzzy
-#~| msgid "Free"
-#~ msgid "Free for "
-#~ msgstr "Gratuit pour les"
-
-#, fuzzy
 #~| msgid "For affiliated shools/universities"
-#~ msgid "affiliated shools/universities"
-#~ msgstr "écoles/universités partenaires"
-
-#, fuzzy
-#~| msgid "For affiliated shools/universities"
-#~ msgid "Affiliated schools / Universities"
+#~ msgid "Free for affiliated shools/universities"
 #~ msgstr "Pour les écoles/universités partenaires"
 
 #~ msgid ""

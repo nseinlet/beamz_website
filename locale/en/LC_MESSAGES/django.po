@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-25 07:30+0000\n"
+"POT-Creation-Date: 2025-06-01 13:36+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,16 +18,267 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: templates/pricing.html:14 templates/website-base.html:32
+#: templates/aboutus.html:14
+msgid "Who we are"
+msgstr ""
+
+#: templates/aboutus.html:25
+msgid ""
+"Vincent is passionate about structures. He teaches Structural Analysis, "
+"statics, and dynamics at the University of Liège where he received his PhD "
+"degree in Civil Engineering."
+msgstr ""
+
+#: templates/aboutus.html:26
+msgid ""
+"He travelled across many places in Europe, Asia, Australia, and the US to "
+"sharpen his knowledge in structural analysis under various loads and "
+"conditions."
+msgstr ""
+
+#: templates/aboutus.html:27
+msgid "He also founded the Structural and Stochastic Dynamics lab."
+msgstr ""
+
+#: templates/aboutus.html:40
+msgid ""
+"Nicolas is a developer. He received his Diploma in Computer Science from the "
+"University of Mons."
+msgstr ""
+
+#: templates/aboutus.html:41
+msgid ""
+"His area of expertises are the databases and the performance of IT systems."
+msgstr ""
+
+#: templates/aboutus.html:50
+msgid "What we do"
+msgstr ""
+
+#: templates/aboutus.html:55
+msgid "Finite elements analysis"
+msgstr ""
+
+#: templates/aboutus.html:58
+msgid ""
+"From smaller structures to bigger ones, our platform makes analyses a breeze."
+msgstr ""
+
+#: templates/aboutus.html:59
+msgid ""
+"Web based, this tool allows you to perform finite elements analyses from "
+"anywhere, at any time."
+msgstr ""
+
+#: templates/aboutus.html:60
+msgid "You can also collaborate with your colleagues."
+msgstr ""
+
+#: templates/aboutus.html:63 templates/features.html:5
+#: templates/website-base.html:33
+msgid "Features"
+msgstr ""
+
+#: templates/blog.html:7 templates/website-base.html:32
+msgid "Blog"
+msgstr ""
+
+#: templates/blog.html:15
+msgid "Blog posts"
+msgstr ""
+
+#: templates/blog.html:26
+msgid "Published"
+msgstr ""
+
+#: templates/blog.html:32
+msgid "Read more"
+msgstr ""
+
+#: templates/blog.html:43
+msgid "Publication dates"
+msgstr ""
+
+#: templates/blog.html:59
+msgid "Tags"
+msgstr ""
+
+#: templates/faq.html:8
+msgid "Faq"
+msgstr ""
+
+#: templates/faq.html:14
+msgid "Frequently asked questions"
+msgstr ""
+
+#: templates/features.html:14
+msgid "Everytime. Everywhere."
+msgstr ""
+
+#: templates/features.html:15
+msgid ""
+"You just need a recent web browser. Share your structures among devices, "
+"thanks to the cloud storage."
+msgstr ""
+
+#: templates/features.html:16
+msgid "Work now"
+msgstr ""
+
+#: templates/features.html:34
+msgid "Intuitive UI"
+msgstr ""
+
+#: templates/features.html:35
+msgid ""
+"Every tool you need to draw a structure at your fingertips, whichever the "
+"platform you're using."
+msgstr ""
+
+#: templates/features.html:36
+msgid ""
+"Without any training, a new user is able to draw a tructure, add loads, and "
+"analyse it in minutes."
+msgstr ""
+
+#: templates/features.html:44
+msgid "Multiple load cases"
+msgstr ""
+
+#: templates/features.html:45
+msgid ""
+"In addition to the existing <i>Self weight</i> pre-defined load, you can "
+"define <b>as many</b> load cases as you want."
+msgstr ""
+
+#: templates/features.html:46
+msgid "Each load case can contain <b>as many</b> Loads as you want."
+msgstr ""
+
+#: templates/features.html:47
+msgid ""
+"Distributed, concentrated, moments, on elements or nodes, heat, fire are the "
+"loads you can add in every case. You can also define supports displacements "
+"or rotations."
+msgstr ""
+
+#: templates/features.html:61
+msgid "Loads combination"
+msgstr ""
+
+#: templates/features.html:62
+msgid ""
+"In addition to multiple loads definitions, you can create <b>combinations</"
+"b> of loads, with a factor. To ease the work, the defaults are set to 1.35 "
+"for self-weight, and 1.5 for others. You can of course set the coefficients "
+"you need per combination."
+msgstr ""
+
+#: templates/features.html:63
+msgid "And you can combine load cases and combos in enveloppes."
+msgstr ""
+
+#: templates/features.html:64
+msgid "As usual, no limit on the number of combinations and enveloppes."
+msgstr ""
+
+#: templates/features.html:72
+msgid "Materials library"
+msgstr ""
+
+#: templates/features.html:73
+msgid ""
+"In addition to the long list of pre-defined materials in the software, you "
+"can create your own list of materials."
+msgstr ""
+
+#: templates/features.html:74
+msgid ""
+"To ease your work, you can also create your list of <b>prefered materials</"
+"b> and have the app to automatically start every new structure with this "
+"list, instead of the default one."
+msgstr ""
+
+#: templates/features.html:75
+msgid ""
+"You can also load those custom-defined materials in any existing structure "
+"in one click."
+msgstr ""
+
+#: templates/features.html:76
+msgid ""
+"The same fonctionality apply for <b>geometries</b>, <b>springs</b> and "
+"<b>dashpots</b>."
+msgstr ""
+
+#: templates/features.html:87
+msgid "Units of measure"
+msgstr ""
+
+#: templates/features.html:88
+msgid "Create your own system of units, to suits your needs."
+msgstr ""
+
+#: templates/features.html:89
+msgid ""
+"When collaborating on the same structure, different users can use different "
+"units of measures, without interfering each other!"
+msgstr ""
+
+#: templates/features.html:103
+msgid "Cloud storage"
+msgstr ""
+
+#: templates/features.html:104
+msgid ""
+"Save your structures in the cloud, and we'll save all your structure's "
+"versions."
+msgstr ""
+
+#: templates/features.html:105
+msgid ""
+"No need to worry about loosing info, or overwrite a modification, we keep "
+"track of all versions."
+msgstr ""
+
+#: templates/features.html:113
+msgid "Suits your needs"
+msgstr ""
+
+#: templates/features.html:114
+msgid ""
+"Adapt the application settings to suit your needs, like number roundings, "
+"units, default drawing style, colors, ..."
+msgstr ""
+
+#: templates/features.html:128 templates/pricing.html:91
+msgid "Social portal"
+msgstr ""
+
+#: templates/features.html:129
+msgid ""
+"Get track of your work, as well as your colleagues' work in a single place, "
+"in a social network style."
+msgstr ""
+
+#: templates/features.html:137
+msgid "Results in spreadsheet"
+msgstr ""
+
+#: templates/features.html:138
+msgid ""
+"Analyse all results in an embedded spreadsheet, even on mobile devices.<br/"
+">No need for an external application to achieve this, it's built-in.<br/>All "
+"the usual spreadsheet tools are available.<br/>Export to XLSX format "
+"available to match your regular workflows."
+msgstr ""
+
+#: templates/pricing.html:14 templates/website-base.html:34
 msgid "Pricing"
 msgstr ""
 
-#: templates/pricing.html:20
-msgid "Student"
-msgstr ""
-
-#: templates/pricing.html:25
-msgid "Free"
+#: templates/pricing.html:20 templates/pricing.html:112
+msgid "Academic"
 msgstr ""
 
 #: templates/pricing.html:29
@@ -47,22 +298,26 @@ msgid "No support"
 msgstr ""
 
 #: templates/pricing.html:35
-msgid "For affiliated shools/universities"
+msgid "Free for "
+msgstr ""
+
+#: templates/pricing.html:35
+msgid "affiliated shools/universities"
 msgstr ""
 
 #: templates/pricing.html:39
-msgid "Immediatly available."
+msgid "Available after student card check."
 msgstr ""
 
-#: templates/pricing.html:41 templates/pricing.html:69
+#: templates/pricing.html:41 templates/pricing.html:70
 msgid "Start now"
 msgstr ""
 
-#: templates/pricing.html:48
+#: templates/pricing.html:48 templates/pricing.html:113
 msgid "Professional"
 msgstr ""
 
-#: templates/pricing.html:57 templates/pricing.html:85
+#: templates/pricing.html:57 templates/pricing.html:86
 msgid "year"
 msgstr ""
 
@@ -70,127 +325,270 @@ msgstr ""
 msgid "Unlimited analysis"
 msgstr ""
 
-#: templates/pricing.html:63 templates/pricing.html:91
+#: templates/pricing.html:63 templates/pricing.html:92
 msgid "Email support"
 msgstr ""
 
-#: templates/pricing.html:67
+#: templates/pricing.html:64
+msgid "Most popular"
+msgstr ""
+
+#: templates/pricing.html:68
 msgid "Available after payment."
 msgstr ""
 
-#: templates/pricing.html:76
+#: templates/pricing.html:77 templates/pricing.html:114
 msgid "Enterprise"
 msgstr ""
 
-#: templates/pricing.html:85
+#: templates/pricing.html:86
 msgid "user"
 msgstr ""
 
-#: templates/pricing.html:88
+#: templates/pricing.html:89
 msgid "Multiple users"
 msgstr ""
 
-#: templates/pricing.html:89
+#: templates/pricing.html:90
 msgid "Share structures among users"
 msgstr ""
 
-#: templates/pricing.html:90
-msgid "Social portal"
-msgstr ""
-
-#: templates/pricing.html:95
+#: templates/pricing.html:96
 msgid "Contact us for terms and conditions."
 msgstr ""
 
-#: templates/pricing.html:97
+#: templates/pricing.html:98
 msgid "Contact us"
 msgstr ""
 
-#: templates/pricing.html:132 templates/pricing.html:133
-#: templates/pricing.html:134 templates/pricing.html:139
-#: templates/pricing.html:140 templates/pricing.html:141
-#: templates/pricing.html:231 templates/pricing.html:232
-#: templates/pricing.html:233 templates/pricing.html:238
-#: templates/pricing.html:239 templates/pricing.html:240
-msgid "Unlimited"
+#: templates/pricing.html:104
+msgid "Features comparision"
 msgstr ""
 
-#: templates/webindex.html:10
-msgid "Structural analysis software"
-msgstr ""
-
-#: templates/webindex.html:11
-msgid "Analyze structures with confidence. And effortless."
-msgstr ""
-
-#: templates/webindex.html:12
-msgid "Discover features"
-msgstr ""
-
-#: templates/website-base.html:30
-msgid "Home"
-msgstr ""
-
-#: templates/website-base.html:31
-msgid "Features"
-msgstr ""
-
-#: templates/website-base.html:34
-msgid "My files"
-msgstr ""
-
-#: templates/website-base.html:45
-msgid "Dashboard"
-msgstr ""
-
-#: templates/website-base.html:46
-msgid "Logout"
-msgstr ""
-
-#: templates/website-base.html:48
-msgid "Login"
-msgstr ""
-
-#: templates/website-base.html:49
-msgid "Sign-up"
-msgstr ""
-
-#: templates/website-base.html:87
-msgid "A cloud based structure analysis platform for architects and engineers."
-msgstr ""
-
-#: templates/website-base.html:88
-msgid "Accessible through a web interface, using any device."
-msgstr ""
-
-#: templates/website-base.html:92
-msgid "Services"
-msgstr ""
-
-#: templates/website-base.html:94
+#: templates/pricing.html:119 templates/website-base.html:96
 msgid "Cloud based"
 msgstr ""
 
-#: templates/website-base.html:97
+#: templates/pricing.html:125
+msgid "Structures"
+msgstr ""
+
+#: templates/pricing.html:130
+msgid "Max number of structures"
+msgstr ""
+
+#: templates/pricing.html:131 templates/pricing.html:132
+#: templates/pricing.html:133 templates/pricing.html:138
+#: templates/pricing.html:139 templates/pricing.html:140
+#: templates/pricing.html:230 templates/pricing.html:231
+#: templates/pricing.html:232 templates/pricing.html:237
+#: templates/pricing.html:238 templates/pricing.html:239
+msgid "Unlimited"
+msgstr ""
+
+#: templates/pricing.html:137
+msgid "Max number of analysis"
+msgstr ""
+
+#: templates/pricing.html:144
+msgid "Sharing"
+msgstr ""
+
+#: templates/pricing.html:151
+msgid "Online saving"
+msgstr ""
+
+#: templates/pricing.html:158
+msgid "Offline saving"
+msgstr ""
+
+#: templates/pricing.html:165
+msgid "File history"
+msgstr ""
+
+#: templates/pricing.html:172
+msgid "Multi users"
+msgstr ""
+
+#: templates/pricing.html:178
+msgid "Supports"
+msgstr ""
+
+#: templates/pricing.html:183
+msgid "Hinged"
+msgstr ""
+
+#: templates/pricing.html:190 templates/pricing.html:215
+msgid "Springs"
+msgstr ""
+
+#: templates/pricing.html:197
+msgid "Rolls"
+msgstr ""
+
+#: templates/pricing.html:203
+msgid "Elements"
+msgstr ""
+
+#: templates/pricing.html:208
+msgid "Beams"
+msgstr ""
+
+#: templates/pricing.html:222
+msgid "Dashpots"
+msgstr ""
+
+#: templates/pricing.html:229
+msgid "Materials per structure"
+msgstr ""
+
+#: templates/pricing.html:236
+msgid "Geometries per structure"
+msgstr ""
+
+#: templates/pricing.html:242
+msgid "Support"
+msgstr ""
+
+#: templates/pricing.html:247
+msgid "Email"
+msgstr ""
+
+#: templates/pricing.html:253
+msgid "Dedicated servers"
+msgstr ""
+
+#: templates/pricing.html:258
+msgid "Dedicated compute module"
+msgstr ""
+
+#: templates/pricing.html:265
+msgid "Dedicated storage server"
+msgstr ""
+
+#: templates/pricing.html:272
+msgid "On-premise deployment"
+msgstr ""
+
+#: templates/pricing.html:282
+msgid "Sharing with students from same school/university"
+msgstr ""
+
+#: templates/pricing.html:285
+msgid "Require additional module, ask for quote."
+msgstr ""
+
+#: templates/pricing.html:288
+msgid "Require additional module on your infrastructure, ask for quote."
+msgstr ""
+
+#: templates/universities.html:5
+msgid "Affiliated schools / Universities"
+msgstr ""
+
+#: templates/universities.html:12
+msgid "Affiliated schools/universities"
+msgstr ""
+
+#: templates/webindex.html:11
+msgid "Structural analysis software"
+msgstr ""
+
+#: templates/webindex.html:12
+msgid "Analyze structures with confidence. And effortless."
+msgstr ""
+
+#: templates/webindex.html:13
+msgid "Discover features"
+msgstr ""
+
+#: templates/webindex.html:23
+msgid ""
+"a lightweight and intuitive structural finite element model accessible "
+"directly from your web browser"
+msgstr ""
+
+#: templates/webindex.html:24
+msgid ""
+"No installations, no hassle! It is multi-platform. MacOS, Windows, Linux, … "
+"on your desktop, laptop, tablet, smartphone"
+msgstr ""
+
+#: templates/webindex.html:24
+msgid "we don't mind as long as you enjoy"
+msgstr ""
+
+#: templates/webindex.html:33
+msgid "Designed for simplicity"
+msgstr ""
+
+#: templates/webindex.html:33
+msgid "and efficiency"
+msgstr ""
+
+#: templates/webindex.html:34
+msgid ""
+"This tool empowers engineers to analyze structures seamlessly anytime, "
+"anywhere. Experience the future of finite element modeling with unmatched "
+"convenience and performance."
+msgstr ""
+
+#: templates/website-base.html:31
+msgid "Home"
+msgstr ""
+
+#: templates/website-base.html:36
+msgid "My files"
+msgstr ""
+
+#: templates/website-base.html:47
+msgid "Dashboard"
+msgstr ""
+
+#: templates/website-base.html:48
+msgid "Logout"
+msgstr ""
+
+#: templates/website-base.html:50
+msgid "Login"
+msgstr ""
+
+#: templates/website-base.html:51
+msgid "Sign-up"
+msgstr ""
+
+#: templates/website-base.html:89
+msgid "A cloud based structure analysis platform for architects and engineers."
+msgstr ""
+
+#: templates/website-base.html:90
+msgid "Accessible through a web interface, using any device."
+msgstr ""
+
+#: templates/website-base.html:94
+msgid "Services"
+msgstr ""
+
+#: templates/website-base.html:99
 msgid "FAQ"
 msgstr ""
 
-#: templates/website-base.html:100
+#: templates/website-base.html:102
 msgid "Licence"
 msgstr ""
 
-#: templates/website-base.html:103
-msgid "Privacy"
+#: templates/website-base.html:105
+msgid "Documentation"
 msgstr ""
 
-#: templates/website-base.html:107
+#: templates/website-base.html:109
 msgid "Contact"
 msgstr ""
 
-#: templates/website-base.html:128
+#: templates/website-base.html:130
 msgid "Still not a user?"
 msgstr ""
 
-#: templates/website-base.html:130
+#: templates/website-base.html:132
 msgid "Sign up!"
 msgstr ""
