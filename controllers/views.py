@@ -3,8 +3,8 @@ from datetime import datetime
 from django.shortcuts import render
 from django.db.models import Q
 
-from .models.faq import Faq, FaqSection
-from .models.blog import BlogPost, BlogTag
+from ..models.faq import Faq, FaqSection
+from ..models.blog import BlogPost, BlogTag
 from beamz.models import University
 
 
