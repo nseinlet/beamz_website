@@ -1,0 +1,35 @@
+{% extends "website-base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans 'Unsubscribe BeamZe mailings' %}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <h1>{% trans 'Unsubscribe from mailings' %}</h1>
+    <br/>
+    
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            {% if success %}
+                <div class="alert alert-success" role="alert">
+                    {{ email }} {% trans 'is successfully unsubscribed from our mailing list.' %}
+                </div>
+            {% else %}
+                <form method="post" action="{% url 'unsubscribe' %}">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <label for="email" class="form-label">{% trans 'Email address' %}</label>
+                        <input type="email" class="form-control" id="email" name="email" required value="{{ email }}">
+                    </div>
+                    <button type="submit" class="btn btn-danger">{% trans 'Unsubscribe' %}</button>
+                </form>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

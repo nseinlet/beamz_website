@@ -1,0 +1,5 @@
+{{message}}
+
+the BeamZe team.
+
+Unsubscribe here : https://beamze.app/unsubscribe?email={{email}}

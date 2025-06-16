@@ -1,7 +1,8 @@
 from django.contrib.auth import views
 from django.urls import path
 
-from . import views
+from .controllers import views
+from .controllers import mail
 
 urlpatterns = [
     path("", views.index, name="home"),
@@ -14,4 +15,5 @@ urlpatterns = [
     path("features", views.features, name="features"),
     path("aboutus", views.aboutus, name="aboutus"),
     path("universities", views.universities, name="universities"),
+    path("unsubscribe", mail.unsubscribe, name="unsubscribe"),
 ]
