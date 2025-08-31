@@ -1,0 +1,119 @@
+{% extends "website-base.html" %}
+{% load i18n %}
+
+{% block canonicalurl %}/contactus{% endblock %}
+{% block title %}{% trans 'Contact US' %}{% endblock %}
+
+{% block content %}
+<div class="container h-100">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>    
+    <center><h1>{% trans 'Contact us' %}</h1></center>
+    <div class="row">
+        <div class="col-sm-5">
+            <div class="h-100">
+                <br/>
+                <br/>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <center><h1><i class="fa-solid fa-book"></i></h1></center>
+                    </div>
+                    <div class="col-sm-9">
+                        <h3 class="h6">{% trans 'Documentation' %}</h3>
+                        <div class="d-grid gap-2">
+                            <a href="https://doc.beamze.app">https://doc.beamze.app</a>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <center><h1><i class="fa-solid fa-envelope"></i></h1></center>
+                    </div>
+                    <div class="col-sm-9">
+                        <h3 class="h6">{% trans 'Contact' %}</h3>
+                        <div class="d-grid gap-2">
+                            <a href="mailto:info@beamze.app">info@beamze.app</a>
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <br/>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <center><h1><i class="fa-solid fa-rss"></i></h1></center>
+                    </div>
+                    <div class="col-sm-9">
+                        <h3 class="h6">{% trans 'Blog' %}</h3>
+                        <div class="d-grid gap-2">
+                            <a href="{% url 'blog' %}">beamze.app{% url 'blog' %}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-7">
+            <div class="alert alert-success d-none" id="contactSuccess">{% trans 'Your message has been sent!' %}</div>
+            <div class="alert alert-danger d-none" id="contactError">{% trans 'Error sending message.' %}</div>
+            <form id="contactForm" action="{% url 'contactus' %}" method="post">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="name" class="form-label">{% trans 'Name' %}</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">{% trans 'Email' %}</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">{% trans 'Message' %}</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">{% trans 'Send' %}</button>
+            </form>
+        </div>
+        <div class="col-sm-12">
+            <hr/>
+            <br/>
+            <br/>
+
+        </div>
+    </div>
+
+    
+    </div>
+
+    <script>
+    document.getElementById("contactForm").addEventListener("submit", async function (e) {
+        e.preventDefault(); // empêche le rechargement
+
+        let form = e.target;
+        let formData = new FormData(form);
+
+        let response = await fetch(form.action, {
+            method: "POST",
+            body: formData,
+            headers: {
+                "X-Requested-With": "XMLHttpRequest" // utile pour distinguer AJAX côté Django
+            }
+        });
+
+        let result = await response.json();
+
+        if (result.success) {
+            document.getElementById("contactSuccess").classList.remove("d-none");
+            document.getElementById("contactError").classList.add("d-none");
+            form.reset(); // vider le formulaire
+        } else {
+            document.getElementById("contactError").classList.remove("d-none");
+            document.getElementById("contactSuccess").classList.add("d-none");
+        }
+    });
+    </script>
+</div>
+
+{% endblock %}

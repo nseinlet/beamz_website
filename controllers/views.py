@@ -2,6 +2,8 @@ from datetime import datetime
 
 from django.shortcuts import render
 from django.db.models import Q
+from django.core.mail import mail_admins, BadHeaderError
+from django.http import JsonResponse
 
 from ..models.faq import Faq, FaqSection
 from ..models.blog import BlogPost, BlogTag
@@ -23,6 +25,29 @@ def pricing(request):
 def aboutus(request):
     context = {}
     return render(request, 'aboutus.html', context)
+
+def contactus(request):
+    if request.method == "POST":
+        # Récupération des champs
+        fullname = request.POST.get("name")
+        email = request.POST.get("email")
+        message = request.POST.get("message")
+
+        # Corps du mail
+        body = f"""
+        Nom : {fullname}
+        Email : {email}
+
+        Message :
+        {message}
+        """
+
+        try:
+            mail_admins("Contact web", body)
+            return JsonResponse({"success": True, "message": "Votre message a été envoyé."})
+        except BadHeaderError:
+            return JsonResponse({"success": False, "message": "Erreur d'entête dans l'email."})
+    return render(request, "contactus.html")
 
 def faq(request):
     context = {}

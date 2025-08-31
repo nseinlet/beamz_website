@@ -14,6 +14,7 @@ urlpatterns = [
     path("pricing", views.pricing, name="pricing"),
     path("features", views.features, name="features"),
     path("aboutus", views.aboutus, name="aboutus"),
+    path("contactus", views.contactus, name="contactus"),
     path("universities", views.universities, name="universities"),
     path("unsubscribe", mail.unsubscribe, name="unsubscribe"),
 ]
