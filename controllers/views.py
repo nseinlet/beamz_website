@@ -2,8 +2,9 @@ from datetime import datetime
 
 from django.shortcuts import render
 from django.db.models import Q
-from django.core.mail import mail_admins, BadHeaderError
+from django.core.mail import send_mail, BadHeaderError
 from django.http import JsonResponse
+from django.conf import settings
 
 from ..models.faq import Faq, FaqSection
 from ..models.blog import BlogPost, BlogTag
@@ -43,7 +44,7 @@ def contactus(request):
         """
 
         try:
-            mail_admins("Contact web", body)
+            send_mail("Contact web", body, None, [m[1] for m in settings.ADMINS])
             return JsonResponse({"success": True, "message": "Votre message a été envoyé."})
         except BadHeaderError:
             return JsonResponse({"success": False, "message": "Erreur d'entête dans l'email."})
