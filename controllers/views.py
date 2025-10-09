@@ -6,6 +6,7 @@ from django.core.mail import send_mail, BadHeaderError
 from django.http import JsonResponse
 from django.conf import settings
 
+from ..forms import ContactUsForm
 from ..models.faq import Faq, FaqSection
 from ..models.blog import BlogPost, BlogTag
 from beamz.models import University
@@ -29,26 +30,31 @@ def aboutus(request):
 
 def contactus(request):
     if request.method == "POST":
-        # Récupération des champs
-        fullname = request.POST.get("name")
-        email = request.POST.get("email")
-        message = request.POST.get("message")
+        form = ContactUsForm(request.POST)
+        if form.is_valid():
+            # Récupération des champs
+            fullname = form.cleaned_data['fullname']
+            email = form.cleaned_data['email']
+            message = form.cleaned_data['message']
 
-        # Corps du mail
-        body = f"""
-        Nom : {fullname}
-        Email : {email}
+            # Corps du mail
+            body = f"""
+            Nom : {fullname}
+            Email : {email}
 
-        Message :
-        {message}
-        """
+            Message :
+            {message}
+            """
 
-        try:
-            send_mail("Contact web", body, None, [m[1] for m in settings.ADMINS])
-            return JsonResponse({"success": True, "message": "Votre message a été envoyé."})
-        except BadHeaderError:
-            return JsonResponse({"success": False, "message": "Erreur d'entête dans l'email."})
-    return render(request, "contactus.html")
+            try:
+                send_mail("Contact web", body, None, [m[1] for m in settings.ADMINS])
+                return JsonResponse({"success": True, "message": "Votre message a été envoyé."})
+            except BadHeaderError:
+                return JsonResponse({"success": False, "message": "Erreur d'entête dans l'email."})
+    else:
+        form = ContactUsForm()
+    return render(request, "contactus.html", {"form": form})
+
 
 def faq(request):
     context = {}
