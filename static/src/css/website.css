@@ -122,3 +122,20 @@ img[alt=blogpicture] {
         border-radius: 0.5rem 0.5rem 0 0;
     }
 }
+
+.feature-card {
+    border-radius: 15px; /* Coins arrondis */
+    border: none; /* Pas de bordure */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    margin-bottom: 20px; /* Espacement entre les cartes */
+    height: 100%; /* Pour que toutes les cartes aient la même hauteur */
+    color: #304781;;
+}
+.feature-icon {
+    font-size: 2.5rem; /* Taille de l'icône */
+    margin-bottom: 15px;
+    color: #304781; /* Couleur Bootstrap primary */
+}
+.carousel-item {
+    height: 350px; /* Ajuste cette valeur selon tes besoins */
+}

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-31 14:49+0000\n"
+"POT-Creation-Date: 2025-11-27 20:47+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -131,6 +131,7 @@ msgstr "Contactez nous"
 
 #: beamz_website/templates/contactus.html:14
 #: beamz_website/templates/pricing.html:98
+#: beamz_website/templates/website-base.html:118
 msgid "Contact us"
 msgstr "Contactez nous"
 
@@ -156,16 +157,16 @@ msgstr "Erreur d'envoi du message."
 msgid "Name"
 msgstr "Nom"
 
-#: beamz_website/templates/contactus.html:69
+#: beamz_website/templates/contactus.html:70
 #: beamz_website/templates/pricing.html:247
 msgid "Email"
 msgstr "Courriel"
 
-#: beamz_website/templates/contactus.html:73
+#: beamz_website/templates/contactus.html:75
 msgid "Message"
 msgstr "Message"
 
-#: beamz_website/templates/contactus.html:76
+#: beamz_website/templates/contactus.html:82
 msgid "Send"
 msgstr "Envoyer"
 
@@ -194,6 +195,7 @@ msgid "Work now"
 msgstr "Travaillez maintenant"
 
 #: beamz_website/templates/features.html:34
+#: beamz_website/templates/webindex.html:58
 msgid "Intuitive UI"
 msgstr "Interface intuitive"
 
@@ -490,6 +492,7 @@ msgid "Features comparision"
 msgstr "Comparaison des fonctionnalités"
 
 #: beamz_website/templates/pricing.html:119
+#: beamz_website/templates/webindex.html:71
 #: beamz_website/templates/website-base.html:96
 msgid "Cloud based"
 msgstr "Hébergé dans le cloud"
@@ -657,7 +660,81 @@ msgstr "Analysez les structures en toute confiance. Simplement."
 msgid "Discover features"
 msgstr "Decouvrez les fonctionnalités"
 
-#: beamz_website/templates/webindex.html:23
+#: beamz_website/templates/webindex.html:15
+msgid ""
+"BeamZe is a 2D finite element analysis software designed for structural "
+"engineers and students, with efficiency and simplicity in mind."
+msgstr "BeamZe est un logiciel d'analyse par éléments finis 2D conçu pour les ingénieurs et les étudiants, avec l'efficacité et la simplicité comme état d'esprit."
+
+#: beamz_website/templates/webindex.html:16
+msgid ""
+"It runs on every device with a modern web browser, and allows you to create "
+"and analyze structures in minutes."
+msgstr "Il fonctionne sur tous les appareils avec un navigateur web moderne, et vous permet de créer et d'analyser des structures en quelques minutes."
+
+#: beamz_website/templates/webindex.html:16
+msgid "Don't believe us?"
+msgstr "Vous ne nous croyez pas ?"
+
+#: beamz_website/templates/webindex.html:16
+msgid "Try it out yourself!"
+msgstr "Essayez par vous-même !"
+
+#: beamz_website/templates/webindex.html:60
+msgid "From a blank page to a finished model in minutes."
+msgstr "D'une page blanche à un modèle fini en quelques minutes."
+
+#: beamz_website/templates/webindex.html:61
+msgid ""
+"Our mindset is simplicity. The tool is powerful, but we hide complexity as "
+"much as possible."
+msgstr "Notre état d'esprit est la simplicité. L'outil est puissant, mais nous masquons la complexité autant que possible."
+
+#: beamz_website/templates/webindex.html:62
+msgid "The right tool at the right place."
+msgstr "Le bon outil au bon endroit."
+
+#: beamz_website/templates/webindex.html:73
+msgid "Nothing to install. Just a modern web browser and you're on."
+msgstr "Rien à installer. Juste un navigateur web moderne et vous y êtes."
+
+#: beamz_website/templates/webindex.html:74
+msgid ""
+"Access your work from anywhere, in the office on your desktop or on your "
+"mobile on the field."
+msgstr "Accédez à votre travail de n'importe où, au bureau sur votre ordinateur ou sur votre mobile sur le chantier."
+
+#: beamz_website/templates/webindex.html:83
+msgid "Libraries"
+msgstr "Bibliothèques"
+
+#: beamz_website/templates/webindex.html:85
+msgid ""
+"Embedded libraries for common materials and geometries, with their well "
+"known properties."
+msgstr "Les bibliothèques intégrées des matériaux et des géométries courants, avec leurs propriétés bien connues."
+
+#: beamz_website/templates/webindex.html:86
+msgid ""
+"Always work with the same ones? mark them as favorites and you'll always "
+"have them handily available."
+msgstr "Vous travaillez toujours avec les mêmes ? Marquez-les comme favoris et vous les aurez toujours à portée de main."
+
+#: beamz_website/templates/webindex.html:95
+msgid "Collaboration"
+msgstr "Collaboration"
+
+#: beamz_website/templates/webindex.html:97
+msgid "Easy teamwork. Social portal. Structure sharing and management."
+msgstr "Travail d'équipe facile. Portail social. Partage et gestion des structures."
+
+#: beamz_website/templates/webindex.html:98
+msgid ""
+"You can work together on the same structure without overwriting each other's "
+"changes. Thanks to the cloud, all versions remain accessible."
+msgstr "Vous pouvez travailler ensemble sur la même structure sans écraser les modifications des autres. Grâce au cloud, toutes les versions restent accessibles."
+
+#: beamz_website/templates/webindex.html:107
 msgid ""
 "a lightweight and intuitive structural finite element model accessible "
 "directly from your web browser"
@@ -665,7 +742,7 @@ msgstr ""
 "un modèle d'éléments finis de structure léger et intuitif, accessible "
 "directement depuis votre navigateur"
 
-#: beamz_website/templates/webindex.html:24
+#: beamz_website/templates/webindex.html:108
 msgid ""
 "No installations, no hassle! It is multi-platform. MacOS, Windows, Linux, … "
 "on your desktop, laptop, tablet, smartphone"
@@ -673,19 +750,19 @@ msgstr ""
 "Pas d'installation, pas de soucis! Multi-plateforme. MacOS, Windows, Linux, "
 "… sur votre ordinateur de bureau, portable, tablette, smartphone"
 
-#: beamz_website/templates/webindex.html:24
+#: beamz_website/templates/webindex.html:108
 msgid "we don't mind as long as you enjoy"
 msgstr "On s'en fiche tant que vous appréciez"
 
-#: beamz_website/templates/webindex.html:33
+#: beamz_website/templates/webindex.html:117
 msgid "Designed for simplicity"
 msgstr "Conçu pour la simplicité"
 
-#: beamz_website/templates/webindex.html:33
+#: beamz_website/templates/webindex.html:117
 msgid "and efficiency"
 msgstr "et l'efficacité"
 
-#: beamz_website/templates/webindex.html:34
+#: beamz_website/templates/webindex.html:118
 msgid ""
 "This tool empowers engineers to analyze structures seamlessly anytime, "
 "anywhere. Experience the future of finite element modeling with unmatched "
@@ -742,11 +819,15 @@ msgstr "FaQ"
 msgid "Licence"
 msgstr "Licence"
 
-#: beamz_website/templates/website-base.html:130
+#: beamz_website/templates/website-base.html:122
+msgid "About us"
+msgstr "Qui sommes-nous"
+
+#: beamz_website/templates/website-base.html:135
 msgid "Still not a user?"
 msgstr "Pas encore utilisateur?"
 
-#: beamz_website/templates/website-base.html:132
+#: beamz_website/templates/website-base.html:137
 msgid "Sign up!"
 msgstr "Enregistrez-vous!"
 
