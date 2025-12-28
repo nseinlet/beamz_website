@@ -4,7 +4,7 @@ from django.forms import CheckboxSelectMultiple
 from .models.blog import BlogTag, BlogPost, BlogPicture
 from .models.faq import FaqSection, Faq
 from .models.blacklist import BlackList
-from .models.mailing import Mailing, MailingRecipient, mailing_add_all_users, mailing_add_student_users, mailing_add_pro_users, Contact
+from .models.mailing import Mailing, MailingRecipient, mailing_add_all_users, mailing_add_student_users, mailing_add_pro_users, mailing_add_contacts, Contact
 
 admin.site.register(BlogPicture)
 
@@ -38,7 +38,7 @@ class BlackListAdmin(admin.ModelAdmin):
 @admin.register(Mailing)
 class MailingAdmin(admin.ModelAdmin):
     list_display = [ 'title', 'planned', 'template' ]
-    actions = [ mailing_add_all_users, mailing_add_student_users, mailing_add_pro_users ]
+    actions = [ mailing_add_all_users, mailing_add_student_users, mailing_add_pro_users, mailing_add_contacts ]
 
 @admin.register(MailingRecipient)
 class MailingRecipientAdmin(admin.ModelAdmin):
