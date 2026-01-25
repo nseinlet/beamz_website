@@ -17,4 +17,5 @@ urlpatterns = [
     path("contactus", views.contactus, name="contactus"),
     path("universities", views.universities, name="universities"),
     path("unsubscribe", mail.unsubscribe, name="unsubscribe"),
+    path("sitemap", views.sitemap, name="sitemap"),
 ]

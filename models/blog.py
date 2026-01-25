@@ -13,6 +13,7 @@ class BlogTag(models.Model):
     name_fr = models.CharField(max_length=200)
     order = models.IntegerField(default=10)
     active = models.BooleanField(default=True)
+    created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.name
@@ -60,8 +61,8 @@ class BlogPost(models.Model):
 
         return the_dates
     
-    def get_slug(self):
-        return self.publication_date.strftime("%Y/%m/") + str(self.id) + '-' + slugify(self.title)
+    def get_slug(self, lang='en'):
+        return f"post/{self.id}/{slugify(self.title_fr if lang=='fr' else self.title)}"
 
 
 class BlogPicture(models.Model):
