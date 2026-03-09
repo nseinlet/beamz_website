@@ -103,13 +103,15 @@ def sitemap(request):
     ]
     for lang in ['en', 'fr']:
         sitemap_urls.append({'location': f'https://beamze.app/{lang}/', 'priority': '1.0', 'lastmod': '2026-01-01', 'changefreq': 'monthly'})
-        sitemap_urls.append({'location': f'https://beamze.app/{lang}/faq/', 'priority': '0.7', 'lastmod': faq_last_mod['created_at__max'], 'changefreq': 'monthly'})
-        sitemap_urls.append({'location': f'https://beamze.app/{lang}/pricing/', 'priority': '0.8', 'lastmod': '2026-01-01', 'changefreq': 'yearly'})
-        sitemap_urls.append({'location': f'https://beamze.app/{lang}/features/', 'priority': '0.8', 'lastmod': '2026-01-01', 'changefreq': 'monthly'})
-        sitemap_urls.append({'location': f'https://beamze.app/{lang}/aboutus/', 'priority': '0.6', 'lastmod': '2026-01-01', 'changefreq': 'yearly'})
-        sitemap_urls.append({'location': f'https://beamze.app/{lang}/contactus/', 'priority': '0.6', 'lastmod': '2026-01-01', 'changefreq': 'yearly'})
-        sitemap_urls.append({'location': f'https://beamze.app/{lang}/universities/', 'priority': '0.5',  'lastmod': '2025-09-01',  'changefreq': 'yearly'})
-        sitemap_urls.append({'location': f'https://beamze.app/{lang}/blog/', 'priority': '0.7', 'lastmod': blog_last_mod['publication_date__max'], 'changefreq': 'weekly'})
+        sitemap_urls.append({'location': f'https://beamze.app/{lang}/faq', 'priority': '0.7', 'lastmod': faq_last_mod['created_at__max'].strftime('%Y-%m-%d'), 'changefreq': 'monthly'})
+        sitemap_urls.append({'location': f'https://beamze.app/{lang}/pricing', 'priority': '0.8', 'lastmod': '2026-01-01', 'changefreq': 'yearly'})
+        sitemap_urls.append({'location': f'https://beamze.app/{lang}/features', 'priority': '0.8', 'lastmod': '2026-01-01', 'changefreq': 'monthly'})
+        sitemap_urls.append({'location': f'https://beamze.app/{lang}/features/static', 'priority': '0.7', 'lastmod': '2026-02-20', 'changefreq': 'yearly'})
+        sitemap_urls.append({'location': f'https://beamze.app/{lang}/features/second_order', 'priority': '0.7', 'lastmod': '2026-03-01', 'changefreq': 'yearly'})
+        sitemap_urls.append({'location': f'https://beamze.app/{lang}/aboutus', 'priority': '0.6', 'lastmod': '2026-01-01', 'changefreq': 'yearly'})
+        sitemap_urls.append({'location': f'https://beamze.app/{lang}/contactus', 'priority': '0.6', 'lastmod': '2026-01-01', 'changefreq': 'yearly'})
+        sitemap_urls.append({'location': f'https://beamze.app/{lang}/universities', 'priority': '0.5',  'lastmod': '2025-09-01',  'changefreq': 'yearly'})
+        sitemap_urls.append({'location': f'https://beamze.app/{lang}/blog', 'priority': '0.7', 'lastmod': blog_last_mod['publication_date__max'].strftime('%Y-%m-%d'), 'changefreq': 'weekly'})
     for tag in BlogTag.objects.filter(active=True):
         sitemap_urls.append({'location': f'https://beamze.app/blog/tag/{tag.name}/', 'priority': '0.6', 'lastmod': tag.created_at.strftime('%Y-%m-%d'), 'changefreq': 'yearly'})
         sitemap_urls.append({'location': f'https://beamze.app/en/blog/tag/{tag.name}/', 'priority': '0.6', 'lastmod': tag.created_at.strftime('%Y-%m-%d'), 'changefreq': 'yearly'})
@@ -118,9 +120,9 @@ def sitemap(request):
         year = dt['year']
         for month in dt['month']:
             m = month['m']
-            sitemap_urls.append({'location': f'https://beamze.app/blog/month/{year}/{m}/', 'priority': '0.6', 'lastmod': '{year}-{m}-28', 'changefreq': 'yearly'})
-            sitemap_urls.append({'location': f'https://beamze.app/en/blog/month/{year}/{m}/', 'priority': '0.6', 'lastmod': '{year}-{m}-28', 'changefreq': 'yearly'})
-            sitemap_urls.append({'location': f'https://beamze.app/fr/blog/month/{year}/{m}/', 'priority': '0.6', 'lastmod': '{year}-{m}-28', 'changefreq': 'yearly'})
+            sitemap_urls.append({'location': f'https://beamze.app/blog/month/{year}/{m}/', 'priority': '0.6', 'lastmod': f'{year}-{m}-28', 'changefreq': 'yearly'})
+            sitemap_urls.append({'location': f'https://beamze.app/en/blog/month/{year}/{m}/', 'priority': '0.6', 'lastmod': f'{year}-{m}-28', 'changefreq': 'yearly'})
+            sitemap_urls.append({'location': f'https://beamze.app/fr/blog/month/{year}/{m}/', 'priority': '0.6', 'lastmod': f'{year}-{m}-28', 'changefreq': 'yearly'})
     for blog in BlogPost.objects.filter(published=True):
         sitemap_urls.append({'location': f'https://beamze.app/blog/{blog.get_slug()}/', 'priority': '0.5', 'lastmod': blog.publication_date.strftime('%Y-%m-%d'), 'changefreq': 'yearly'})
         sitemap_urls.append({'location': f'https://beamze.app/en/blog/{blog.get_slug()}/', 'priority': '0.5', 'lastmod': blog.publication_date.strftime('%Y-%m-%d'), 'changefreq': 'yearly'})

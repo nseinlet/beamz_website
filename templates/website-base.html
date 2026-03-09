@@ -30,7 +30,25 @@
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                   <li><a href="/{{ LANGUAGE_CODE }}/" class="nav-link px-2 {% block menuclass-home %}text-secondary{% endblock %}">{% trans 'Home' %}</a></li>
                   <li><a href="/{{ LANGUAGE_CODE }}/blog" class="nav-link px-2 {% block menuclass-blog %}text-secondary{% endblock %}">{% trans 'Blog'%}</a></li>
-                  <li><a href="/{{ LANGUAGE_CODE }}/features" class="nav-link px-2 {% block menuclass-features %}text-secondary{% endblock %}">{% trans 'Features'%}</a></li>
+                  <li><a href="/{{ LANGUAGE_CODE }}/features" id="featuresDropdownMainMenu" class="nav-link px-2 {% block menuclass-features %}text-secondary{% endblock %}">{% trans 'Features'%}</a></li>
+                  
+                    <!-- "Features" dropdown -->
+                      <li class="nav-item dropdown">
+                        <a href="#"
+                          class="nav-link px-2 {% block menuclass-features-sub %}text-secondary{% endblock %} dropdown-toggle"
+                          id="featuresDropdown"
+                          role="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="featuresDropdownMainMenu">
+                          <li><a class="dropdown-item" href="/{{ LANGUAGE_CODE }}/features/static">{% trans 'Static analysis' %}</a></li>
+                          <li><a class="dropdown-item" href="/{{ LANGUAGE_CODE }}/features/second-order">{% trans 'Second order analysis' %}</a></li>
+                        </ul>
+                      </li>
+                      <!-- End of "Features" dropdown -->
+
+
                   <li><a href="/{{ LANGUAGE_CODE }}/pricing" class="nav-link px-2 {% block menuclass-pricing %}text-secondary{% endblock %}">{% trans 'Pricing' %}</a></li>
                   {% if user.is_authenticated %}
                   <li><a href="/{{ LANGUAGE_CODE }}/app/files" class="nav-link px-2 text-secondary">{% trans 'My files' %}</a></li>

@@ -1,0 +1,161 @@
+{% extends "website-base.html" %}
+{% load i18n %}
+
+{% block canonicalurl %}/en/features/static{% endblock %}
+{% block title %}{% trans 'Features - static analysis' %}{% endblock %}
+
+{% block menuclass-features %}text-white{% endblock %}
+{% block menuclass-features-sub %}text-white{% endblock %}
+
+{% block main %}
+<div class="container">
+<main>
+<h1>What is static analysis of a 2D structure ?</h1>
+<img src="/static/screenshots/static_analysis.png" alt="Analyse statique d'une structure en 2D, de multiples portiques sont deformes sous l'effet de charges, on y voit en pointilles la structure initiale ainsi que les charge appliquees menant a la deformation." class="img-fluid mb-4"/><br/>
+Static analysis of a 2D structure is an essential method in civil engineering, mechanics and architecture. It allows to determine the internal forces, deformations and stresses of a structure subjected to static loads (constant over time), considering only two dimensions. This approach is widely used to design and verify the safety of buildings, bridges, machines and other structures. Specialized software, like BeamZe, facilitates this analysis by automating calculations and providing accurate results.<br/>
+<br/>
+<h3>1. Definition and basic principles</h3>
+<h4>1.1. What is static analysis ?</h4>
+Static analysis consists in studying the behavior of a structure under the effect of static loads (not varying with time), such as self weight, permanent loads, live loads or climatic loads (snow, static wind). The goal is to ensure that the structure remains in stable equilibrium and that it resists the applied forces without failure or excessive deformation.<br/>
+<h4>1.2. Why 2D ?</h4>
+A 2D analysis simplifies modeling by reducing the structure to a plane (e.g., a building facade, a beam, a frame). This allows for :<br/>
+<ul>
+      <li>Reducing the complexity of calculations.</li>
+      <li>Saving time in design and verification.</li>
+      <li>Easily visualizing internal forces and deformations.</li>
+      <li>2D models are often beams, frames, trusses, slabs or walls.</li>
+</ul>
+<h3></h3>
+<h3>2. Fundamental assumptions</h3>
+Static analysis of 2D structures is based on several key assumptions:<br/>
+<h4>2.1. Static equilibrium</h4>
+Internal forces (forces, moments) and external forces (loads) must be in equilibrium. This is expressed by the fundamental equations of statics:<br/>
+<ul>
+      <li><pre>ΣFx = 0</pre> (sum of horizontal forces is zero)</li>
+      <li><pre>ΣFy = 0</pre> (sum of vertical forces is zero)</li>
+      <li><pre>ΣM = 0</pre> (sum of moments is zero)</li>
+</ul>
+<h4>2.2. Geometric linearity</h4>
+Deformations are assumed to be small: the structure's geometry does not change significantly under load. Calculations are performed on the initial (undeformed) configuration.
+<h4>2.3. Material linearity</h4>
+Materials (steel, concrete, wood, etc.) are assumed to be elastic and linear: their deformations are proportional to the applied stresses (<a href="https://fr.wikipedia.org/wiki/Loi_de_Hooke">Hooke's Law</a>).
+<h4>2.4. Static loads</h4>
+Loads are constant over time (no dynamic variations like earthquakes or vibrations).<br/>
+
+<h3>3. Common applications</h3>
+Static 2D analysis is used in many fields:<br/>
+<table class="table table-bordered">
+  <tr>
+    <th scope="col">
+      Domain
+    </th>
+    <th scope="col">
+      Examples of applications
+    </th>
+  </tr>
+  <tr>
+    <td scope="row">
+      Building
+    </td>
+    <td scope="row">
+      Frames, beams, slabs, retaining walls.
+    </td>
+  </tr>
+  <tr>
+    <td scope="row">
+      Civil engineering
+    </td>
+    <td scope="row">
+      Bridges, walkways, hydraulic structures.
+    </td>
+  </tr>
+  <tr>
+    <td scope="row">
+      Mechanics
+    </td>
+    <td scope="row">
+      Metal frames, machine structures.
+    </td>
+  </tr>
+  <tr>
+    <td scope="row">
+      Architecture
+    </td>
+    <td scope="row">
+      Frames, verandas, stairs.
+    </td>
+  </tr>
+</table>
+
+<h3>4. Advantages and limitations</h3>
+<h4>4.1. Advantages</h4>
+<ul>
+<li><b>Simplicity</b> : The calculations are relatively simple and can be performed manually for isostatic structures.</li>
+<li><b>Speed</b> : Suitable for structures where dynamic or non-linear effects are negligible.</li>
+<li><b>Codes and regulations</b> : Many building codes (like Eurocodes) allow this method for specific structures.</li>
+</ul>
+
+<h4>4.2. Limitations</h4>
+<ul>
+<li><b>Slender structures</b> : For slender or tall structures (towers, slender columns), second-order effects (geometric deformations) become significant and require non-linear analysis.</li>
+<li><b>Dynamic loads</b> : Not suitable for time-varying loads (earthquakes, turbulent wind).</li>
+<li><b>Non-linear materials</b> : Material linearity is not always realistic (e.g., cracked concrete, plastic steel).</li>
+</ul>
+
+<h3>5. Difference with second-order analysis</h3>
+The classical static analysis (first order) assumes that the structure's geometry does not change under load. In contrast, <a href="/features/second_order.html">second-order analysis</a> (or P-Δ analysis) takes into account geometric deformations and their impact on internal forces. It is essential for structures where deformations significantly influence load distribution, such as skyscrapers, slender columns, or long beams.<br/>
+<table class="table table-bordered">
+  <tr>
+    <th scope="col">
+      Criterion
+    </th>
+    <th scope="col">
+      Static 2D analysis (first order)
+    </th>
+    <th scope="col">
+      Second-order analysis (P-Δ)
+    </th>
+  </tr>
+  <tr>
+    <td scope="row">
+      Geometry
+    </td>
+    <td scope="row">
+      Non deformed.
+    </td>
+    <td scope="row">
+      Deformed under load.
+    </td>
+  </tr>
+  <tr>
+    <td scope="row">
+      Precision
+    </td>
+    <td scope="row">
+      Sufficient for rigid structures.
+    </td>
+    <td scope="row">
+      Necessary for slender structures.
+    </td>
+  </tr>
+  <tr>
+    <td scope="row">
+      Complexity
+    </td>
+    <td scope="row">
+      Simple.
+    </td>
+    <td scope="row">
+      Iterative, more complex.
+    </td>
+  </tr>
+</table>
+
+<h3>6. Conclusion</h3>
+Static 2D analysis of a structure is an essential method for designing and verifying the safety of structures. It is based on assumptions of linearity and static equilibrium, which makes it simple and efficient for many applications. However, for slender structures or those subjected to complex loads, second-order or dynamic analysis may be necessary. Tools like BeamZe allow these analyses to be performed precisely and automatically.<br/>
+<br/>
+<br/>
+<br/>
+</main>
+</div>
+{% endblock %}

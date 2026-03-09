@@ -1,0 +1,182 @@
+{% extends "website-base.html" %}
+{% load i18n %}
+
+{% block canonicalurl %}/fr/features/second-order{% endblock %}
+{% block title %}Fonctionnalites - analyse second ordre{% endblock %}
+
+{% block menuclass-features %}text-white{% endblock %}
+{% block menuclass-features-sub %}text-white{% endblock %}
+
+{% block main %}
+<div class="container">
+  <main>
+<h1>Le calcul de second ordre d'une structure en 2D</h1>
+Le calcul de second ordre, aussi appel&eacute; <b>analyse P-Δ</b> ou <b>analyse g&eacute;om&eacute;triquement non-lin&eacute;aire</b>, est une m&eacute;thode essentielle pour &eacute;tudier le comportement des structures où les 
+<b>d&eacute;formations influencent significativement la r&eacute;partition des efforts internes</b>. Contrairement &agrave; l'analyse statique classique (premier ordre), qui suppose que la g&eacute;om&eacute;trie de la structure 
+reste inchang&eacute;e sous charge, le calcul de second ordre prend en compte les <b>d&eacute;placements et les d&eacute;formations</b> pour d&eacute;terminer l'&eacute;quilibre. Cette approche est cruciale pour &eacute;viter 
+les risques d'instabilit&eacute;, comme le flambement ou le d&eacute;versement, dans les structures &eacute;lanc&eacute;es ou soumises &agrave; des charges de compression importantes.<br/>
+<br/>
+
+<h3>1. Qu'est-ce que le calcul de second ordre ?</h3>
+Le calcul de second ordre consiste &agrave; <b>d&eacute;terminer l'&eacute;quilibre d'une structure sur sa g&eacute;om&eacute;trie d&eacute;form&eacute;e</b>, et non sur sa configuration initiale. Cela signifie que les efforts internes 
+(moments, efforts normaux, efforts tranchants) sont recalcul&eacute;s en tenant compte des <b>d&eacute;placements</b> caus&eacute;s par les charges appliqu&eacute;es.<br/>
+<br/>
+Cette m&eacute;thode est particuli&egrave;rement importante pour les structures où les <b>effets P-Δ</b> (effets du second ordre) ne sont pas n&eacute;gligeables :<br/>
+<ul>
+  <li><b>P</b> : Charge axiale appliqu&eacute;e.</li>
+  <li><b>Δ</b> : D&eacute;placement lat&eacute;ral ou vertical de la structure sous charge.</li>
+</ul>
+L'effet P-Δ g&eacute;n&egrave;re des <b>moments suppl&eacute;mentaires</b> qui peuvent amplifier les d&eacute;formations et, dans certains cas, conduire &agrave; une <b>instabilit&eacute; globale</b> (flambement).<br/>
+<br/>
+
+<h3>2. Diff&eacute;rence entre le calcul de premier ordre et de second ordre</h3>
+<table class="table table-bordered">
+   <tr>
+    <th scope="col">
+      Crit&egrave;re
+    </th>
+    <th scope="col">
+      Calcul de premier ordre
+    </th>
+    <th scope="col">
+      Calcul de second ordre (P-Δ)
+    </th>
+  </tr>
+  <tr>
+    <td scope="row">
+      G&eacute;om&eacute;trie
+    </td>
+    <td scope="row">
+      &eacute;quilibre calcul&eacute; sur la structure <b>non d&eacute;form&eacute;e</b>
+    </td>
+    <td scope="row">
+      &eacute;quilibre calcul&eacute; sur la structure <b>d&eacute;form&eacute;e</b>
+    </td>
+  </tr>
+   <tr>
+    <td scope="row">
+      Effets P-Δ
+    </td>
+    <td scope="row">
+      Non pris en compte
+    </td>
+    <td scope="row">
+      Pris en compte (moments suppl&eacute;mentaires)
+    </td>
+  </tr>
+  <tr>
+    <td scope="row">
+      Pr&eacute;cision
+    </td>
+    <td scope="row">
+      Suffisante pour les structures rigides
+    </td>
+    <td scope="row">
+      N&eacute;cessaire pour les structures &eacute;lanc&eacute;es ou soumises &agrave; des charges de compression importantes
+    </td>
+  </tr>
+  <tr>
+    <td scope="row">
+      Complexit&eacute;
+    </td>
+    <td scope="row">
+      Simple, calculs directs
+    </td>
+    <td scope="row">
+      It&eacute;rative, n&eacute;cessite des solveurs num&eacute;riques
+    </td>
+  </tr>
+  <tr>
+    <td scope="row">
+      Applications typiques
+    </td>
+    <td scope="row">
+      Poutres courtes, dalles, murs
+    </td>
+    <td scope="row">
+      Colonnes, gratte-ciels, poutres longues, câbles
+    </td>
+  </tr>
+</table>
+<br/>
+
+<h3>3. Quand le calcul de second ordre est-il n&eacute;cessaire ?</h3>
+
+Le calcul de second ordre est indispensable dans les cas suivants :
+
+<h4>3.1. Structures &eacute;lanc&eacute;es</h4>
+<ul>
+  <li> Colonnes ou poteaux de grande hauteur</li>
+  <li> Poutres longues soumises &agrave; des charges de compression</li>
+  <li> Gratte-ciels ou structures hautes (effets du vent, charges verticales)</li>
+</ul>
+<h4>3.2. Charges de compression importantes</h4>
+<ul>
+  <li> Structures où les efforts normaux (compression) sont &eacute;lev&eacute;s par rapport aux efforts tranchants</li>
+  <li> Arcs, câbles ou structures tendues (comme les ponts suspendus)</li>
+</ul>
+<h4>3.3. Normes et r&eacute;glementations</h4>
+De nombreuses normes, comme les <b>Eurocodes</b>, imposent une analyse de second ordre pour les structures sensibles aux instabilit&eacute;s. Par exemple :<br/>
+<ul>    
+  <li><b>Eurocode 2</b> (b&eacute;ton) : Recommande une v&eacute;rification de second ordre pour les &eacute;l&eacute;ments comprim&eacute;s</li>
+  <li><b>Eurocode 3</b> (acier) : Exige une analyse P-Δ pour les colonnes &eacute;lanc&eacute;es</li>
+</ul>
+
+<br/>
+
+<h3>4. M&eacute;thodologie du calcul de second ordre</h3>
+
+<h4>4.1. Processus it&eacute;ratif</h4>
+Le calcul de second ordre est g&eacute;n&eacute;ralement it&eacute;ratif :
+<ol>
+  <li> <b>Analyse lin&eacute;aire initiale</b> : Calcul des efforts et d&eacute;formations en supposant la structure non d&eacute;form&eacute;e</li>
+  <li> <b>Application des effets P-Δ</b> : Recalcul des efforts en tenant compte des d&eacute;formations obtenues.</li>
+  <li> <b>It&eacute;rations successives</b> : Le processus est r&eacute;p&eacute;t&eacute; jusqu'&agrave; ce que les d&eacute;formations et les efforts **convergent** (c'est-&agrave;-dire qu'ils ne changent plus significativement).</li>
+</ol>
+
+<h4>4.2. Crit&egrave;res de convergence</h4>
+La convergence est atteinte lorsque :
+<ul>
+  <li>Les d&eacute;placements entre deux it&eacute;rations sont inf&eacute;rieurs &agrave; une tol&eacute;rance d&eacute;finie (ex. : 1%)</li>
+  <li>Les efforts internes ne varient plus de mani&egrave;re significative</li>
+</ul>
+
+<h4>4.3. M&eacute;thodes de r&eacute;solution</h4>
+Plusieurs m&eacute;thodes num&eacute;riques sont utilis&eacute;es pour r&eacute;soudre les &eacute;quations non-lin&eacute;aires :
+<ul>
+  <li><b>Newton-Raphson</b> : M&eacute;thode it&eacute;rative rapide, bas&eacute;e sur la tangente des courbes effort-d&eacute;placement</li>
+  <li><b>Picard</b> : M&eacute;thode plus stable mais plus lente, bas&eacute;e sur des approximations s&eacute;cantes.</li>
+  <li><b>Relaxation dynamique</b> : Utilis&eacute;e pour les probl&egrave;mes complexes ou instables.</li>
+</ul>
+<br/>
+
+<h3>5. Avantages et limites du calcul de second ordre</h3>
+
+<h4>5.1. Avantages</h4>
+<ul>  
+  <li><b>Pr&eacute;cision</b> : Prend en compte les comportements r&eacute;els des structures d&eacute;form&eacute;es</li>
+  <li><b>S&eacute;curit&eacute;</b> : &eacute;vite les risques d'instabilit&eacute; (flambement, d&eacute;versement).</li>
+  <li><b>Conformit&eacute; aux normes</b> : Respecte les exigences des r&eacute;glementations modernes.</li>
+</ul>
+
+<h4>5.2. Limites</h4>
+<ul>
+  <li><b>Complexit&eacute;</b> : N&eacute;cessite des logiciels sp&eacute;cialis&eacute;s et une expertise en calcul des structures.</li>
+  <li><b>Temps de calcul</b> : Les it&eacute;rations peuvent être longues pour les structures complexes.</li>
+  <li><b>Interpr&eacute;tation</b> : Les r&eacute;sultats peuvent être plus difficiles &agrave; analyser pour les non-experts.</li>
+</ul>
+
+<br/>
+
+<h3>6. Conclusion</h3>
+
+Le calcul de second ordre est une <b>m&eacute;thode indispensable</b> pour analyser les structures où les d&eacute;formations influencent la r&eacute;partition des efforts. 
+Il permet de pr&eacute;venir les risques d'instabilit&eacute; et de garantir la s&eacute;curit&eacute; des ouvrages &eacute;lanc&eacute;s ou soumis &agrave; des charges de compression. 
+Bien que plus complexe que l'analyse de premier ordre, il est aujourd'hui facilit&eacute; par BeamZe, qui automatise les it&eacute;rations et fournit des r&eacute;sultats pr&eacute;cis.
+
+    <br/>
+    <br/>
+    <br/>
+  </main>
+</div>
+{% endblock %}

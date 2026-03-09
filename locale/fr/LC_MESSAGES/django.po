@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-11-27 20:47+0000\n"
+"POT-Creation-Date: 2026-03-09 19:26+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: beamz_website/templates/aboutus.html:14
+#: templates/aboutus.html:14
 msgid "Who we are"
 msgstr "Qui nous sommes"
 
-#: beamz_website/templates/aboutus.html:25
+#: templates/aboutus.html:25
 msgid ""
 "Vincent is passionate about structures. He teaches Structural Analysis, "
 "statics, and dynamics at the University of Liège where he received his PhD "
@@ -32,7 +32,7 @@ msgstr ""
 "la statique et la dynamique à l'Université de Liège où il a obtenu son "
 "doctorat en génie civil."
 
-#: beamz_website/templates/aboutus.html:26
+#: templates/aboutus.html:26
 msgid ""
 "He travelled across many places in Europe, Asia, Australia, and the US to "
 "sharpen his knowledge in structural analysis under various loads and "
@@ -42,12 +42,12 @@ msgstr ""
 "aux États-Unis pour affiner ses connaissances en analyse structurale sous "
 "diverses charges et conditions."
 
-#: beamz_website/templates/aboutus.html:27
+#: templates/aboutus.html:27
 msgid "He also founded the Structural and Stochastic Dynamics lab."
 msgstr ""
 "Il a aussi fondé le laboratoire de dynamique structurale et stochastique."
 
-#: beamz_website/templates/aboutus.html:40
+#: templates/aboutus.html:40
 msgid ""
 "Nicolas is a developer. He received his Diploma in Computer Science from the "
 "University of Mons."
@@ -55,31 +55,31 @@ msgstr ""
 "Nicolas est un développeur. Il a reçu son diplôme en informatique de "
 "l'Université de Mons."
 
-#: beamz_website/templates/aboutus.html:41
+#: templates/aboutus.html:41
 msgid ""
 "His area of expertises are the databases and the performance of IT systems."
 msgstr ""
 "Ses domaines d'expertise sont les bases de données et les performances des "
 "systèmes informatiques."
 
-#: beamz_website/templates/aboutus.html:50
+#: templates/aboutus.html:50
 msgid "What we do"
 msgstr "Ce que nous faisons"
 
-#: beamz_website/templates/aboutus.html:55
+#: templates/aboutus.html:55
 #, fuzzy
 #| msgid "Unlimited analysis"
 msgid "Finite elements analysis"
 msgstr "Analyses par elements finis"
 
-#: beamz_website/templates/aboutus.html:58
+#: templates/aboutus.html:58
 msgid ""
 "From smaller structures to bigger ones, our platform makes analyses a breeze."
 msgstr ""
 " Des structures les plus simples aux plus complexes, notre plateforme rend "
 "leurs analyses faciles."
 
-#: beamz_website/templates/aboutus.html:59
+#: templates/aboutus.html:59
 msgid ""
 "Web based, this tool allows you to perform finite elements analyses from "
 "anywhere, at any time."
@@ -87,102 +87,96 @@ msgstr ""
 "Basé sur le web, cet outil vous permet d'effectuer des analyses par éléments "
 "finis de n'importe où, à tout moment."
 
-#: beamz_website/templates/aboutus.html:60
+#: templates/aboutus.html:60
 msgid "You can also collaborate with your colleagues."
 msgstr "Vous pouvez aussi collaborer avec vos collègues."
 
-#: beamz_website/templates/aboutus.html:63
-#: beamz_website/templates/features.html:5
-#: beamz_website/templates/website-base.html:33
+#: templates/aboutus.html:63 templates/features.html:5
+#: templates/website-base.html:33
 msgid "Features"
 msgstr "Fonctionnalités"
 
-#: beamz_website/templates/blog.html:7
-#: beamz_website/templates/contactus.html:51
-#: beamz_website/templates/website-base.html:32
+#: templates/blog.html:7 templates/contactus.html:51
+#: templates/website-base.html:32
 msgid "Blog"
 msgstr "Blog"
 
-#: beamz_website/templates/blog.html:15
+#: templates/blog.html:15
 msgid "Blog posts"
 msgstr "Articles de blog"
 
-#: beamz_website/templates/blog.html:26
+#: templates/blog.html:26
 msgid "Published"
 msgstr "Publié"
 
-#: beamz_website/templates/blog.html:32
+#: templates/blog.html:32
 msgid "Read more"
 msgstr "Lire plus"
 
-#: beamz_website/templates/blog.html:43
+#: templates/blog.html:43
 msgid "Publication dates"
 msgstr "Dates de publication"
 
-#: beamz_website/templates/blog.html:59
+#: templates/blog.html:59
 msgid "Tags"
 msgstr "Étiquettes"
 
-#: beamz_website/templates/contactus.html:5
+#: templates/contactus.html:5
 #, fuzzy
 #| msgid "Contact"
 msgid "Contact US"
 msgstr "Contactez nous"
 
-#: beamz_website/templates/contactus.html:14
-#: beamz_website/templates/pricing.html:98
-#: beamz_website/templates/website-base.html:118
+#: templates/contactus.html:14 templates/pricing.html:98
+#: templates/website-base.html:136
 msgid "Contact us"
 msgstr "Contactez nous"
 
-#: beamz_website/templates/contactus.html:25
-#: beamz_website/templates/website-base.html:105
+#: templates/contactus.html:25 templates/website-base.html:123
 msgid "Documentation"
 msgstr "Documentation"
 
-#: beamz_website/templates/contactus.html:38
-#: beamz_website/templates/website-base.html:109
+#: templates/contactus.html:38 templates/website-base.html:127
 msgid "Contact"
 msgstr "Contact"
 
-#: beamz_website/templates/contactus.html:60
+#: templates/contactus.html:60
 msgid "Your message has been sent!"
 msgstr "Votre message a été envoyé."
 
-#: beamz_website/templates/contactus.html:61
+#: templates/contactus.html:61
 msgid "Error sending message."
 msgstr "Erreur d'envoi du message."
 
-#: beamz_website/templates/contactus.html:65
+#: templates/contactus.html:65
 msgid "Name"
 msgstr "Nom"
 
-#: beamz_website/templates/contactus.html:70
-#: beamz_website/templates/pricing.html:247
+#: templates/contactus.html:70
 msgid "Email"
 msgstr "Courriel"
 
-#: beamz_website/templates/contactus.html:75
+#: templates/contactus.html:75
 msgid "Message"
 msgstr "Message"
 
-#: beamz_website/templates/contactus.html:82
+#: templates/contactus.html:82
 msgid "Send"
 msgstr "Envoyer"
 
-#: beamz_website/templates/faq.html:8
+#: templates/faq.html:8
 msgid "Faq"
 msgstr ""
 
-#: beamz_website/templates/faq.html:14
+#: templates/faq.html:14
 msgid "Frequently asked questions"
 msgstr "Questions fréquentes"
 
-#: beamz_website/templates/features.html:14
+#: templates/features.html:15
 msgid "Everytime. Everywhere."
 msgstr "Partout. Tout le temps."
 
-#: beamz_website/templates/features.html:15
+#: templates/features.html:16
 msgid ""
 "You just need a recent web browser. Share your structures among devices, "
 "thanks to the cloud storage."
@@ -190,16 +184,15 @@ msgstr ""
 "Vous avez juste besoin d'un navigateur web récent. Partagez vos structures "
 "entre appareils, grâce au stockage dans le cloud."
 
-#: beamz_website/templates/features.html:16
+#: templates/features.html:17
 msgid "Work now"
 msgstr "Travaillez maintenant"
 
-#: beamz_website/templates/features.html:34
-#: beamz_website/templates/webindex.html:58
+#: templates/features.html:35 templates/webindex.html:58
 msgid "Intuitive UI"
 msgstr "Interface intuitive"
 
-#: beamz_website/templates/features.html:35
+#: templates/features.html:36
 msgid ""
 "Every tool you need to draw a structure at your fingertips, whichever the "
 "platform you're using."
@@ -207,7 +200,7 @@ msgstr ""
 "Chaque outil dont vous avez besoin pour dessiner une structure à portée de "
 "main, quel que soit la plateforme que vous utilisez."
 
-#: beamz_website/templates/features.html:36
+#: templates/features.html:37
 msgid ""
 "Without any training, a new user is able to draw a tructure, add loads, and "
 "analyse it in minutes."
@@ -215,11 +208,11 @@ msgstr ""
 "Sans aucune formation, un nouvel utilisateur est capable de dessiner une "
 "structure, d'ajouter des charges et de l'analyser en quelques minutes."
 
-#: beamz_website/templates/features.html:44
+#: templates/features.html:45
 msgid "Multiple load cases"
 msgstr "Plusieurs cas de charge"
 
-#: beamz_website/templates/features.html:45
+#: templates/features.html:46
 msgid ""
 "In addition to the existing <i>Self weight</i> pre-defined load, you can "
 "define <b>as many</b> load cases as you want."
@@ -227,13 +220,13 @@ msgstr ""
 "En plus de la charge pré-définie <i>Poids propre</i>, vous pouvez définir "
 "<b>autant</b> de cas de charge que vous le souhaitez."
 
-#: beamz_website/templates/features.html:46
+#: templates/features.html:47
 msgid "Each load case can contain <b>as many</b> Loads as you want."
 msgstr ""
 "Chaque cas de charge peut contenir <b>autant</b> de charges que vous le "
 "souhaitez."
 
-#: beamz_website/templates/features.html:47
+#: templates/features.html:48
 msgid ""
 "Distributed, concentrated, moments, on elements or nodes, heat, fire are the "
 "loads you can add in every case. You can also define supports displacements "
@@ -243,11 +236,11 @@ msgstr ""
 "incendie sont les charges que vous pouvez ajouter dans chaque cas. Vous "
 "pouvez également définir des déplacements ou des rotations de supports."
 
-#: beamz_website/templates/features.html:61
+#: templates/features.html:62
 msgid "Loads combination"
 msgstr "Combinaison de charges"
 
-#: beamz_website/templates/features.html:62
+#: templates/features.html:63
 msgid ""
 "In addition to multiple loads definitions, you can create <b>combinations</"
 "b> of loads, with a factor. To ease the work, the defaults are set to 1.35 "
@@ -260,23 +253,23 @@ msgstr ""
 "les autres. Vous pouvez bien sûr définir les coefficients dont vous avez "
 "besoin par combinaison."
 
-#: beamz_website/templates/features.html:63
+#: templates/features.html:64
 msgid "And you can combine load cases and combos in enveloppes."
 msgstr ""
 "Et vous pouvez combiner les cas de charge et les combinaisons dans des "
 "enveloppes."
 
-#: beamz_website/templates/features.html:64
+#: templates/features.html:65
 msgid "As usual, no limit on the number of combinations and enveloppes."
 msgstr ""
 "Comme d'habitude, pas de limite sur le nombre de combinaisons et "
 "d'enveloppes."
 
-#: beamz_website/templates/features.html:72
+#: templates/features.html:73
 msgid "Materials library"
 msgstr "Librairie de matériaux"
 
-#: beamz_website/templates/features.html:73
+#: templates/features.html:74
 msgid ""
 "In addition to the long list of pre-defined materials in the software, you "
 "can create your own list of materials."
@@ -284,7 +277,7 @@ msgstr ""
 "En place de la longue liste de matériaux pré-définis dans le logiciel, vous "
 "pouvez créer votre propre liste de matériaux."
 
-#: beamz_website/templates/features.html:74
+#: templates/features.html:75
 msgid ""
 "To ease your work, you can also create your list of <b>prefered materials</"
 "b> and have the app to automatically start every new structure with this "
@@ -295,7 +288,7 @@ msgstr ""
 "automatiquement chaque nouvelle structure avec cette liste, au lieu de la "
 "liste par défaut."
 
-#: beamz_website/templates/features.html:75
+#: templates/features.html:76
 msgid ""
 "You can also load those custom-defined materials in any existing structure "
 "in one click."
@@ -303,7 +296,7 @@ msgstr ""
 "Vous pouvez également charger ces matériaux définis par vous dans n'importe "
 "quelle structure existante en un clic."
 
-#: beamz_website/templates/features.html:76
+#: templates/features.html:77
 msgid ""
 "The same fonctionality apply for <b>geometries</b>, <b>springs</b> and "
 "<b>dashpots</b>."
@@ -311,15 +304,15 @@ msgstr ""
 "Cette même fonctionnalité s'applique aux <b>géométries</b>, <b>ressorts</b> "
 "et <b>coulisses</b>."
 
-#: beamz_website/templates/features.html:87
+#: templates/features.html:88
 msgid "Units of measure"
 msgstr "Unités de mesure"
 
-#: beamz_website/templates/features.html:88
+#: templates/features.html:89
 msgid "Create your own system of units, to suits your needs."
 msgstr "Créez votre propre système d'unités, pour répondre à vos besoins."
 
-#: beamz_website/templates/features.html:89
+#: templates/features.html:90
 msgid ""
 "When collaborating on the same structure, different users can use different "
 "units of measures, without interfering each other!"
@@ -328,11 +321,11 @@ msgstr ""
 "peuvent utiliser différentes unités de mesure, sans interférer les uns avec "
 "les autres!"
 
-#: beamz_website/templates/features.html:103
+#: templates/features.html:104
 msgid "Cloud storage"
 msgstr "Sauvegarde dans le cloud"
 
-#: beamz_website/templates/features.html:104
+#: templates/features.html:105
 msgid ""
 "Save your structures in the cloud, and we'll save all your structure's "
 "versions."
@@ -340,7 +333,7 @@ msgstr ""
 "Enregistrez vos structures dans le cloud, et nous enregistrerons toutes les "
 "versions de votre structure."
 
-#: beamz_website/templates/features.html:105
+#: templates/features.html:106
 msgid ""
 "No need to worry about loosing info, or overwrite a modification, we keep "
 "track of all versions."
@@ -348,36 +341,11 @@ msgstr ""
 "Inutile de s'inquiéter de la perte d'informations ou de l'écrasement d'une "
 "modification, nous gardons une trace de toutes les versions."
 
-#: beamz_website/templates/features.html:113
-msgid "Suits your needs"
-msgstr "Repond à vos besoins"
-
-#: beamz_website/templates/features.html:114
-msgid ""
-"Adapt the application settings to suit your needs, like number roundings, "
-"units, default drawing style, colors, ..."
-msgstr ""
-"Adaptez les paramètres de l'application à vos besoins, comme le nombre de "
-"décimales, les unités, le style de dessin par défaut, les couleurs, ..."
-
-#: beamz_website/templates/features.html:128
-#: beamz_website/templates/pricing.html:91
-msgid "Social portal"
-msgstr "Portail social"
-
-#: beamz_website/templates/features.html:129
-msgid ""
-"Get track of your work, as well as your colleagues' work in a single place, "
-"in a social network style."
-msgstr ""
-"Suivez votre travail, ainsi que celui de vos collègues en un seul endroit, "
-"dans un style de réseau social."
-
-#: beamz_website/templates/features.html:137
+#: templates/features.html:114
 msgid "Results in spreadsheet"
 msgstr "Résultats dans une feuille de calcul"
 
-#: beamz_website/templates/features.html:138
+#: templates/features.html:115
 msgid ""
 "Analyse all results in an embedded spreadsheet, even on mobile devices.<br/"
 ">No need for an external application to achieve this, it's built-in.<br/>All "
@@ -390,351 +358,392 @@ msgstr ""
 "disponibles.<br/>L'export au format XLSX est disponible pour s'adapter à vos "
 "flux de travail habituels."
 
-#: beamz_website/templates/pricing.html:14
-#: beamz_website/templates/website-base.html:34
+#: templates/features.html:129 templates/pricing.html:91
+msgid "Social portal"
+msgstr "Portail social"
+
+#: templates/features.html:130
+msgid ""
+"Get track of your work, as well as your colleagues' work in a single place, "
+"in a social network style."
+msgstr ""
+"Suivez votre travail, ainsi que celui de vos collègues en un seul endroit, "
+"dans un style de réseau social."
+
+#: templates/features.html:138
+msgid "Suits your needs"
+msgstr "Repond à vos besoins"
+
+#: templates/features.html:139
+msgid ""
+"Adapt the application settings to suit your needs, like number roundings, "
+"units, default drawing style, colors, ..."
+msgstr ""
+"Adaptez les paramètres de l'application à vos besoins, comme le nombre de "
+"décimales, les unités, le style de dessin par défaut, les couleurs, ..."
+
+#: templates/features/static.html:5
+msgid "Features - static analysis"
+msgstr "Fonctionnalites - analyse statique"
+
+#: templates/pricing.html:14 templates/website-base.html:52
 msgid "Pricing"
 msgstr "Tarif"
 
-#: beamz_website/templates/pricing.html:20
-#: beamz_website/templates/pricing.html:112
+#: templates/pricing.html:20 templates/pricing.html:112
 msgid "Academic"
 msgstr "Académique"
 
-#: beamz_website/templates/pricing.html:29
+#: templates/pricing.html:29
 msgid "academic year"
 msgstr "année académique"
 
-#: beamz_website/templates/pricing.html:32
-#: beamz_website/templates/pricing.html:60
+#: templates/pricing.html:32 templates/pricing.html:60
 msgid "One user"
 msgstr "Un utilisateur"
 
-#: beamz_website/templates/pricing.html:33
-#: beamz_website/templates/pricing.html:62
+#: templates/pricing.html:33 templates/pricing.html:62
 msgid "Unlimited structures number"
 msgstr "Nombre illimité de structures"
 
-#: beamz_website/templates/pricing.html:34
+#: templates/pricing.html:34
 msgid "No support"
 msgstr "Pas de support"
 
-#: beamz_website/templates/pricing.html:35
+#: templates/pricing.html:35
 #, fuzzy
 #| msgid "Free"
 msgid "Free for "
 msgstr "Gratuit pour les"
 
-#: beamz_website/templates/pricing.html:35
+#: templates/pricing.html:35
 #, fuzzy
 #| msgid "For affiliated shools/universities"
 msgid "affiliated shools/universities"
 msgstr "écoles/universités partenaires"
 
-#: beamz_website/templates/pricing.html:39
+#: templates/pricing.html:39
 msgid "Available after student card check."
 msgstr "Disponnible après vérification de la carte étudiant."
 
-#: beamz_website/templates/pricing.html:41
-#: beamz_website/templates/pricing.html:70
+#: templates/pricing.html:41 templates/pricing.html:70
 msgid "Start now"
 msgstr "Commencez maintenant"
 
-#: beamz_website/templates/pricing.html:48
-#: beamz_website/templates/pricing.html:113
+#: templates/pricing.html:48 templates/pricing.html:113
 msgid "Professional"
 msgstr "Professionel"
 
-#: beamz_website/templates/pricing.html:57
-#: beamz_website/templates/pricing.html:86
+#: templates/pricing.html:57 templates/pricing.html:86
 msgid "year"
 msgstr "Année"
 
-#: beamz_website/templates/pricing.html:61
+#: templates/pricing.html:61
 msgid "Unlimited analysis"
 msgstr "Analyses illimitées"
 
-#: beamz_website/templates/pricing.html:63
-#: beamz_website/templates/pricing.html:92
+#: templates/pricing.html:63 templates/pricing.html:92
+#: templates/pricing.html:247
 msgid "Email support"
 msgstr "Support par courriel"
 
-#: beamz_website/templates/pricing.html:64
+#: templates/pricing.html:64
 msgid "Most popular"
 msgstr "Le plus demandé"
 
-#: beamz_website/templates/pricing.html:68
+#: templates/pricing.html:68
 msgid "Available after payment."
 msgstr "Disponnible après paiement."
 
-#: beamz_website/templates/pricing.html:77
-#: beamz_website/templates/pricing.html:114
+#: templates/pricing.html:77 templates/pricing.html:114
 msgid "Enterprise"
 msgstr "Entreprise"
 
-#: beamz_website/templates/pricing.html:86
+#: templates/pricing.html:86
 msgid "user"
 msgstr "utilisateur"
 
-#: beamz_website/templates/pricing.html:89
+#: templates/pricing.html:89
 msgid "Multiple users"
 msgstr "Plusieurs utilisateurs"
 
-#: beamz_website/templates/pricing.html:90
+#: templates/pricing.html:90
 msgid "Share structures among users"
 msgstr "Partage de structures entre utilisateurs"
 
-#: beamz_website/templates/pricing.html:96
+#: templates/pricing.html:96
 msgid "Contact us for terms and conditions."
 msgstr "Contactez nous pour les conditions d'accès et modalités."
 
-#: beamz_website/templates/pricing.html:104
+#: templates/pricing.html:104
 msgid "Features comparision"
 msgstr "Comparaison des fonctionnalités"
 
-#: beamz_website/templates/pricing.html:119
-#: beamz_website/templates/webindex.html:71
-#: beamz_website/templates/website-base.html:96
+#: templates/pricing.html:119 templates/webindex.html:71
+#: templates/website-base.html:114
 msgid "Cloud based"
 msgstr "Hébergé dans le cloud"
 
-#: beamz_website/templates/pricing.html:125
+#: templates/pricing.html:125
 msgid "Structures"
 msgstr "Structures"
 
-#: beamz_website/templates/pricing.html:130
+#: templates/pricing.html:130
 msgid "Max number of structures"
 msgstr "Nombre maximum de structures"
 
-#: beamz_website/templates/pricing.html:131
-#: beamz_website/templates/pricing.html:132
-#: beamz_website/templates/pricing.html:133
-#: beamz_website/templates/pricing.html:138
-#: beamz_website/templates/pricing.html:139
-#: beamz_website/templates/pricing.html:140
-#: beamz_website/templates/pricing.html:230
-#: beamz_website/templates/pricing.html:231
-#: beamz_website/templates/pricing.html:232
-#: beamz_website/templates/pricing.html:237
-#: beamz_website/templates/pricing.html:238
-#: beamz_website/templates/pricing.html:239
+#: templates/pricing.html:131 templates/pricing.html:132
+#: templates/pricing.html:133 templates/pricing.html:138
+#: templates/pricing.html:139 templates/pricing.html:140
+#: templates/pricing.html:230 templates/pricing.html:231
+#: templates/pricing.html:232 templates/pricing.html:237
+#: templates/pricing.html:238 templates/pricing.html:239
 msgid "Unlimited"
 msgstr "Illimité"
 
-#: beamz_website/templates/pricing.html:137
+#: templates/pricing.html:137
 #, fuzzy
 #| msgid "Unlimited analysis"
 msgid "Max number of analysis"
 msgstr "Analyses illimitées"
 
-#: beamz_website/templates/pricing.html:144
+#: templates/pricing.html:144
 msgid "Sharing"
 msgstr "Partage"
 
-#: beamz_website/templates/pricing.html:151
+#: templates/pricing.html:151
 msgid "Online saving"
 msgstr "Sauvegarde en ligne"
 
-#: beamz_website/templates/pricing.html:158
+#: templates/pricing.html:158
 msgid "Offline saving"
 msgstr "Sauvegarde locale"
 
-#: beamz_website/templates/pricing.html:165
+#: templates/pricing.html:165
 msgid "File history"
 msgstr "Historique du fichier"
 
-#: beamz_website/templates/pricing.html:172
+#: templates/pricing.html:172
 #, fuzzy
 #| msgid "Multiple users"
 msgid "Multi users"
 msgstr "Plusieurs utilisateurs"
 
-#: beamz_website/templates/pricing.html:178
+#: templates/pricing.html:178
 #, fuzzy
 #| msgid "No support"
 msgid "Supports"
 msgstr "Supports"
 
-#: beamz_website/templates/pricing.html:183
+#: templates/pricing.html:183
 msgid "Hinged"
 msgstr "Rotules"
 
-#: beamz_website/templates/pricing.html:190
-#: beamz_website/templates/pricing.html:215
+#: templates/pricing.html:190 templates/pricing.html:215
 msgid "Springs"
 msgstr "Ressorts"
 
-#: beamz_website/templates/pricing.html:197
+#: templates/pricing.html:197
 msgid "Rolls"
 msgstr "Rouleaux"
 
-#: beamz_website/templates/pricing.html:203
+#: templates/pricing.html:203
 msgid "Elements"
 msgstr "Eléments"
 
-#: beamz_website/templates/pricing.html:208
+#: templates/pricing.html:208
 msgid "Beams"
 msgstr "Barres"
 
-#: beamz_website/templates/pricing.html:222
+#: templates/pricing.html:222
 msgid "Dashpots"
 msgstr "Coulisses"
 
-#: beamz_website/templates/pricing.html:229
+#: templates/pricing.html:229
 msgid "Materials per structure"
 msgstr "Matériaux par structure"
 
-#: beamz_website/templates/pricing.html:236
+#: templates/pricing.html:236
 msgid "Geometries per structure"
 msgstr "Géométries par structure"
 
-#: beamz_website/templates/pricing.html:242
+#: templates/pricing.html:242
 msgid "Support"
 msgstr "Support"
 
-#: beamz_website/templates/pricing.html:253
+#: templates/pricing.html:253
+msgid "Analysis"
+msgstr "Analyses"
+
+#: templates/pricing.html:258 templates/website-base.html:45
+msgid "Static analysis"
+msgstr "Analyse statique"
+
+#: templates/pricing.html:265
+msgid "Second-order analysis"
+msgstr "Analyse de second ordre"
+
+#: templates/pricing.html:271
 msgid "Dedicated servers"
 msgstr "Serveurs dédiés"
 
-#: beamz_website/templates/pricing.html:258
+#: templates/pricing.html:276
 msgid "Dedicated compute module"
 msgstr "Moteur de calcul dédié"
 
-#: beamz_website/templates/pricing.html:265
+#: templates/pricing.html:283
 msgid "Dedicated storage server"
 msgstr "Serveur de stockage privé"
 
-#: beamz_website/templates/pricing.html:272
+#: templates/pricing.html:290
 msgid "On-premise deployment"
 msgstr "Déploiement sur site"
 
-#: beamz_website/templates/pricing.html:282
+#: templates/pricing.html:300
 msgid "Sharing with students from same school/university"
 msgstr "Partage avec les étudiants de la même école/université"
 
-#: beamz_website/templates/pricing.html:285
+#: templates/pricing.html:303
 msgid "Require additional module, ask for quote."
 msgstr "Nécessite un module additionnel, demandez un devis."
 
-#: beamz_website/templates/pricing.html:288
+#: templates/pricing.html:306
 msgid "Require additional module on your infrastructure, ask for quote."
 msgstr ""
 "Nécessite un module additionnel sur votre infrastructure, demandez un devis."
 
-#: beamz_website/templates/universities.html:5
+#: templates/universities.html:5
 msgid "Affiliated schools / Universities"
 msgstr "Ecoles / universités partenaires"
 
-#: beamz_website/templates/universities.html:12
+#: templates/universities.html:12
 msgid "Affiliated schools/universities"
 msgstr "Ecoles/universités partenaires"
 
-#: beamz_website/templates/unsubscribe.html:4
+#: templates/unsubscribe.html:4
 msgid "Unsubscribe BeamZe mailings"
 msgstr "Se désabonner des envois BeamZe"
 
-#: beamz_website/templates/unsubscribe.html:12
+#: templates/unsubscribe.html:12
 msgid "Unsubscribe from mailings"
 msgstr "Se désabonner des envois"
 
-#: beamz_website/templates/unsubscribe.html:19
+#: templates/unsubscribe.html:19
 msgid "is successfully unsubscribed from our mailing list."
 msgstr "a été désabonné avec succès de notre liste de diffusion."
 
-#: beamz_website/templates/unsubscribe.html:25
+#: templates/unsubscribe.html:25
 msgid "Email address"
 msgstr "Adresse courriel"
 
-#: beamz_website/templates/unsubscribe.html:28
+#: templates/unsubscribe.html:28
 msgid "Unsubscribe"
 msgstr "Se désabonner"
 
-#: beamz_website/templates/webindex.html:11
+#: templates/webindex.html:11
 msgid "Structural analysis software"
 msgstr "Logiciel d'analyse de structures"
 
-#: beamz_website/templates/webindex.html:12
+#: templates/webindex.html:12
 msgid "Analyze structures with confidence. And effortless."
 msgstr "Analysez les structures en toute confiance. Simplement."
 
-#: beamz_website/templates/webindex.html:13
+#: templates/webindex.html:13
 msgid "Discover features"
 msgstr "Decouvrez les fonctionnalités"
 
-#: beamz_website/templates/webindex.html:15
+#: templates/webindex.html:15
 msgid ""
 "BeamZe is a 2D finite element analysis software designed for structural "
 "engineers and students, with efficiency and simplicity in mind."
-msgstr "BeamZe est un logiciel d'analyse par éléments finis 2D conçu pour les ingénieurs et les étudiants, avec l'efficacité et la simplicité comme état d'esprit."
+msgstr ""
+"BeamZe est un logiciel d'analyse par éléments finis 2D conçu pour les "
+"ingénieurs et les étudiants, avec l'efficacité et la simplicité comme état "
+"d'esprit."
 
-#: beamz_website/templates/webindex.html:16
+#: templates/webindex.html:16
 msgid ""
 "It runs on every device with a modern web browser, and allows you to create "
 "and analyze structures in minutes."
-msgstr "Il fonctionne sur tous les appareils avec un navigateur web moderne, et vous permet de créer et d'analyser des structures en quelques minutes."
+msgstr ""
+"Il fonctionne sur tous les appareils avec un navigateur web moderne, et vous "
+"permet de créer et d'analyser des structures en quelques minutes."
 
-#: beamz_website/templates/webindex.html:16
+#: templates/webindex.html:16
 msgid "Don't believe us?"
 msgstr "Vous ne nous croyez pas ?"
 
-#: beamz_website/templates/webindex.html:16
+#: templates/webindex.html:16
 msgid "Try it out yourself!"
 msgstr "Essayez par vous-même !"
 
-#: beamz_website/templates/webindex.html:60
+#: templates/webindex.html:60
 msgid "From a blank page to a finished model in minutes."
 msgstr "D'une page blanche à un modèle fini en quelques minutes."
 
-#: beamz_website/templates/webindex.html:61
+#: templates/webindex.html:61
 msgid ""
 "Our mindset is simplicity. The tool is powerful, but we hide complexity as "
 "much as possible."
-msgstr "Notre état d'esprit est la simplicité. L'outil est puissant, mais nous masquons la complexité autant que possible."
+msgstr ""
+"Notre état d'esprit est la simplicité. L'outil est puissant, mais nous "
+"masquons la complexité autant que possible."
 
-#: beamz_website/templates/webindex.html:62
+#: templates/webindex.html:62
 msgid "The right tool at the right place."
 msgstr "Le bon outil au bon endroit."
 
-#: beamz_website/templates/webindex.html:73
+#: templates/webindex.html:73
 msgid "Nothing to install. Just a modern web browser and you're on."
 msgstr "Rien à installer. Juste un navigateur web moderne et vous y êtes."
 
-#: beamz_website/templates/webindex.html:74
+#: templates/webindex.html:74
 msgid ""
 "Access your work from anywhere, in the office on your desktop or on your "
 "mobile on the field."
-msgstr "Accédez à votre travail de n'importe où, au bureau sur votre ordinateur ou sur votre mobile sur le chantier."
+msgstr ""
+"Accédez à votre travail de n'importe où, au bureau sur votre ordinateur ou "
+"sur votre mobile sur le chantier."
 
-#: beamz_website/templates/webindex.html:83
+#: templates/webindex.html:83
 msgid "Libraries"
 msgstr "Bibliothèques"
 
-#: beamz_website/templates/webindex.html:85
+#: templates/webindex.html:85
 msgid ""
 "Embedded libraries for common materials and geometries, with their well "
 "known properties."
-msgstr "Les bibliothèques intégrées des matériaux et des géométries courants, avec leurs propriétés bien connues."
+msgstr ""
+"Les bibliothèques intégrées des matériaux et des géométries courants, avec "
+"leurs propriétés bien connues."
 
-#: beamz_website/templates/webindex.html:86
+#: templates/webindex.html:86
 msgid ""
 "Always work with the same ones? mark them as favorites and you'll always "
 "have them handily available."
-msgstr "Vous travaillez toujours avec les mêmes ? Marquez-les comme favoris et vous les aurez toujours à portée de main."
+msgstr ""
+"Vous travaillez toujours avec les mêmes ? Marquez-les comme favoris et vous "
+"les aurez toujours à portée de main."
 
-#: beamz_website/templates/webindex.html:95
+#: templates/webindex.html:95
 msgid "Collaboration"
 msgstr "Collaboration"
 
-#: beamz_website/templates/webindex.html:97
+#: templates/webindex.html:97
 msgid "Easy teamwork. Social portal. Structure sharing and management."
-msgstr "Travail d'équipe facile. Portail social. Partage et gestion des structures."
+msgstr ""
+"Travail d'équipe facile. Portail social. Partage et gestion des structures."
 
-#: beamz_website/templates/webindex.html:98
+#: templates/webindex.html:98
 msgid ""
 "You can work together on the same structure without overwriting each other's "
 "changes. Thanks to the cloud, all versions remain accessible."
-msgstr "Vous pouvez travailler ensemble sur la même structure sans écraser les modifications des autres. Grâce au cloud, toutes les versions restent accessibles."
+msgstr ""
+"Vous pouvez travailler ensemble sur la même structure sans écraser les "
+"modifications des autres. Grâce au cloud, toutes les versions restent "
+"accessibles."
 
-#: beamz_website/templates/webindex.html:107
+#: templates/webindex.html:107
 msgid ""
 "a lightweight and intuitive structural finite element model accessible "
 "directly from your web browser"
@@ -742,7 +751,7 @@ msgstr ""
 "un modèle d'éléments finis de structure léger et intuitif, accessible "
 "directement depuis votre navigateur"
 
-#: beamz_website/templates/webindex.html:108
+#: templates/webindex.html:108
 msgid ""
 "No installations, no hassle! It is multi-platform. MacOS, Windows, Linux, … "
 "on your desktop, laptop, tablet, smartphone"
@@ -750,19 +759,19 @@ msgstr ""
 "Pas d'installation, pas de soucis! Multi-plateforme. MacOS, Windows, Linux, "
 "… sur votre ordinateur de bureau, portable, tablette, smartphone"
 
-#: beamz_website/templates/webindex.html:108
+#: templates/webindex.html:108
 msgid "we don't mind as long as you enjoy"
 msgstr "On s'en fiche tant que vous appréciez"
 
-#: beamz_website/templates/webindex.html:117
+#: templates/webindex.html:117
 msgid "Designed for simplicity"
 msgstr "Conçu pour la simplicité"
 
-#: beamz_website/templates/webindex.html:117
+#: templates/webindex.html:117
 msgid "and efficiency"
 msgstr "et l'efficacité"
 
-#: beamz_website/templates/webindex.html:118
+#: templates/webindex.html:118
 msgid ""
 "This tool empowers engineers to analyze structures seamlessly anytime, "
 "anywhere. Experience the future of finite element modeling with unmatched "
@@ -773,61 +782,65 @@ msgstr ""
 "modélisation par éléments finis avec une commodité et des performances "
 "inégalées."
 
-#: beamz_website/templates/website-base.html:31
+#: templates/website-base.html:31
 msgid "Home"
 msgstr "Acceuil"
 
-#: beamz_website/templates/website-base.html:36
+#: templates/website-base.html:46
+msgid "Second order analysis"
+msgstr "Analyse de second ordre"
+
+#: templates/website-base.html:54
 msgid "My files"
 msgstr "Mes fichiers"
 
-#: beamz_website/templates/website-base.html:47
+#: templates/website-base.html:65
 msgid "Dashboard"
 msgstr "Tableau de bord"
 
-#: beamz_website/templates/website-base.html:48
+#: templates/website-base.html:66
 msgid "Logout"
 msgstr "Déconnexion"
 
-#: beamz_website/templates/website-base.html:50
+#: templates/website-base.html:68
 msgid "Login"
 msgstr "Connexion"
 
-#: beamz_website/templates/website-base.html:51
+#: templates/website-base.html:69
 msgid "Sign-up"
 msgstr "Enregistrement"
 
-#: beamz_website/templates/website-base.html:89
+#: templates/website-base.html:107
 msgid "A cloud based structure analysis platform for architects and engineers."
 msgstr ""
 "Une plateforme d'analyse de structures pour architectes et ingénieurs, "
 "hébergée dans le cloud."
 
-#: beamz_website/templates/website-base.html:90
+#: templates/website-base.html:108
 msgid "Accessible through a web interface, using any device."
 msgstr "Accessible via une interface web, sur n'importe quel appareil."
 
-#: beamz_website/templates/website-base.html:94
+#: templates/website-base.html:112
 msgid "Services"
 msgstr "Services"
 
-#: beamz_website/templates/website-base.html:99
+#: templates/website-base.html:117
 msgid "FAQ"
 msgstr "FaQ"
 
-#: beamz_website/templates/website-base.html:102
+#: templates/website-base.html:120
 msgid "Licence"
 msgstr "Licence"
 
-#: beamz_website/templates/website-base.html:122
+#: templates/website-base.html:140
 msgid "About us"
 msgstr "Qui sommes-nous"
 
-#: beamz_website/templates/website-base.html:135
+#: templates/website-base.html:153
 msgid "Still not a user?"
 msgstr "Pas encore utilisateur?"
 
-#: beamz_website/templates/website-base.html:137
+#: templates/website-base.html:155
 msgid "Sign up!"
 msgstr "Enregistrez-vous!"
 

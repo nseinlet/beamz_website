@@ -1,0 +1,179 @@
+{% extends "website-base.html" %}
+{% load i18n %}
+
+{% block canonicalurl %}/en/features/second-order{% endblock %}
+{% block title %}Features - second-order analysis{% endblock %}
+
+{% block menuclass-features %}text-white{% endblock %}
+{% block menuclass-features-sub %}text-white{% endblock %}
+
+{% block main %}
+<div class="container">
+  <main>
+<h1>Second-order analysis of a 2D structure</h1>
+Second-order analysis, also called <b>P-Δ analysis</b> or <b>geometrically nonlinear analysis</b>, is an essential method for studying the behavior of structures where 
+<b>deformations significantly influence the distribution of internal forces</b>. Unlike the classical first-order analysis, which assumes that the structure's geometry 
+remains unchanged under load, second-order analysis accounts for <b>displacements and deformations</b> to determine equilibrium. This approach is crucial for avoiding 
+the risks of instability, such as buckling or lateral-torsional buckling, in slender structures or those subjected to significant compressive loads.<br/>
+<br/>
+
+<h3>1. What is second-order analysis?</h3>
+Second-order analysis involves <b>determining the equilibrium of a structure on its deformed geometry</b>, rather than its initial configuration. This means that internal forces 
+(moments, axial forces, shear forces) are recalculated while considering the <b>displacements</b> caused by the applied loads.<br/>
+<br/>
+This method is particularly important for structures where <b>P-Δ effects</b> (second-order effects) cannot be neglected :<br/>
+<ul>
+  <li><b>P</b> : Axial load applied.</li>
+  <li><b>Δ</b> : Lateral or vertical displacement of the structure under load.</li>
+</ul>
+The P-Δ effect generates <b>additional moments</b> that can amplify deformations and, in some cases, lead to <b>global instability</b> ( buckling).<br/>
+<br/>
+
+<h3>2. Difference between first-order and second-order analysis</h3>
+<table class="table table-bordered">
+   <tr>
+    <th scope="col">
+      Criterion
+    </th>
+    <th scope="col">
+      First-order analysis
+    </th>
+    <th scope="col">
+      Second-order analysis (P-Δ)
+    </th>
+  </tr>
+  <tr>
+    <td scope="row">
+      Geometry
+    </td>
+    <td scope="row">
+      Equilibrium calculated on the structure <b>undeformed</b>
+    </td>
+    <td scope="row">
+      Equilibrium calculated on the structure <b>deformed</b>
+    </td>
+  </tr>
+   <tr>
+    <td scope="row">
+      P-Δ Effects
+    </td>
+    <td scope="row">
+      Not taken into account
+    </td>
+    <td scope="row">
+      Taken into account (additional moments)
+    </td>
+  </tr>
+  <tr>
+    <td scope="row">
+      Accuracy
+    </td>
+    <td scope="row">
+      Sufficient for rigid structures
+    </td>
+    <td scope="row">
+      Necessary for slender structures or those subjected to significant compressive loads
+    </td>
+  </tr>
+  <tr>
+    <td scope="row">
+      Complexity
+    </td>
+    <td scope="row">
+      Simple, direct calculations
+    </td>
+    <td scope="row">
+      Iterative, requires numerical solvers
+    </td>
+  </tr>
+  <tr>
+    <td scope="row">
+      Typical applications
+    </td>
+    <td scope="row">
+      Short beams, slabs, walls
+    </td>
+    <td scope="row">
+      Columns, skyscrapers, long beams, cables
+    </td>
+  </tr>
+</table>
+<br/>
+
+<h3>3. When is second-order analysis necessary?</h3>
+
+Second-order analysis is indispensable in the following cases:
+
+<h4>3.1. Slender structures</h4>
+<ul>
+  <li> Columns or columns of great height</li>
+  <li> Long beams subjected to compressive loads</li>
+  <li> Skyscrapers or tall structures (wind effects, vertical loads)</li>
+</ul>
+<h4>3.2. Important compressive loads</h4>
+<ul>
+  <li> Structures where axial forces (compression) are high compared to shear forces</li>
+  <li> Arches, cables or tensioned structures (like suspension bridges)</li>
+</ul>
+<h4>3.3. Standards and regulations</h4>
+Many standards, such as the <b>Eurocodes</b>, require a second-order analysis for structures sensitive to instability. For example :<br/>
+<ul>    
+  <li><b>Eurocode 2</b> (concrete) : Recommends a second-order verification for compressed elements</li>
+  <li><b>Eurocode 3</b> (steel) : Requires a P-Δ analysis for slender columns</li>
+</ul>
+
+<br/>
+
+<h3>4. MMethodology of second-order analysis</h3>
+
+<h4>4.1. Iterative process</h4>
+Second-order analysis is typically iterative:
+<ol>
+  <li> <b>Initial linear analysis</b> : Calculation of forces and deformations assuming the structure is not deformed</li>
+  <li> <b>Application of P-Δ effects</b> : Recalculation of forces taking into account the obtained deformations.</li>
+  <li> <b>Successive iterations</b> : The process is repeated until the deformations and forces **converge** (i.e., they no longer change significantly).</li>
+</ol>
+
+<h4>4.2. Convergence criteria</h4>
+Convergence is achieved when:
+<ul>
+  <li>Displacements between two iterations are below a defined tolerance (e.g., 1%)</li>
+  <li>Internal forces no longer change significantly</li>
+</ul>
+
+<h4>4.3. Resolution methods</h4>
+Several numerical methods are used to solve the nonlinear equations:
+<ul>
+  <li><b>Newton-Raphson</b> : Fast iterative method, based on the tangent of the force-displacement curves</li>
+  <li><b>Picard</b> : More stable but slower method, based on secant approximations.</li>
+  <li><b>Dynamic relaxation</b> : Used for complex or unstable problems.</li>
+</ul>
+<br/>
+
+<h3>5. Advantages and Limitations of second order analysis</h3>
+
+<h4>5.1. Advantages</h4>
+<ul>
+  <li><b>Accuracy</b> : Takes into account the real behavior of deformed structures</li>
+   <li><b>Safety</b> : Avoids the risks of instability (buckling, overturning).</li>
+  <li><b>Compliance with standards</b> : Meets the requirements of modern regulations.</li>
+</ul>
+
+<h4>5.2. Limitations</h4>
+<ul>
+  <li><b>Complexity</b> : Requires specialized software and expertise in structural analysis.</li>
+  <li><b>Calculation time</b> : Iterations can be long for complex structures.</li>
+  <LI><b>Interpretation</b> : Results can be more difficult to analyze for non-experts.</li>
+</ul>
+<br/>
+<h3>6. Conclusion</h3>
+Second order analysis is an <b>indispensable method</b> for analyzing structures where deformations influence the distribution of forces. 
+It helps to prevent the risks of instability and to ensure the safety of slender structures or those subjected to
+significant compressive loads. Although more complex than first-order analysis, it is now facilitated by BeamZe, which automates the 
+iterations and provides accurate results.
+    <br/>
+    <br/>
+    <br/>
+  </main>
+</div>
+{% endblock %}
