@@ -12,11 +12,15 @@
 <main>
 <h1>Qu'est-ce que le calcul d'analyse statique d'une structure 2D ?</h1>
 <img src="/static/screenshots/static_analysis.png" alt="Analyse statique d'une structure en 2D, de multiples portiques sont deformes sous l'effet de charges, on y voit en pointilles la structure initiale ainsi que les charges appliquees menant a la deformation." class="img-fluid mb-4"/><br/>
-L'analyse statique d'une structure en 2D est une m&eacute;thode essentielle en g&eacute;nie civil, en m&eacute;canique et en architecture. Elle permet de d&eacute;terminer les efforts internes, les d&eacute;formations et les contraintes d'une structure soumise à des charges statiques (constantes dans le temps), en ne consid&eacute;rant que deux dimensions. Cette approche est largement utilis&eacute;e pour concevoir et v&eacute;rifier la s&eacute;curit&eacute; des b&acirc;timents, des ponts, des machines et d'autres ouvrages. Des logiciels sp&eacute;cialis&eacute;s, comme BeamZe, facilitent cette analyse en automatisant les calculs et en fournissant des r&eacute;sultats pr&eacute;cis.<br/>
+L'analyse statique d'une structure en 2D est une &eacute;tape essentielle en g&eacute;nie civil, en m&eacute;canique et en architecture. Elle permet de d&eacute;terminer les efforts internes, 
+les d&eacute;formations et les contraintes d'une structure soumise à des charges statiques (constantes dans le temps), en ne consid&eacute;rant que deux dimensions. Cette approche est largement 
+utilis&eacute;e pour concevoir et v&eacute;rifier la s&eacute;curit&eacute; des b&acirc;timents, des ponts, des machines et d'autres ouvrages. Des logiciels sp&eacute;cialis&eacute;s, comme BeamZe, 
+facilitent cette analyse en automatisant les calculs et en fournissant des r&eacute;sultats pr&eacute;cis.<br/>
 <br/>
 <h3>1. D&eacute;finition et principes de base</h3>
-<h4>1.1. Qu'est-ce qu'une analyse statique ?</h4>
-L'analyse statique consiste à &eacute;tudier le comportement d'une structure sous l'effet de charges statiques (ne variant pas avec le temps), comme le poids propre, les charges permanentes, les surcharges d'exploitation ou les charges climatiques (neige, vent statique). L'objectif est de s'assurer que la structure reste en &eacute;quilibre stable et qu'elle r&eacute;siste aux sollicitations sans rupture ni d&eacute;formation excessive.<br/>
+<h4>1.1. Qu'est-ce qu'une analyse statique (au premier ordre)?</h4>
+L'analyse statique consiste à &eacute;tudier le comportement d'une structure sous l'effet de charges statiques (ne variant pas avec le temps), comme le poids propre, les charges permanentes, 
+les surcharges d'exploitation ou les charges climatiques (neige, vent statique). L'objectif est de s'assurer qu'elle r&eacute;siste aux sollicitations sans rupture ni d&eacute;formation excessive.<br/>
 <h4>1.2. Pourquoi en 2D ?</h4>
 Une analyse en 2D simplifie la mod&eacute;lisation en r&eacute;duisant la structure à un plan (par exemple, une façade de b&acirc;timent, une poutre, un portique). Cela permet de :<br/>
 <ul>
@@ -27,18 +31,20 @@ Une analyse en 2D simplifie la mod&eacute;lisation en r&eacute;duisant la struct
 </ul>
 
 <h3>2. Hypoth&egrave;ses fondamentales</h3>
-L'analyse statique 2D repose sur plusieurs hypoth&egrave;ses cl&eacute;s :<br/>
-<h4>2.1. &eacute;quilibre statique</h4>
+L'analyse statique 2D repose sur plusieurs principes cl&eacute;s :<br/>
+<h4>2.1. Equilibre statique</h4>
 Les forces internes (efforts, moments) et externes (charges) doivent &ecirc;tre en &eacute;quilibre. Cela se traduit par les &eacute;quations fondamentales de la statique :<br/>
 <ul>
       <li><pre>ΣFx = 0</pre> (somme des forces horizontales nulle)</li>
       <li><pre>ΣFy = 0</pre> (somme des forces verticales nulle)</li>
       <li><pre>ΣM = 0</pre> (somme des moments nulle)</li>
 </ul>
-<h4>2.2. Lin&eacute;arit&eacute; g&eacute;om&eacute;trique</h4>
-Les d&eacute;formations sont suppos&eacute;es petites : la g&eacute;om&eacute;trie de la structure ne change pas significativement sous l'effet des charges. Les calculs sont effectu&eacute;s sur la configuration initiale (non d&eacute;form&eacute;e).
+<h4>2.2. Lin&eacute;arit&eacute; "g&eacute;om&eacute;trique"</h4>
+Les d&eacute;placements sont suppos&eacute;s petits : la g&eacute;om&eacute;trie de la structure ne change pas significativement sous l'effet des charges. Les calculs sont effectu&eacute;s 
+sur la configuration initiale (non d&eacute;form&eacute;e).
 <h4>2.3. Lin&eacute;arit&eacute; mat&eacute;rielle</h4>
-Les mat&eacute;riaux (acier, b&eacute;ton, bois, etc.) sont suppos&eacute;s &eacute;lastiques et lin&eacute;aires : leurs d&eacute;formations sont proportionnelles aux contraintes appliqu&eacute;es (<a href="https://fr.wikipedia.org/wiki/Loi_de_Hooke">loi de Hooke</a>).
+Les mat&eacute;riaux (acier, b&eacute;ton, bois, etc.) sont suppos&eacute;s &eacute;lastiques et lin&eacute;aires : leurs d&eacute;formations sont proportionnelles aux contraintes 
+appliqu&eacute;es selon la <a href="https://fr.wikipedia.org/wiki/Loi_de_Hooke">loi de Hooke</a>.
 <h4>2.4. Charges statiques</h4>
 Les charges sont constantes dans le temps (pas de variations dynamiques comme les s&eacute;ismes ou les vibrations).<br/>
 
@@ -82,7 +88,7 @@ L'analyse statique 2D est utilis&eacute;e dans de nombreux domaines :<br/>
       Architecture
     </td>
     <td scope="row">
-      Charpentes, v&eacute;randas, escaliers.
+      Charpentes, v&eacute;randas, escaliers, portiques de b&acirc;timent industriel, calcul de fondations, sout&egrave;nements
     </td>
   </tr>
 </table>
@@ -104,7 +110,9 @@ L'analyse statique 2D est utilis&eacute;e dans de nombreux domaines :<br/>
 </ul>
 
 <h3>5. Diff&eacute;rence avec l'analyse de second ordre</h3>
-L'analyse statique classique (premier ordre) suppose que la g&eacute;om&eacute;trie de la structure ne change pas sous charge. En revanche, l'<a href="/features/second-order">analyse de second ordre</a> (ou analyse P-Δ) prend en compte les d&eacute;formations g&eacute;om&eacute;triques et leur impact sur les efforts internes. Elle est indispensable pour les structures où les d&eacute;formations influencent significativement la r&eacute;partition des charges, comme les gratte-ciels, les colonnes &eacute;lanc&eacute;es ou les poutres longues.<br/>
+L'analyse statique classique (premier ordre) suppose que la g&eacute;om&eacute;trie de la structure ne change pas sous charge. En revanche, l'<a href="/features/second-order">analyse de second ordre</a> (ou analyse P-Δ) 
+prend en compte les d&eacute;formations g&eacute;om&eacute;triques et leur impact sur les efforts internes. Elle est indispensable pour les structures où les d&eacute;formations influencent significativement la 
+r&eacute;partition des charges, comme les c&acirc;bles, les colonnes &eacute;lanc&eacute;es ou les poutres longues.<br/>
 <table class="table table-bordered">
   <tr>
     <th scope="col">
