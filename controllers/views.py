@@ -107,7 +107,7 @@ def sitemap(request):
         sitemap_urls.append({'location': f'https://beamze.app/{lang}/pricing', 'priority': '0.8', 'lastmod': '2026-01-01', 'changefreq': 'yearly'})
         sitemap_urls.append({'location': f'https://beamze.app/{lang}/features', 'priority': '0.8', 'lastmod': '2026-01-01', 'changefreq': 'monthly'})
         sitemap_urls.append({'location': f'https://beamze.app/{lang}/features/static', 'priority': '0.7', 'lastmod': '2026-02-20', 'changefreq': 'yearly'})
-        sitemap_urls.append({'location': f'https://beamze.app/{lang}/features/second_order', 'priority': '0.7', 'lastmod': '2026-03-01', 'changefreq': 'yearly'})
+        sitemap_urls.append({'location': f'https://beamze.app/{lang}/features/second-order', 'priority': '0.7', 'lastmod': '2026-03-01', 'changefreq': 'yearly'})
         sitemap_urls.append({'location': f'https://beamze.app/{lang}/aboutus', 'priority': '0.6', 'lastmod': '2026-01-01', 'changefreq': 'yearly'})
         sitemap_urls.append({'location': f'https://beamze.app/{lang}/contactus', 'priority': '0.6', 'lastmod': '2026-01-01', 'changefreq': 'yearly'})
         sitemap_urls.append({'location': f'https://beamze.app/{lang}/universities', 'priority': '0.5',  'lastmod': '2025-09-01',  'changefreq': 'yearly'})
